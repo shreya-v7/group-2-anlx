@@ -1,0 +1,14 @@
+{
+  "started_at": "2026-10-03T23:41:28.885256+00:00",
+  "model": "/Users/shreyaverma/Projects/applications of nlx and llms/.models/phi-4-mini-instruct-4bit",
+  "preregistration_sha256": "a4841016ccb83908054f4c3180a8291004afb6dd4db8d788d3128a63d279c4f2",
+  "code_sha256": {
+    "fence_parser.py": "071507cf0486f164ec8e268023f72758f2bb174b4a04d95a962fb13fc6b360c9",
+    "run_followup_fence.py": "da6a803595a7d476542523b6038b23ba67da928290f3634b889cc5018bc11e76",
+    "llmbox_integration.py": "728b992ca949affe66db847fb249a58b6adfb0cbc980a1b8861e29289ee66930",
+    "career_api.py": "51fbfb6d065d67867fff12e9cce040693a97a0b3349997b44ba0dcc0ce0733ec"
+  },
+  "records": "evaluation.jsonl[50:100]",
+  "mode": "verified (C4) via Modes.run_structured_output",
+  "ended_at": "2026-10-03T23:53:51.280135+00:00"
+}

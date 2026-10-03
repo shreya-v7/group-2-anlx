@@ -14,7 +14,7 @@ Team: Shreya Verma, Chih-yu Li, William Sun. About four minutes in total, then q
 
 [Point at the Finding 1 chart] “Thanks, Shreya. The headline: the tool works, but the answers don’t. In the best design the model used its lookup tool correctly 50 out of 50 times, yet only 17 of 50 answers got all five basic facts right. A working tool does not guarantee a correct answer.”
 
-[Point at Finding 2] “The most surprising result: when we forced a strict data format, the model scored zero out of 50. The facts were not the problem. It wrapped every answer in extra formatting that the checker rejected. Stripping that formatting gave 43 valid answers. How you measure can change the conclusion completely.”
+[Point at Finding 2] “The most surprising result: when we forced a strict data format, the model scored zero out of 50. The facts were not the problem. It wrapped every answer in extra formatting that the checker rejected. Shreya fixed the parser and tested it on 50 new postings with the success rule written down first: 44 answers were valid and 33 passed every fact check. How you measure can change the conclusion completely.”
 
 [Point at the three-sector table] “My Finance study showed the same trap from another angle. Certification extraction scored 86% agreement, but most postings list no certification, and on the four that did, the model missed every one. A high score can hide failure on exactly the cases that matter. Across all three industries, larger hosted models fixed the format, but lists of skills and qualifications stayed hard. William will cover his API study, safety and what we recommend.”
 

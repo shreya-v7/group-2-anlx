@@ -18,9 +18,9 @@ from reportlab.pdfgen import canvas
 from reportlab.platypus import Paragraph, Table, TableStyle
 
 R = Path(__file__).resolve().parent
-P = R.parents[3]
+P = R.parents[1]
 RUNS = P / 'AS02/as02_prospective/runs/policy_first_gpu'
-COST = P / 'AS02/as02_prospective/updated_package/prototype_cost/cost_inputs.json'
+COST = R / 'package_base/prototype_cost/cost_inputs.json'
 OUT = R / 'documents'
 FIG = R / 'figures'
 OUT.mkdir(exist_ok=True)
@@ -240,9 +240,9 @@ y = para(x, y, 'Five facts: posting ID, URL, title, employer, location. One run 
          21, color=INK2)
 y = heading(x, y, 'Finding 2: formatting hid good answers')
 y = para(x, y, 'The model wrapped its JSON in Markdown fences, so the strict checker rejected <b>all 50</b> '
-               'structured answers. Stripping the fences afterwards gave <b>43/50</b> valid, <b>31/50</b> '
-               'source-correct: a diagnosis, not a new result.', 25)
-y = para(x, y, 'A checker that refuses anything unverified (C4) blocked all 50 answers. Perfectly safe, '
+               'structured answers. We fixed the parser and tested it, pre-registered, on <b>50 new postings</b>: '
+               '<b>44/50</b> valid and <b>33/50</b> passed every fact check.', 25)
+y = para(x, y, 'Before the fix, the strict verifier (C4) blocked all 50 answers: perfectly safe, '
                'completely useless.', 25, True, NAVY)
 y = heading(x, y, 'Same lesson in all three sectors')
 y = table(x, y, [['Sector (AS01 test set)', 'Phi valid JSON', 'Larger hosted model'],

@@ -1,0 +1,67 @@
+[transformers] This model config has set a `rope_parameters['original_max_position_embeddings']` field, to be used together with `max_position_embeddings` to determine a scaling factor. Please set the `factor` field of `rope_parameters`with this ratio instead -- we recommend the use of this field over `original_max_position_embeddings`, as it is compatible with most model architectures.
+F1 1/50: strict=False tolerant=True delivered=True 14.9s
+F1 2/50: strict=False tolerant=False delivered=False 13.7s
+F1 3/50: strict=False tolerant=True delivered=True 12.3s
+F1 4/50: strict=False tolerant=True delivered=False 11.0s
+F1 5/50: strict=False tolerant=False delivered=False 12.1s
+F1 6/50: strict=False tolerant=True delivered=True 13.4s
+F1 7/50: strict=False tolerant=True delivered=False 10.9s
+F1 8/50: strict=False tolerant=False delivered=False 13.9s
+F1 9/50: strict=False tolerant=True delivered=True 11.7s
+F1 10/50: strict=False tolerant=True delivered=True 13.5s
+F1 11/50: strict=False tolerant=True delivered=True 13.7s
+F1 12/50: strict=False tolerant=True delivered=True 12.7s
+F1 13/50: strict=False tolerant=False delivered=False 15.4s
+F1 14/50: strict=False tolerant=True delivered=True 18.2s
+F1 15/50: strict=False tolerant=True delivered=False 14.1s
+F1 16/50: strict=False tolerant=True delivered=True 12.5s
+F1 17/50: strict=False tolerant=True delivered=True 12.6s
+F1 18/50: strict=False tolerant=True delivered=True 13.1s
+F1 19/50: strict=False tolerant=True delivered=True 13.4s
+F1 20/50: strict=False tolerant=True delivered=True 12.0s
+F1 21/50: strict=False tolerant=True delivered=True 17.1s
+F1 22/50: strict=False tolerant=True delivered=True 19.1s
+F1 23/50: strict=False tolerant=True delivered=True 14.7s
+F1 24/50: strict=False tolerant=True delivered=True 13.5s
+F1 25/50: strict=False tolerant=True delivered=True 13.8s
+F1 26/50: strict=False tolerant=True delivered=False 19.7s
+F1 27/50: strict=False tolerant=False delivered=False 18.6s
+F1 28/50: strict=False tolerant=True delivered=True 16.0s
+F1 29/50: strict=False tolerant=True delivered=True 16.1s
+F1 30/50: strict=False tolerant=True delivered=True 17.0s
+F1 31/50: strict=False tolerant=True delivered=True 16.5s
+F1 32/50: strict=False tolerant=True delivered=False 14.9s
+F1 33/50: strict=False tolerant=True delivered=True 17.0s
+F1 34/50: strict=False tolerant=True delivered=False 15.3s
+F1 35/50: strict=False tolerant=True delivered=False 16.5s
+F1 36/50: strict=False tolerant=True delivered=False 13.3s
+F1 37/50: strict=False tolerant=True delivered=True 14.7s
+F1 38/50: strict=False tolerant=True delivered=True 19.6s
+F1 39/50: strict=False tolerant=True delivered=True 14.9s
+F1 40/50: strict=False tolerant=True delivered=False 16.6s
+F1 41/50: strict=False tolerant=True delivered=True 15.8s
+F1 42/50: strict=False tolerant=True delivered=False 12.7s
+F1 43/50: strict=False tolerant=True delivered=True 14.2s
+F1 44/50: strict=False tolerant=True delivered=True 15.1s
+F1 45/50: strict=False tolerant=True delivered=False 11.0s
+F1 46/50: strict=False tolerant=True delivered=True 20.0s
+F1 47/50: strict=False tolerant=True delivered=True 16.7s
+F1 48/50: strict=False tolerant=True delivered=True 12.1s
+F1 49/50: strict=False tolerant=True delivered=True 12.9s
+F1 50/50: strict=False tolerant=False delivered=False 16.3s
+{
+  "n": 50,
+  "strict_schema_valid": 0,
+  "tolerant_schema_valid": 44,
+  "fence_stripped": 44,
+  "c4_delivered": 33,
+  "withhold_reasons": {
+    "employer": 8,
+    "invalid_schema": 6,
+    "qualification_quote_not_in_source": 3
+  },
+  "mean_latency_seconds": 14.736133973259275,
+  "mean_input_tokens": 1708.78,
+  "mean_output_tokens": 211.58,
+  "decision": "works"
+}

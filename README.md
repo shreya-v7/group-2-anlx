@@ -6,6 +6,8 @@ CMU 95820 Applications of NLX and LLM (Fall 2026). Team: Shreya Verma (Pharma), 
 
 **Answer:** the lookup tool worked on 50/50 requests, but only 17/50 answers got all five source facts right. Strict JSON validation rejected 0/50 → 43/50 after stripping Markdown fences (post-hoc). A keyword guardrail blocked 15/20 attacks and 1/10 benign requests. Recommendation: copy known facts directly; use the model only under adviser review.
 
+**Start here:** [`PROJECT_GUIDE.md`](PROJECT_GUIDE.md) explains every assignment, step, file, model and result.
+
 ## Layout
 
 | Folder | Contents |
@@ -30,6 +32,7 @@ CMU 95820 Applications of NLX and LLM (Fall 2026). Team: Shreya Verma (Pharma), 
 | C2 | read-only `lookup_selected_posting` tool | 22/50 | 17/50 |
 | C3 | regex input/output guardrail | 0/50 | 0/50 |
 | C4 | schema + source + quote verifier | 0/50 (50 withheld) | 0/50 |
+| F1 (Oct 3) | C4 + fence-tolerant parser, pre-registered, 50 new postings | 44/50 | 33/50 delivered |
 
 AS01 (Pharma, 25 human labels): Phi 48% field agreement, 0/25 full records, 92% schema-valid; Gemini Flash 92.4%.
 
@@ -38,7 +41,7 @@ AS01 (Pharma, 25 human labels): Phi 48% field agreement, 0/25 full records, 92% 
 ```bash
 cd AS02_llm_api/project
 pip install -r requirements-local-lock.txt
-python -m unittest test_career_api test_llmbox_integration   # 17 tests
+python -m unittest test_career_api test_llmbox_integration test_fence_parser   # 24 tests
 ```
 
 Model: `mlx-community/Phi-4-mini-instruct-4bit` (Apple silicon, MLX). LLMBox upstream: https://github.com/sarakingsley/llmbox (commit `23f97e7`).

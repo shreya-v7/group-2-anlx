@@ -140,9 +140,10 @@
       <section>
         <h2>Finding 2: formatting hid answers</h2>
         <p>The model wrapped its JSON in Markdown fences, so the strict checker rejected <b>all 50</b> structured answers.
-          Stripping the fences afterwards gave <b>43/50</b> valid, <b>31/50</b> source-correct: a diagnosis, not a new result.</p>
-        <p class="lead" style="font-size:38px">A checker that refuses anything unverified (C4) blocked all 50 answers.
-          Perfectly safe, completely useless.</p>
+          We fixed the parser and tested it, pre-registered, on <b>50 new postings</b>: <b>44/50</b> valid and
+          <b>33/50</b> passed every fact check.</p>
+        <p class="lead" style="font-size:38px">Before the fix, the strict verifier (C4) blocked all 50 answers:
+          perfectly safe, completely useless.</p>
       </section>
       <section>
         <h2>Same lesson in all three sectors</h2>
