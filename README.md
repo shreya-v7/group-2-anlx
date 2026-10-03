@@ -16,7 +16,8 @@ CMU 95820 Applications of NLX and LLM (Fall 2026). Team: Shreya Verma (Pharma), 
 | `AS01_pharma/` | Shreya's AS01: 200-posting Pharma corpus, 25 human labels, Phi/Gemini outputs (`out/`), extraction, clustering, recovery, memo |
 | `AS01_teammates/` | Chih-yu Li's Finance and William Sun's Tech AS01 submissions (as supplied) |
 | `AS02_llm_api/` | Shreya's AS02: LLMBox + MLX integration (`project/`, `llmbox/`), frozen policies (`governance/`), all six 50-request runs and 30 safety probes (`runs/policy_first_gpu/`), earlier prototype and timing evidence, submitted report (`report/`) |
-| `verification/` | Independent recomputation scripts (run on the Mac and the course VM) |
+| `AS02_teammates/tech_william_sun/` | William's Tech AS02: LLMBox runtime (HF transformers, Phi-4-mini-instruct bf16), posting-level split, 70 safety probes, all Part B/C/D outputs and metrics (`results/`), AS02 memo source (`report/`) |
+| `verification/` | Independent recomputation scripts (run on the Mac and the course VM); `verify_tech_as02.py` recomputes the Tech AS02 results (pydantic only, no model) |
 | `AI_USAGE.md` | AI-assistance disclosure |
 
 ## Key numbers (all recomputed from raw outputs)

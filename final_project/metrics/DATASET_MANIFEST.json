@@ -8,7 +8,9 @@
   "label_warning": "Finance label_provenance explicitly states model pre-annotation with independent human review not confirmed. Tech has no per-row provenance field. Pharma annotation_summary records human review.",
   "fine_tuning": "None performed. Chatlogs contain inference/evaluation calls to instruction-tuned models, not newly fine-tuned weights.",
   "missing_evidence": [
-    "Finance and Tech raw model outputs, full runtime dependencies and run metric files",
+    "Finance raw model outputs, full runtime dependencies and run metric files",
+    "Tech AS01 raw model outputs (Tech AS02 outputs are present in AS02_teammates/tech_william_sun)",
     "Complete separate assistant prompt/response records for Finance and Tech"
-  ]
+  ],
+  "tech_as02": "AS02_teammates/tech_william_sun holds William Sun's Tech AS02 runtime, posting-level split (124/126 records, 39/32 postings, no shared source_url), 70 safety probes and every Part B/C/D output. Metrics are recomputed from the saved outputs by verification/verify_tech_as02.py. Runtime differs from Pharma: HF transformers, Phi-4-mini-instruct in bfloat16, not quantized."
 }
