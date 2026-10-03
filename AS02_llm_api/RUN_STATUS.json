@@ -1,0 +1,9 @@
+{
+  "policy_sha256": "54f2e2ee4904cea4a287d3df93504e7eebd4093e4171acd10b13e893bf11f13d",
+  "freeze_lock_sha256": "8ada91f2f0319078af38027bacc1a6a2750d376bd511c3c28fde45555a4bf85b",
+  "launched_at_utc": "2026-09-30T01:11:33.451425+00:00",
+  "status": "failed",
+  "ended_at_utc": "2026-09-30T01:11:34.955220+00:00",
+  "exit_code": 1,
+  "changed_frozen_files": []
+}

@@ -1,0 +1,7 @@
+{
+  "original_corpora": "Unchanged records, preserved in sector folders and combined wrappers",
+  "administrative_redactions": "Course pseudonym redacted from plain-text administrative files in the handoff copies. Original workspace files remain unchanged.",
+  "native_experiment_source_hashes": "All match frozen protocol",
+  "documents": "New team synthesis and clean AS02 report; historical inputs and metrics are not replaced",
+  "disclosure": "Single canonical AI_USAGE.md; original memos and transcripts retain their historical text"
+}

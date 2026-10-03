@@ -1,0 +1,134 @@
+[
+  {
+    "regime": "B1",
+    "count": 50,
+    "schema_valid_count": 10,
+    "blocked_count": 0,
+    "delivered_field_accuracy": {
+      "doc_id": 0.2,
+      "source_url": 0.2,
+      "job_title": 0.2,
+      "employer": 0.12,
+      "location": 0.2
+    },
+    "delivered_all_source_fields_correct_rate": 0.12,
+    "successful_tool_calls": 0,
+    "output_cap_reached_calls": 4,
+    "mean_latency_seconds": 10.359266245019972,
+    "mean_input_tokens": 1333.28,
+    "mean_output_tokens": 201.24,
+    "qualification_semantic_accuracy": null,
+    "work_arrangement_accuracy": null,
+    "human_review_status": "Pending; source string checks are not human judgments"
+  },
+  {
+    "regime": "B3",
+    "count": 50,
+    "schema_valid_count": 5,
+    "blocked_count": 0,
+    "delivered_field_accuracy": {
+      "doc_id": 0.1,
+      "source_url": 0.1,
+      "job_title": 0.1,
+      "employer": 0.04,
+      "location": 0.1
+    },
+    "delivered_all_source_fields_correct_rate": 0.04,
+    "successful_tool_calls": 0,
+    "output_cap_reached_calls": 0,
+    "mean_latency_seconds": 11.835048913219726,
+    "mean_input_tokens": 1333.28,
+    "mean_output_tokens": 202.66,
+    "qualification_semantic_accuracy": null,
+    "work_arrangement_accuracy": null,
+    "human_review_status": "Pending; source string checks are not human judgments"
+  },
+  {
+    "regime": "C1",
+    "count": 50,
+    "schema_valid_count": 28,
+    "blocked_count": 0,
+    "delivered_field_accuracy": {
+      "doc_id": 0.56,
+      "source_url": 0.56,
+      "job_title": 0.54,
+      "employer": 0.42,
+      "location": 0.56
+    },
+    "delivered_all_source_fields_correct_rate": 0.42,
+    "successful_tool_calls": 0,
+    "output_cap_reached_calls": 2,
+    "mean_latency_seconds": 14.662585619140081,
+    "mean_input_tokens": 1567,
+    "mean_output_tokens": 196.62,
+    "qualification_semantic_accuracy": null,
+    "work_arrangement_accuracy": null,
+    "human_review_status": "Pending; source string checks are not human judgments"
+  },
+  {
+    "regime": "C2",
+    "count": 50,
+    "schema_valid_count": 0,
+    "blocked_count": 0,
+    "delivered_field_accuracy": {
+      "doc_id": 0.0,
+      "source_url": 0.0,
+      "job_title": 0.0,
+      "employer": 0.0,
+      "location": 0.0
+    },
+    "delivered_all_source_fields_correct_rate": 0.0,
+    "successful_tool_calls": 0,
+    "output_cap_reached_calls": 33,
+    "mean_latency_seconds": 10.985910135740196,
+    "mean_input_tokens": 500.14,
+    "mean_output_tokens": 243.66,
+    "qualification_semantic_accuracy": null,
+    "work_arrangement_accuracy": null,
+    "human_review_status": "Pending; source string checks are not human judgments"
+  },
+  {
+    "regime": "C3",
+    "count": 50,
+    "schema_valid_count": 27,
+    "blocked_count": 1,
+    "delivered_field_accuracy": {
+      "doc_id": 0.54,
+      "source_url": 0.54,
+      "job_title": 0.52,
+      "employer": 0.4,
+      "location": 0.54
+    },
+    "delivered_all_source_fields_correct_rate": 0.4,
+    "successful_tool_calls": 0,
+    "output_cap_reached_calls": 2,
+    "mean_latency_seconds": 11.793456759059772,
+    "mean_input_tokens": 1538.56,
+    "mean_output_tokens": 191.54,
+    "qualification_semantic_accuracy": null,
+    "work_arrangement_accuracy": null,
+    "human_review_status": "Pending; source string checks are not human judgments"
+  },
+  {
+    "regime": "C4",
+    "count": 50,
+    "schema_valid_count": 28,
+    "blocked_count": 33,
+    "delivered_field_accuracy": {
+      "doc_id": 0.34,
+      "source_url": 0.34,
+      "job_title": 0.34,
+      "employer": 0.34,
+      "location": 0.34
+    },
+    "delivered_all_source_fields_correct_rate": 0.34,
+    "successful_tool_calls": 0,
+    "output_cap_reached_calls": 2,
+    "mean_latency_seconds": 12.194536605759858,
+    "mean_input_tokens": 1567,
+    "mean_output_tokens": 196.62,
+    "qualification_semantic_accuracy": null,
+    "work_arrangement_accuracy": null,
+    "human_review_status": "Pending; source string checks are not human judgments"
+  }
+]

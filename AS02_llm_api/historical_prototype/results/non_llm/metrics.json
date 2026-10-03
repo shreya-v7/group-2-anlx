@@ -1,0 +1,23 @@
+{
+  "count": 50,
+  "schema_valid_count": 50,
+  "blocked_count": 0,
+  "delivered_field_accuracy": {
+    "doc_id": 1.0,
+    "source_url": 1.0,
+    "job_title": 1.0,
+    "employer": 1.0,
+    "location": 1.0
+  },
+  "delivered_all_source_fields_correct_rate": 1.0,
+  "successful_tool_calls": 0,
+  "output_cap_reached_calls": 0,
+  "mean_latency_seconds": 3.169919946230948e-06,
+  "mean_input_tokens": 0,
+  "mean_output_tokens": 0,
+  "qualification_semantic_accuracy": null,
+  "work_arrangement_accuracy": null,
+  "human_review_status": "Pending; source string checks are not human judgments",
+  "limitation": "Copies existing source fields only; does not interpret work arrangement or extract qualification sentences. Not a complete semantic-task substitute.",
+  "timing_scope": "In-memory field mapping and JSON serialization; excludes dataset loading."
+}

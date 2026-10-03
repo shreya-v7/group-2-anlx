@@ -1,0 +1,19 @@
+{
+  "task": "optional SLM vs hosted LLM comparison",
+  "n_records": 25,
+  "same_prompt": "taxonomy v1_original",
+  "same_schema": true,
+  "same_human_labels": true,
+  "provider": "gemini",
+  "models_used": {
+    "gemini-flash-latest": 8,
+    "gemini-3.5-flash": 17
+  },
+  "notes": [
+    "Gemini 3.1 Pro and gemini-pro-latest returned quota 429.",
+    "gemini-3.6-flash returned 503 high demand.",
+    "gemini-flash-latest completed the first 8 records, then hit 429.",
+    "Remaining 17 records used gemini-3.5-flash.",
+    "API keys are not stored in this file or in the submission archive."
+  ]
+}

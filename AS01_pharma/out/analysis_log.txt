@@ -1,0 +1,95 @@
+Loaded 200 records from corpus.jsonl
+====================================================================
+CORPUS CHARACTERIZATION
+====================================================================
+
+Documents: 200
+Sources:   4  (largest contributes 33%)
+Retrieved: 2026-09-20 to 2026-09-20
+
+Tabular share: 100.0%  [OK]
+Modalities:    {'mixed': 200}
+
+Document length, characters
+  min    2,759.0   p25    4,773.5   median    5,886.0
+  p75    7,211.0   p95    9,403.5   max      12,361.0
+
+Document length, words
+  min      388.0   p25      665.0   median      809.5
+  p75      993.8   p95    1,301.3   max       1,570.0
+
+Numeric density (share of tokens that are numbers)
+  min        0.0   p25        0.0   median        0.0
+  p75        0.0   p95        0.0   max           0.0
+
+Near-duplicate pairs: 6  (6.0% of documents involved)
+  0.990  pharma_recursionpharmaceuticals_8054131  ~  pharma_recursionpharmaceuticals_8054379
+  0.984  pharma_arrowheadpharmacareers_5151979007  ~  pharma_arrowheadpharmacareers_5152086007
+  0.976  pharma_revolutionmedicines_7849787003  ~  pharma_revolutionmedicines_7996594003
+  0.958  pharma_beamtherapeutics_8815327002  ~  pharma_beamtherapeutics_8817599002
+  0.910  pharma_kymeratherapeutics_7726507003  ~  pharma_kymeratherapeutics_7797959003
+
+Distinct license notes: 8
+      53  Arrowhead Pharmaceuticals public job advertisement retrieved
+      52  Revolution Medicines public job advertisement retrieved usin
+      36  Beam Therapeutics public job advertisement retrieved using t
+      29  Kymera Therapeutics public job advertisement retrieved using
+      11  Relay Therapeutics public job advertisement retrieved using 
+
+Documents per source
+      66  job-boards.greenhouse.io
+      53  arrowheadpharma.com
+      52  www.revmed.com
+      29  www.kymeratx.com
+
+--------------------------------------------------------------------
+Questions the memo has to answer, which this output does not:
+  * Is the source concentration above a defensible level?
+  * Do the near-duplicates represent real reissued records, or a
+    collection bug? Open two pairs and say which.
+  * What kinds of questions can this corpus not answer?
+--------------------------------------------------------------------
+  wrote out/corpus_stats.json
+Wrote out/clusters.png
+
+6 clusters, silhouette 0.171
+  cluster  0  n=  29   kymera, clinical, degrader, experience, tpd, regulatory, study, ll
+  cluster  1  n=  11   drug, relay, discovery, motion, protein, clinical, development, cmc
+  cluster  2  n=  36   beam, editing, base, gene, overview, cell, experience, vision
+  cluster  3  n=  19   recursion, tessera, talent, ai, clinical, discovery, ultragenyx, experience
+  cluster  4  n=  52   revolution, ras, revmed, medicines, email, experience, salary, pay
+  cluster  5  n=  53   arrowhead, rnai, rna, wi, analytical, interference, liver, genes
+
+Name each cluster yourself after reading a few documents from it:
+    for doc in result.sample(cluster_id=0, n=5): print(doc['raw_text'][:300])
+
+  cluster 0 -- read these, then name it:
+    pharma_kymeratherapeutics_7864663003 'Who we are:\nKymera is a clinical-stage biotechnology company pioneering the field of targeted protein degradat'
+    pharma_kymeratherapeutics_7894000003 'Who we are:\nKymera is a clinical-stage biotechnology company pioneering the field of targeted protein degradat'
+    pharma_kymeratherapeutics_7965329003 'Who we are:\nKymera is a clinical-stage biotechnology company pioneering the field of targeted protein degradat'
+
+  cluster 1 -- read these, then name it:
+    pharma_relaytherapeutics_6123386004 'The Opportunity:\nWe are seeking an exceptional scientific leader to oversee our integrated Medicinal Chemistry'
+    pharma_relaytherapeutics_6129110004 'The Opportunity\nThe Sr. Manager, Clinical Business Operations will be responsible for managing vendor selectio'
+    pharma_relaytherapeutics_6129122004 'The Opportunity:\nAs the Senior Associate/Associate Director of Portfolio and Strategy Operations, you will hel'
+
+  cluster 2 -- read these, then name it:
+    pharma_beamtherapeutics_8760769002 'Company Overview:\nBeam Therapeutics is a biotechnology company committed to establishing the leading, fully in'
+    pharma_beamtherapeutics_8795480002 'Company Overview:\nBeam Therapeutics is a biotechnology company committed to establishing the leading, fully in'
+    pharma_beamtherapeutics_8795629002 'Company Overview:\nBeam Therapeutics is a biotechnology company committed to establishing the leading, fully in'
+
+  cluster 3 -- read these, then name it:
+    pharma_recursionpharmaceuticals_8214932 'Your work will change lives. Including your own.\nThe Impact You’ll Make\nAs our pipeline matures, you will play'
+    pharma_tesseratherapeutics_5170380007 'Your experience includes…\nJ.D. from a fully accredited law school.\n15+ years of industry-related experience wi'
+    pharma_tesseratherapeutics_5240104007 'Your experience includes…\nBS/MS in Chemistry, Biochemistry, Chemical Engineering, or related field with 5+ yea'
+
+  cluster 4 -- read these, then name it:
+    pharma_revolutionmedicines_7836119003 'Revolution Medicines is a global, commercial-state oncology company dedicated to discovering, developing and d'
+    pharma_revolutionmedicines_7867247003 'Revolution Medicines is a global, commercial-state oncology company dedicated to discovering, developing and d'
+    pharma_revolutionmedicines_7984060003 'Revolution Medicines is a global, commercial-state oncology company dedicated to discovering, developing and d'
+
+  cluster 5 -- read these, then name it:
+    pharma_arrowheadpharmacareers_5206021007 'Arrowhead Pharmaceuticals, Inc. (Nasdaq ARWR) is a commercial stage biopharmaceutical company that develops me'
+    pharma_arrowheadpharmacareers_5214722007 'Arrowhead Pharmaceuticals, Inc. (Nasdaq ARWR) is a commercial stage biopharmaceutical company that develops me'
+    pharma_arrowheadpharmacareers_5230678007 'Arrowhead Pharmaceuticals, Inc. (Nasdaq ARWR) is a commercial stage biopharmaceutical company that develops me'
+  wrote out/clusters.json

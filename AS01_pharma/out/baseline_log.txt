@@ -1,0 +1,153 @@
+Loaded 200 records from corpus.jsonl
+[transformers] This model config has set a `rope_parameters['original_max_position_embeddings']` field, to be used together with `max_position_embeddings` to determine a scaling factor. Please set the `factor` field of `rope_parameters`with this ratio instead -- we recommend the use of this field over `original_max_position_embeddings`, as it is compatible with most model architectures.
+Loaded local MLX Phi from /private/tmp/assignment1-phi-model
+  wrote out/baseline_manifest.json
+      1/25  pharma_arrowheadpharmacareers_5180582007 Director, Global Trade and Operations Strategy
+      2/25  pharma_arrowheadpharmacareers_5188281007 Senior Scientist II, Discovery Analytical Chemistry
+      3/25  pharma_arrowheadpharmacareers_5188291007 Senior ERP Solution Architect - Finance (Microsoft Dynamics 365)
+  !   4/25  pharma_arrowheadpharmacareers_5210343007 --
+      5/25  pharma_arrowheadpharmacareers_5213007007 Coordinator II, Translational Biomarkers
+      6/25  pharma_arrowheadpharmacareers_5234169007 Lead, Technical Transfer
+  !   7/25  pharma_arrowheadpharmacareers_5240945007 --
+      8/25  pharma_beamtherapeutics_8392998002 Vice President, Compliance
+      9/25  pharma_beamtherapeutics_8583823002 Director, Pharmacovigilance
+     10/25  pharma_beamtherapeutics_8636699002 Director/Senior Director, CMC Operations
+     11/25  pharma_beamtherapeutics_8795551002 mRNA Science Co-op
+     12/25  pharma_beamtherapeutics_8817599002 Director, FP&A (Clinical)
+     13/25  pharma_beamtherapeutics_8817994002 Senior Director, Field Key Account Management (East)
+     14/25  pharma_kymeratherapeutics_7726507003 Clinical Trial Manager
+     15/25  pharma_kymeratherapeutics_7785662003 Director or Senior Director, Regulatory Affairs
+     16/25  pharma_kymeratherapeutics_7991240003 Director, Data Management
+     17/25  pharma_recursionpharmaceuticals_8188707 Senior AI Researcher
+     18/25  pharma_relaytherapeutics_5985754004 Senior Manager, Drug Product
+     19/25  pharma_relaytherapeutics_6123386004 VP, Head of Drug Discovery
+     20/25  pharma_revolutionmedicines_7695103003 Director, Molecular Pathology, Translational Sciences, Translational Research.
+     21/25  pharma_revolutionmedicines_7720354003 Global Development Lead (GDL), Clinical Development
+     22/25  pharma_revolutionmedicines_7812375003 Executive Director, Global Commercial Precision Medicine & Companion Diagnostics
+     23/25  pharma_revolutionmedicines_7836119003 Senior QA Manager, GMP GxP Auditing & Vendor Management
+     24/25  pharma_revolutionmedicines_7860071003 Executive Director, US Region Operations
+     25/25  pharma_revolutionmedicines_7984060003 Senior Vice President, Head of Corporate Development
+  wrote out/phi_v1.jsonl
+
+================================================================
+HUMAN vs PHI
+================================================================
+  n_records                  25
+  all_fields_correct_rate    0.0
+  schema_violation_rate      0.08
+  mean_latency_s             31.09
+  field_accuracy             {'job_title': 0.92, 'employer': 0.72, 'location': 0.92, 'job_function': 0.32, 'work_arrangement': 0.16, 'required_qualifications': 0.2, 'preferred_qualifications': 0.32, 'education_requirements': 0.32, 'experience_requirements': 0.44}
+  list_field_scores          {'required_qualifications': {'precision': 0.81, 'recall': 0.669, 'f1': 0.733}, 'preferred_qualifications': {'precision': 0.383, 'recall': 0.603, 'f1': 0.469}, 'education_requirements': {'precision': 0.321, 'recall': 0.36, 'f1': 0.34}, 'experience_requirements': {'precision': 0.433, 'recall': 0.433, 'f1': 0.433}}
+  field_errors               {'employer': 7, 'job_function': 17, 'required_qualifications': 20, 'preferred_qualifications': 17, 'work_arrangement': 21, 'education_requirements': 17, 'experience_requirements': 14, 'job_title': 2, 'location': 2, 'schema_violation': 2}
+  accuracy_by_modality       {'mixed': 0.0}
+
+  representative disagreements:
+    pharma_arrowheadpharmacareers_5180582007
+      human: {"job_title": "Director, Global Trade and Operations Strategy", "employer": "Arrowhead Pharmaceuticals ", "location": "Pasadena, California, United St
+      phi:   {"job_title": "Director, Global Trade and Operations Strategy", "employer": "Arrowhead Pharmaceuticals Inc.", "location": "Pasadena, California, Unite
+    pharma_arrowheadpharmacareers_5188281007
+      human: {"job_title": "Senior Scientist II, Discovery Analytical Chemistry", "employer": "Arrowhead Pharmaceuticals ", "location": "Madison, Wisconsin, United
+      phi:   {"job_title": "Senior Scientist II, Discovery Analytical Chemistry", "employer": "Arrowhead Pharmaceuticals Inc.", "location": "Madison, Wisconsin, Un
+    pharma_arrowheadpharmacareers_5188291007
+      human: {"job_title": "Senior ERP Solution Architect - Finance (Microsoft Dynamics 365)", "employer": "Arrowhead Pharmaceuticals ", "location": "Madison, Wisc
+      phi:   {"job_title": "Senior ERP Solution Architect - Finance (Microsoft Dynamics 365)", "employer": "Arrowhead Pharmaceuticals Inc.", "location": "Madison, 
+    pharma_arrowheadpharmacareers_5210343007
+      human: {"job_title": "Senior Benefits & Payroll Specialist ", "employer": "Arrowhead Pharmaceuticals ", "location": "Pasadena, California, United States", "j
+      phi:   null
+  wrote out/evaluation.json
+====================================================================
+CORPUS CHARACTERIZATION
+====================================================================
+
+Documents: 200
+Sources:   4  (largest contributes 33%)
+Retrieved: 2026-09-20 to 2026-09-20
+
+Tabular share: 100.0%  [OK]
+Modalities:    {'mixed': 200}
+
+Document length, characters
+  min    2,759.0   p25    4,773.5   median    5,886.0
+  p75    7,211.0   p95    9,403.5   max      12,361.0
+
+Document length, words
+  min      388.0   p25      665.0   median      809.5
+  p75      993.8   p95    1,301.3   max       1,570.0
+
+Numeric density (share of tokens that are numbers)
+  min        0.0   p25        0.0   median        0.0
+  p75        0.0   p95        0.0   max           0.0
+
+Near-duplicate pairs: 6  (6.0% of documents involved)
+  0.993  pharma_recursionpharmaceuticals_8054131  ~  pharma_recursionpharmaceuticals_8054379
+  0.986  pharma_arrowheadpharmacareers_5151979007  ~  pharma_arrowheadpharmacareers_5152086007
+  0.984  pharma_revolutionmedicines_7849787003  ~  pharma_revolutionmedicines_7996594003
+  0.959  pharma_beamtherapeutics_8815327002  ~  pharma_beamtherapeutics_8817599002
+  0.920  pharma_ultragenyxpharmaceutical_4714053005  ~  pharma_ultragenyxpharmaceutical_4718890005
+
+Distinct license notes: 8
+      53  Arrowhead Pharmaceuticals public job advertisement retrieved
+      52  Revolution Medicines public job advertisement retrieved usin
+      36  Beam Therapeutics public job advertisement retrieved using t
+      29  Kymera Therapeutics public job advertisement retrieved using
+      11  Relay Therapeutics public job advertisement retrieved using 
+
+Documents per source
+      66  job-boards.greenhouse.io
+      53  arrowheadpharma.com
+      52  www.revmed.com
+      29  www.kymeratx.com
+
+--------------------------------------------------------------------
+Questions the memo has to answer, which this output does not:
+  * Is the source concentration above a defensible level?
+  * Do the near-duplicates represent real reissued records, or a
+    collection bug? Open two pairs and say which.
+  * What kinds of questions can this corpus not answer?
+--------------------------------------------------------------------
+  wrote out/corpus_stats.json
+Matplotlib is building the font cache; this may take a moment.
+Wrote out/clusters.png
+
+6 clusters, silhouette 0.171
+  cluster  0  n=  29   kymera, clinical, degrader, experience, tpd, regulatory, study, ll
+  cluster  1  n=  11   drug, relay, discovery, motion, protein, clinical, development, cmc
+  cluster  2  n=  36   beam, editing, base, gene, overview, cell, experience, vision
+  cluster  3  n=  19   recursion, tessera, talent, ai, clinical, discovery, ultragenyx, experience
+  cluster  4  n=  52   revolution, ras, revmed, medicines, email, experience, salary, pay
+  cluster  5  n=  53   arrowhead, rnai, rna, wi, analytical, silencing, genes, liver
+
+Name each cluster yourself after reading a few documents from it:
+    for doc in result.sample(cluster_id=0, n=5): print(doc['raw_text'][:300])
+
+  cluster 0 -- read these, then name it:
+    pharma_kymeratherapeutics_7864663003 'Who we are:\nKymera is a clinical-stage biotechnology company pioneering the field of targeted protein degradat'
+    pharma_kymeratherapeutics_7894000003 'Who we are:\nKymera is a clinical-stage biotechnology company pioneering the field of targeted protein degradat'
+    pharma_kymeratherapeutics_7965329003 'Who we are:\nKymera is a clinical-stage biotechnology company pioneering the field of targeted protein degradat'
+
+  cluster 1 -- read these, then name it:
+    pharma_relaytherapeutics_6123386004 'The Opportunity:\nWe are seeking an exceptional scientific leader to oversee our integrated Medicinal Chemistry'
+    pharma_relaytherapeutics_6129110004 'The Opportunity\nThe Sr. Manager, Clinical Business Operations will be responsible for managing vendor selectio'
+    pharma_relaytherapeutics_6129122004 'The Opportunity:\nAs the Senior Associate/Associate Director of Portfolio and Strategy Operations, you will hel'
+
+  cluster 2 -- read these, then name it:
+    pharma_beamtherapeutics_8760769002 'Company Overview:\nBeam Therapeutics is a biotechnology company committed to establishing the leading, fully in'
+    pharma_beamtherapeutics_8795480002 'Company Overview:\nBeam Therapeutics is a biotechnology company committed to establishing the leading, fully in'
+    pharma_beamtherapeutics_8795629002 'Company Overview:\nBeam Therapeutics is a biotechnology company committed to establishing the leading, fully in'
+
+  cluster 3 -- read these, then name it:
+    pharma_recursionpharmaceuticals_8214932 'Your work will change lives. Including your own.\nThe Impact You’ll Make\nAs our pipeline matures, you will play'
+    pharma_tesseratherapeutics_5170380007 'Your experience includes…\nJ.D. from a fully accredited law school.\n15+ years of industry-related experience wi'
+    pharma_tesseratherapeutics_5240104007 'Your experience includes…\nBS/MS in Chemistry, Biochemistry, Chemical Engineering, or related field with 5+ yea'
+
+  cluster 4 -- read these, then name it:
+    pharma_revolutionmedicines_7836119003 'Revolution Medicines is a global, commercial-state oncology company dedicated to discovering, developing and d'
+    pharma_revolutionmedicines_7867247003 'Revolution Medicines is a global, commercial-state oncology company dedicated to discovering, developing and d'
+    pharma_revolutionmedicines_7984060003 'Revolution Medicines is a global, commercial-state oncology company dedicated to discovering, developing and d'
+
+  cluster 5 -- read these, then name it:
+    pharma_arrowheadpharmacareers_5206021007 'Arrowhead Pharmaceuticals, Inc. (Nasdaq ARWR) is a commercial stage biopharmaceutical company that develops me'
+    pharma_arrowheadpharmacareers_5214722007 'Arrowhead Pharmaceuticals, Inc. (Nasdaq ARWR) is a commercial stage biopharmaceutical company that develops me'
+    pharma_arrowheadpharmacareers_5230678007 'Arrowhead Pharmaceuticals, Inc. (Nasdaq ARWR) is a commercial stage biopharmaceutical company that develops me'
+  wrote out/clusters.json
+Inspect baseline errors before writing prompts.v2_recovery and running --stage recovery.

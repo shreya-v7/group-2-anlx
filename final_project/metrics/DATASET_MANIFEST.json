@@ -1,0 +1,14 @@
+{
+  "original_combined": {
+    "records": 650,
+    "format": "sector and team_doc_id plus unchanged original_record"
+  },
+  "development_and_evaluation": "pharma_as02 preserves the actual 100/100 split used in recorded API experiments. Each condition uses 50 as specified in run manifests. No invented team-wide train/test split.",
+  "sector_label_sets": "The three as01_labeled_records files contain the actual reference-label subsets, 25 Pharma, 28 Finance, 25 Tech. They are not a common benchmark.",
+  "label_warning": "Finance label_provenance explicitly states model pre-annotation with independent human review not confirmed. Tech has no per-row provenance field. Pharma annotation_summary records human review.",
+  "fine_tuning": "None performed. Chatlogs contain inference/evaluation calls to instruction-tuned models, not newly fine-tuned weights.",
+  "missing_evidence": [
+    "Finance and Tech raw model outputs, full runtime dependencies and run metric files",
+    "Complete separate assistant prompt/response records for Finance and Tech"
+  ]
+}

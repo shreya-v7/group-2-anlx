@@ -1,0 +1,8 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+out_phi_rerun/
+out_phi_instruct/
+out_gemini_rerun/

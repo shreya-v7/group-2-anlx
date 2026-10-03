@@ -1,0 +1,20 @@
+{
+  "model": "mlx-community/Phi-4-mini-instruct-4bit",
+  "precision": "4-bit quantized",
+  "hardware_architecture": "arm64",
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "python": "3.14.7",
+  "packages": {
+    "mlx": "0.32.2",
+    "mlx-lm": "0.31.3",
+    "transformers": "5.17.0",
+    "pydantic": "2.13.5"
+  },
+  "model_file_sha256": {
+    "config.json": "431eafdf55dc6d4a76dc3e9f22b0d06eac42d9ac6dc7cbd7ff8ca1e38f18cdb1",
+    "tokenizer_config.json": "76c79ba1828e98a574123dd5de047587219ed8c1ab20702d340bc10a7a32b6bd",
+    "tokenizer.json": "382cc235b56c725945e149cc25f191da667c836655efd0857b004320e90e91ea",
+    "model.safetensors": "9dcfcdc0a579494283f2d2317ad686123782ce461d1111690ede7c904ff3f87b"
+  },
+  "note": "These local runs must not be pooled with full-precision VM runs."
+}

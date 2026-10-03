@@ -1,0 +1,75 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "doc_id": {
+      "title": "Doc Id",
+      "type": "string"
+    },
+    "job_title": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Job Title"
+    },
+    "employer": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Employer"
+    },
+    "location": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Location"
+    },
+    "source_url": {
+      "title": "Source Url",
+      "type": "string"
+    },
+    "work_arrangement": {
+      "enum": [
+        "onsite",
+        "hybrid",
+        "remote",
+        "not_stated"
+      ],
+      "title": "Work Arrangement",
+      "type": "string"
+    },
+    "required_qualifications": {
+      "items": {
+        "type": "string"
+      },
+      "maxItems": 4,
+      "title": "Required Qualifications",
+      "type": "array"
+    }
+  },
+  "required": [
+    "doc_id",
+    "job_title",
+    "employer",
+    "location",
+    "source_url",
+    "work_arrangement",
+    "required_qualifications"
+  ],
+  "title": "JobFacts",
+  "type": "object"
+}

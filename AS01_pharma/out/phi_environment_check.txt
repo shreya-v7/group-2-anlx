@@ -1,0 +1,5 @@
+RESOLVED: Actual local Phi-4-mini-instruct inference completed on all 25 records.
+Backend: MLX, public 4-bit conversion, Apple M4 GPU.
+Model revision, hashes and runtime versions: model_environment.json.
+Baseline: 23/25 schema-valid outputs, 108/225 matching fields, 0/25 complete matches.
+Reference labels were independently reviewed and finalized by Shreya Verma.

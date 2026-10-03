@@ -1,0 +1,9 @@
+mlx==0.32.2
+mlx-lm==0.31.3
+transformers==5.17.0
+numpy==2.4.6
+scikit-learn==1.9.1
+matplotlib==3.11.2
+huggingface-hub==1.32.0
+tokenizers==0.23.2
+safetensors==0.8.0

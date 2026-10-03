@@ -1,0 +1,9 @@
+{
+  "first_ten_ids_match_C1": true,
+  "usable": 4,
+  "review_sample": 10,
+  "timed_posting_ids_exist": true,
+  "cost_arithmetic_verified": true,
+  "review_evidence_file": "cost_timing_one_posting.json",
+  "frozen_review_templates": "unchanged"
+}

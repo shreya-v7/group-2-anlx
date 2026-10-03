@@ -1,0 +1,21 @@
+{
+  "status": "complete",
+  "student": "Shreya Verma",
+  "human_labeling": "DONE: 25/25, independently reviewed and finalized",
+  "completed": [
+    "200-record corpus and source manifest",
+    "25 completed human labels and source evidence",
+    "actual local Phi baseline on 25 records",
+    "evidence-driven revised prompt and measured recovery",
+    "cluster reading linked to measured Phi performance",
+    "optional hosted Gemini comparison",
+    "results memo and submission ZIP",
+    "Phi-4-mini-instruct sensitive-information masking pass (run on all 200 records, reviewed, rejected as unreliable; corpus unchanged, evidence retained)"
+  ],
+  "optional_bonus": "completed",
+  "baseline_record_agreement": 0.0,
+  "baseline_field_agreement": 0.48,
+  "recovery_target": "work_arrangement",
+  "recovery_n": 19,
+  "recovery_target_agreement": 0.316
+}

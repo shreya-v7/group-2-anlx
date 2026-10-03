@@ -1,0 +1,738 @@
+{
+  "status": "done",
+  "origin": "Human-reviewed reference labels finalized by Shreya Verma",
+  "created_at": "2026-09-20T19:26:03.422082+00:00",
+  "selection": "Fixed seed-820 sample; source evidence selected before Phi inference",
+  "records": [
+    {
+      "doc_id": "pharma_arrowheadpharmacareers_5180582007",
+      "source_line_indices_zero_based": {
+        "required_qualifications": [
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          43,
+          44,
+          45,
+          46
+        ],
+        "preferred_qualifications": [
+          34,
+          41,
+          42,
+          48,
+          49,
+          50
+        ],
+        "education_requirements": [
+          34
+        ],
+        "experience_requirements": [
+          35
+        ]
+      },
+      "job_function": "manufacturing_supply",
+      "work_arrangement": "onsite"
+    },
+    {
+      "doc_id": "pharma_arrowheadpharmacareers_5188281007",
+      "source_line_indices_zero_based": {
+        "required_qualifications": [
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33
+        ],
+        "preferred_qualifications": [
+          35,
+          36,
+          37,
+          38
+        ],
+        "education_requirements": [
+          23
+        ],
+        "experience_requirements": [
+          23
+        ]
+      },
+      "job_function": "manufacturing_supply",
+      "work_arrangement": "not_stated"
+    },
+    {
+      "doc_id": "pharma_arrowheadpharmacareers_5188291007",
+      "source_line_indices_zero_based": {
+        "required_qualifications": [
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34
+        ],
+        "preferred_qualifications": [
+          36,
+          37,
+          38,
+          39,
+          40,
+          41
+        ],
+        "education_requirements": [
+          27
+        ],
+        "experience_requirements": [
+          28
+        ]
+      },
+      "job_function": "data_technology",
+      "work_arrangement": "not_stated"
+    },
+    {
+      "doc_id": "pharma_arrowheadpharmacareers_5210343007",
+      "source_line_indices_zero_based": {
+        "required_qualifications": [
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          27,
+          28,
+          29,
+          30
+        ],
+        "preferred_qualifications": [
+          26,
+          32
+        ],
+        "education_requirements": [],
+        "experience_requirements": [
+          20
+        ]
+      },
+      "job_function": "corporate_other",
+      "work_arrangement": "onsite"
+    },
+    {
+      "doc_id": "pharma_arrowheadpharmacareers_5213007007",
+      "source_line_indices_zero_based": {
+        "required_qualifications": [
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25
+        ],
+        "preferred_qualifications": [
+          27,
+          28,
+          29
+        ],
+        "education_requirements": [
+          15,
+          16
+        ],
+        "experience_requirements": [
+          15,
+          16
+        ]
+      },
+      "job_function": "clinical_development",
+      "work_arrangement": "not_stated"
+    },
+    {
+      "doc_id": "pharma_arrowheadpharmacareers_5234169007",
+      "source_line_indices_zero_based": {
+        "required_qualifications": [
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25
+        ],
+        "preferred_qualifications": [
+          27
+        ],
+        "education_requirements": [
+          17
+        ],
+        "experience_requirements": [
+          18
+        ]
+      },
+      "job_function": "manufacturing_supply",
+      "work_arrangement": "not_stated"
+    },
+    {
+      "doc_id": "pharma_arrowheadpharmacareers_5240945007",
+      "source_line_indices_zero_based": {
+        "required_qualifications": [
+          27,
+          28,
+          29,
+          30
+        ],
+        "preferred_qualifications": [],
+        "education_requirements": [
+          27,
+          28
+        ],
+        "experience_requirements": [
+          28
+        ]
+      },
+      "job_function": "manufacturing_supply",
+      "work_arrangement": "onsite"
+    },
+    {
+      "doc_id": "pharma_beamtherapeutics_8392998002",
+      "source_line_indices_zero_based": {
+        "required_qualifications": [
+          21,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35
+        ],
+        "preferred_qualifications": [
+          21,
+          22
+        ],
+        "education_requirements": [
+          21
+        ],
+        "experience_requirements": [
+          23
+        ]
+      },
+      "job_function": "corporate_other",
+      "work_arrangement": "not_stated"
+    },
+    {
+      "doc_id": "pharma_beamtherapeutics_8583823002",
+      "source_line_indices_zero_based": {
+        "required_qualifications": [
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46
+        ],
+        "preferred_qualifications": [
+          31
+        ],
+        "education_requirements": [
+          31
+        ],
+        "experience_requirements": [
+          32
+        ]
+      },
+      "job_function": "clinical_development",
+      "work_arrangement": "hybrid"
+    },
+    {
+      "doc_id": "pharma_beamtherapeutics_8636699002",
+      "source_line_indices_zero_based": {
+        "required_qualifications": [
+          22,
+          23,
+          24,
+          25,
+          26,
+          28,
+          29,
+          30,
+          31,
+          32
+        ],
+        "preferred_qualifications": [
+          25,
+          27
+        ],
+        "education_requirements": [
+          22
+        ],
+        "experience_requirements": [
+          23
+        ]
+      },
+      "job_function": "manufacturing_supply",
+      "work_arrangement": "not_stated"
+    },
+    {
+      "doc_id": "pharma_beamtherapeutics_8795551002",
+      "source_line_indices_zero_based": {
+        "required_qualifications": [
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24
+        ],
+        "preferred_qualifications": [
+          26,
+          27,
+          28
+        ],
+        "education_requirements": [
+          16,
+          24
+        ],
+        "experience_requirements": [
+          17
+        ]
+      },
+      "job_function": "research_discovery",
+      "work_arrangement": "not_stated"
+    },
+    {
+      "doc_id": "pharma_beamtherapeutics_8817599002",
+      "source_line_indices_zero_based": {
+        "required_qualifications": [
+          16,
+          17,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25
+        ],
+        "preferred_qualifications": [
+          17,
+          25
+        ],
+        "education_requirements": [
+          16
+        ],
+        "experience_requirements": [
+          16,
+          17
+        ]
+      },
+      "job_function": "corporate_other",
+      "work_arrangement": "not_stated"
+    },
+    {
+      "doc_id": "pharma_beamtherapeutics_8817994002",
+      "source_line_indices_zero_based": {
+        "required_qualifications": [
+          29,
+          33,
+          36,
+          38,
+          39,
+          40
+        ],
+        "preferred_qualifications": [
+          30,
+          31,
+          32,
+          35
+        ],
+        "education_requirements": [
+          29
+        ],
+        "experience_requirements": [
+          29
+        ]
+      },
+      "job_function": "commercial_medical_affairs",
+      "work_arrangement": "not_stated"
+    },
+    {
+      "doc_id": "pharma_kymeratherapeutics_7726507003",
+      "source_line_indices_zero_based": {
+        "required_qualifications": [
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "preferred_qualifications": [],
+        "education_requirements": [
+          25
+        ],
+        "experience_requirements": [
+          25
+        ]
+      },
+      "job_function": "clinical_development",
+      "work_arrangement": "not_stated"
+    },
+    {
+      "doc_id": "pharma_kymeratherapeutics_7785662003",
+      "source_line_indices_zero_based": {
+        "required_qualifications": [
+          18,
+          19,
+          20,
+          21,
+          23,
+          24,
+          25,
+          26
+        ],
+        "preferred_qualifications": [
+          18,
+          22
+        ],
+        "education_requirements": [
+          18
+        ],
+        "experience_requirements": [
+          19
+        ]
+      },
+      "job_function": "regulatory",
+      "work_arrangement": "not_stated"
+    },
+    {
+      "doc_id": "pharma_kymeratherapeutics_7991240003",
+      "source_line_indices_zero_based": {
+        "required_qualifications": [
+          20,
+          21,
+          22,
+          23,
+          25,
+          26
+        ],
+        "preferred_qualifications": [
+          24
+        ],
+        "education_requirements": [],
+        "experience_requirements": [
+          20,
+          21
+        ]
+      },
+      "job_function": "clinical_development",
+      "work_arrangement": "not_stated"
+    },
+    {
+      "doc_id": "pharma_recursionpharmaceuticals_8188707",
+      "source_line_indices_zero_based": {
+        "required_qualifications": [
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "preferred_qualifications": [
+          12
+        ],
+        "education_requirements": [
+          7
+        ],
+        "experience_requirements": [
+          10
+        ]
+      },
+      "job_function": "data_technology",
+      "work_arrangement": "remote"
+    },
+    {
+      "doc_id": "pharma_relaytherapeutics_5985754004",
+      "source_line_indices_zero_based": {
+        "required_qualifications": [
+          15,
+          16,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27
+        ],
+        "preferred_qualifications": [
+          16,
+          17,
+          20
+        ],
+        "education_requirements": [
+          15
+        ],
+        "experience_requirements": [
+          16
+        ]
+      },
+      "job_function": "manufacturing_supply",
+      "work_arrangement": "not_stated"
+    },
+    {
+      "doc_id": "pharma_relaytherapeutics_6123386004",
+      "source_line_indices_zero_based": {
+        "required_qualifications": [
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32
+        ],
+        "preferred_qualifications": [],
+        "education_requirements": [
+          24
+        ],
+        "experience_requirements": [
+          25
+        ]
+      },
+      "job_function": "research_discovery",
+      "work_arrangement": "not_stated"
+    },
+    {
+      "doc_id": "pharma_revolutionmedicines_7695103003",
+      "source_line_indices_zero_based": {
+        "required_qualifications": [
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "preferred_qualifications": [
+          22,
+          23,
+          24
+        ],
+        "education_requirements": [
+          20
+        ],
+        "experience_requirements": [
+          15
+        ]
+      },
+      "job_function": "research_discovery",
+      "work_arrangement": "hybrid"
+    },
+    {
+      "doc_id": "pharma_revolutionmedicines_7720354003",
+      "source_line_indices_zero_based": {
+        "required_qualifications": [
+          37,
+          38,
+          40,
+          41,
+          42,
+          43,
+          44,
+          46,
+          47,
+          48,
+          49,
+          51,
+          52
+        ],
+        "preferred_qualifications": [
+          37,
+          44,
+          53,
+          55,
+          56,
+          57,
+          58,
+          59
+        ],
+        "education_requirements": [
+          37
+        ],
+        "experience_requirements": [
+          40,
+          41
+        ]
+      },
+      "job_function": "clinical_development",
+      "work_arrangement": "hybrid"
+    },
+    {
+      "doc_id": "pharma_revolutionmedicines_7812375003",
+      "source_line_indices_zero_based": {
+        "required_qualifications": [
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32
+        ],
+        "preferred_qualifications": [
+          34,
+          35,
+          36,
+          37,
+          38
+        ],
+        "education_requirements": [
+          22
+        ],
+        "experience_requirements": [
+          24
+        ]
+      },
+      "job_function": "commercial_medical_affairs",
+      "work_arrangement": "remote"
+    },
+    {
+      "doc_id": "pharma_revolutionmedicines_7836119003",
+      "source_line_indices_zero_based": {
+        "required_qualifications": [
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32
+        ],
+        "preferred_qualifications": [
+          34,
+          35,
+          36,
+          37
+        ],
+        "education_requirements": [
+          23
+        ],
+        "experience_requirements": [
+          24,
+          25
+        ]
+      },
+      "job_function": "quality",
+      "work_arrangement": "remote"
+    },
+    {
+      "doc_id": "pharma_revolutionmedicines_7860071003",
+      "source_line_indices_zero_based": {
+        "required_qualifications": [
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "preferred_qualifications": [
+          32,
+          33,
+          34
+        ],
+        "education_requirements": [
+          22
+        ],
+        "experience_requirements": [
+          22
+        ]
+      },
+      "job_function": "commercial_medical_affairs",
+      "work_arrangement": "remote"
+    },
+    {
+      "doc_id": "pharma_revolutionmedicines_7984060003",
+      "source_line_indices_zero_based": {
+        "required_qualifications": [
+          37,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48
+        ],
+        "preferred_qualifications": [
+          37,
+          38
+        ],
+        "education_requirements": [],
+        "experience_requirements": [
+          37
+        ]
+      },
+      "job_function": "corporate_other",
+      "work_arrangement": "not_stated"
+    }
+  ],
+  "reviewed_by": "Shreya Verma",
+  "human_reviewed": true
+}

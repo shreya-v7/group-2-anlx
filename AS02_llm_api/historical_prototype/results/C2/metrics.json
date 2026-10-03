@@ -1,0 +1,21 @@
+{
+  "count": 50,
+  "schema_valid_count": 0,
+  "blocked_count": 0,
+  "delivered_field_accuracy": {
+    "doc_id": 0.0,
+    "source_url": 0.0,
+    "job_title": 0.0,
+    "employer": 0.0,
+    "location": 0.0
+  },
+  "delivered_all_source_fields_correct_rate": 0.0,
+  "successful_tool_calls": 0,
+  "output_cap_reached_calls": 33,
+  "mean_latency_seconds": 10.985910135740196,
+  "mean_input_tokens": 500.14,
+  "mean_output_tokens": 243.66,
+  "qualification_semantic_accuracy": null,
+  "work_arrangement_accuracy": null,
+  "human_review_status": "Pending; source string checks are not human judgments"
+}

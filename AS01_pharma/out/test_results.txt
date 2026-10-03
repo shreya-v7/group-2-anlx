@@ -1,0 +1,14 @@
+test_full_text_and_table_reach_prompt (test_pipeline.PipelineTests.test_full_text_and_table_reach_prompt) ... ok
+test_human_labels_are_complete (test_pipeline.PipelineTests.test_human_labels_are_complete) ... ok
+test_incomplete_annotations_block_evaluation (test_pipeline.PipelineTests.test_incomplete_annotations_block_evaluation) ... ok
+test_invalid_enum_is_rejected (test_pipeline.PipelineTests.test_invalid_enum_is_rejected) ... ok
+test_missing_prediction_cannot_score_as_empty_list (test_pipeline.PipelineTests.test_missing_prediction_cannot_score_as_empty_list) ... ok
+test_prediction_ids_are_checked (test_pipeline.PipelineTests.test_prediction_ids_are_checked) ... ok
+test_reference_quotes_have_source_evidence (test_pipeline.PipelineTests.test_reference_quotes_have_source_evidence) ... ok
+test_schema_violation_cannot_score_as_fully_correct (test_pipeline.PipelineTests.test_schema_violation_cannot_score_as_fully_correct) ... ok
+test_sources_and_sample_match_corpus (test_pipeline.PipelineTests.test_sources_and_sample_match_corpus) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.014s
+
+OK

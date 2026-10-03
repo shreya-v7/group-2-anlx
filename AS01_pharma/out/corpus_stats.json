@@ -1,0 +1,99 @@
+{
+  "n_documents": 200,
+  "tabular_share": 1.0,
+  "tabular_share_ok": true,
+  "modality_counts": {
+    "mixed": 200
+  },
+  "char_length": {
+    "n": 200,
+    "min": 2759.0,
+    "p25": 4773.5,
+    "median": 5886.0,
+    "p75": 7211.0,
+    "p95": 9403.5,
+    "max": 12361.0,
+    "mean": 6113.04
+  },
+  "word_length": {
+    "n": 200,
+    "min": 388.0,
+    "p25": 665.0,
+    "median": 809.5,
+    "p75": 993.75,
+    "p95": 1301.3,
+    "max": 1570.0,
+    "mean": 848.925
+  },
+  "numeric_density": {
+    "n": 200,
+    "min": 0.0,
+    "p25": 0.0040722838146660225,
+    "median": 0.005601308727464229,
+    "p75": 0.007569213722928752,
+    "p95": 0.01161593774625688,
+    "max": 0.016917293233082706,
+    "mean": 0.0060135221725221896
+  },
+  "table_rows": {},
+  "table_cols": {},
+  "table_missingness": {},
+  "n_sources": 4,
+  "documents_per_source": {
+    "job-boards.greenhouse.io": 66,
+    "arrowheadpharma.com": 53,
+    "www.revmed.com": 52,
+    "www.kymeratx.com": 29
+  },
+  "source_concentration": 0.33,
+  "license_notes": {
+    "Arrowhead Pharmaceuticals public job advertisement retrieved": 53,
+    "Revolution Medicines public job advertisement retrieved usin": 52,
+    "Beam Therapeutics public job advertisement retrieved using t": 36,
+    "Kymera Therapeutics public job advertisement retrieved using": 29,
+    "Relay Therapeutics public job advertisement retrieved using ": 11,
+    "Recursion public job advertisement retrieved using the unaut": 10,
+    "Tessera Therapeutics public job advertisement retrieved usin": 6,
+    "Ultragenyx Pharmaceutical public job advertisement retrieved": 3
+  },
+  "distinct_license_notes": 8,
+  "retrieved_span": [
+    "2026-09-20",
+    "2026-09-20"
+  ],
+  "near_duplicate_pairs": 6,
+  "near_duplicate_rate": 0.06,
+  "near_duplicate_examples": [
+    [
+      "pharma_recursionpharmaceuticals_8054131",
+      "pharma_recursionpharmaceuticals_8054379",
+      0.993
+    ],
+    [
+      "pharma_arrowheadpharmacareers_5151979007",
+      "pharma_arrowheadpharmacareers_5152086007",
+      0.986
+    ],
+    [
+      "pharma_revolutionmedicines_7849787003",
+      "pharma_revolutionmedicines_7996594003",
+      0.984
+    ],
+    [
+      "pharma_beamtherapeutics_8815327002",
+      "pharma_beamtherapeutics_8817599002",
+      0.959
+    ],
+    [
+      "pharma_ultragenyxpharmaceutical_4714053005",
+      "pharma_ultragenyxpharmaceutical_4718890005",
+      0.92
+    ],
+    [
+      "pharma_kymeratherapeutics_7726507003",
+      "pharma_kymeratherapeutics_7797959003",
+      0.915
+    ]
+  ],
+  "documents_without_metadata": 0
+}

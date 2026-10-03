@@ -1,0 +1,13 @@
+{
+  "manual_seconds_per_posting": 330,
+  "review_seconds_per_posting": 90,
+  "correction_seconds_per_incorrect_posting": 135,
+  "usable_without_correction_fraction": 0.4,
+  "human_setup_seconds": 1800,
+  "blocked_wait_fraction": 0.0,
+  "reviewer": "Shreya Verma",
+  "reviewed_at": "2026-09-28T10:40:00-04:00",
+  "timed_posting_id": "pharma_arrowheadpharmacareers_5221763007",
+  "timed_regime": "C1",
+  "notes": "Times are from one C1 posting (index 12, Arrowhead Director Regulatory Affairs Labeling): 330s to extract JobFacts from the posting text, 90s to review the API JSON against the source. That posting was usable as-is, so correction time (135s) was measured on C1 index 01 (Recursion Senior Computational Biologist): change onsite to hybrid and repair a truncated qualification. usable_without_correction_fraction is 4/10 from the first ten sequential C1 outputs (not schema-validity and not the 0.42 exact source-field rate). blocked_wait_fraction is 0 because advisers would review a batch, not sit through generation. human_setup_seconds is a 30-minute first-time briefing on the schema, work-arrangement rule, and review checklist."
+}

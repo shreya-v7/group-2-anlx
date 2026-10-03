@@ -1,0 +1,62 @@
+{
+  "sectors": [
+    {
+      "sector": "Pharma",
+      "contributor": "Shreya Verma",
+      "records": 200,
+      "unique_exact_source_urls": 200,
+      "employers": 8,
+      "modality": {
+        "mixed": 200
+      },
+      "median_raw_text_characters": 5886.0,
+      "reference_label_records": 25,
+      "label_provenance": {
+        "No per-row provenance field": 25
+      },
+      "source_zip": "assignment1_completed.zip",
+      "source_zip_sha256": "5ffa1403fc770e772e8d01d805c419f3c6e672cd934afa3b3d38a7c5e5fe936e"
+    },
+    {
+      "sector": "Finance",
+      "contributor": "Chih-yu",
+      "records": 200,
+      "unique_exact_source_urls": 175,
+      "employers": 27,
+      "modality": {
+        "mixed": 148,
+        "text": 52
+      },
+      "median_raw_text_characters": 4017.0,
+      "reference_label_records": 28,
+      "label_provenance": {
+        "model pre-annotation (Claude Opus) against annotation_guidelines.md; independent human review not confirmed": 28
+      },
+      "source_zip": "assignment1_chihyul3.zip",
+      "source_zip_sha256": "b19fb93bfc45e7d21cc6876c366bfc9b42d4e67ff56dcf23d4a26c76ff4b3e5e"
+    },
+    {
+      "sector": "Tech",
+      "contributor": "William Sun",
+      "records": 250,
+      "unique_exact_source_urls": 71,
+      "employers": 68,
+      "modality": {
+        "text": 115,
+        "table": 134,
+        "mixed": 1
+      },
+      "median_raw_text_characters": 79.0,
+      "reference_label_records": 25,
+      "label_provenance": {
+        "No per-row provenance field": 25
+      },
+      "source_zip": "95820-assignment1-yiqings2.zip",
+      "source_zip_sha256": "31f8bc74715f9e0da2a343c50ec36797eac5eb7b5327241cced39fb11038f72b"
+    }
+  ],
+  "total_records": 650,
+  "global_unique_exact_source_urls": 446,
+  "cross_sector_shared_urls": {},
+  "method": "Exact URL strings; no claim that URLs establish independently sampled or currently open vacancies."
+}

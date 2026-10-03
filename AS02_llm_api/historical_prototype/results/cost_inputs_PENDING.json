@@ -1,0 +1,8 @@
+{
+  "manual_seconds_per_posting": null,
+  "review_seconds_per_posting": null,
+  "correction_seconds_per_incorrect_posting": null,
+  "usable_without_correction_fraction": null,
+  "human_setup_seconds": null,
+  "blocked_wait_fraction": null
+}

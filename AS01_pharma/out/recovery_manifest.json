@@ -1,0 +1,95 @@
+{
+  "timestamp": "2026-09-20T19:41:51.695846+00:00",
+  "corpus_sha256": "8f7394c1ed92cb041489e8b3934fa0e6897d22139cb265371f86015dc447daec",
+  "labels_sha256": "2be9ae212f33f8b69923a750d251f46c8c1dce2fc6b907b1d1c6199ff37aa879",
+  "fields": {
+    "job_title": {
+      "kind": "label",
+      "description": "Copy job_title from the source table exactly."
+    },
+    "employer": {
+      "kind": "label",
+      "description": "Copy employer from the source table exactly."
+    },
+    "location": {
+      "kind": "label",
+      "description": "Copy the full location from the source table exactly; not_stated if absent."
+    },
+    "job_function": {
+      "kind": "label",
+      "values": [
+        "research_discovery",
+        "clinical_development",
+        "regulatory",
+        "quality",
+        "manufacturing_supply",
+        "commercial_medical_affairs",
+        "data_technology",
+        "corporate_other",
+        "unclear"
+      ],
+      "description": "Classify the primary responsibility. clinical_development includes clinical operations and clinical data; commercial_medical_affairs includes field medical and medical affairs; quality includes QC and QA; data_technology is computational/IT roles unless primarily clinical data. Use unclear if insufficient evidence."
+    },
+    "work_arrangement": {
+      "kind": "label",
+      "values": [
+        "onsite",
+        "hybrid",
+        "remote",
+        "not_stated"
+      ],
+      "description": "Use only an explicit statement about this specific role or an explicit remote/hybrid designation in its location. A city alone does not imply onsite. Travel is not remote work. Use not_stated for unresolved alternatives."
+    },
+    "required_qualifications": {
+      "kind": "list",
+      "description": "Copy complete source sentences or bullet text stating required skills, knowledge, certifications or experience. Include education alternatives intact. A Qualifications/Requirements section is required unless explicitly preferred. Exclude responsibilities and generic culture/benefits."
+    },
+    "preferred_qualifications": {
+      "kind": "list",
+      "description": "Copy complete source sentences or bullet text explicitly preferred, desired, a plus or nice-to-have. Preserve wording; no paraphrase or inferred preferences."
+    },
+    "education_requirements": {
+      "kind": "list",
+      "description": "Copy complete source sentences or bullets specifying required education. Preserve all OR alternatives, equivalent-experience clauses and linked experience amounts together. Do not reduce a PhD/MS/BS alternative to a single degree. Exclude preferred-only education."
+    },
+    "experience_requirements": {
+      "kind": "list",
+      "description": "Copy complete source sentences or bullets specifying required numeric years of experience. Preserve ranges, plus signs and education-dependent alternatives. Exclude preferred-only years and company history."
+    }
+  },
+  "baseline_prompt": "You label documents from a corpus about pharmaceutical and therapeutic biotechnology job postings. Fill in every field:\n- job_title: Copy job_title from the source table exactly. -- a short value taken from the document.\n- employer: Copy employer from the source table exactly. -- a short value taken from the document.\n- location: Copy the full location from the source table exactly; not_stated if absent. -- a short value taken from the document.\n- job_function: Classify the primary responsibility. clinical_development includes clinical operations and clinical data; commercial_medical_affairs includes field medical and medical affairs; quality includes QC and QA; data_technology is computational/IT roles unless primarily clinical data. Use unclear if insufficient evidence. -- one of research_discovery, clinical_development, regulatory, quality, manufacturing_supply, commercial_medical_affairs, data_technology, corporate_other, unclear.\n- work_arrangement: Use only an explicit statement about this specific role or an explicit remote/hybrid designation in its location. A city alone does not imply onsite. Travel is not remote work. Use not_stated for unresolved alternatives. -- one of onsite, hybrid, remote, not_stated.\n- required_qualifications: Copy complete source sentences or bullet text stating required skills, knowledge, certifications or experience. Include education alternatives intact. A Qualifications/Requirements section is required unless explicitly preferred. Exclude responsibilities and generic culture/benefits. -- a list of strings.\n- preferred_qualifications: Copy complete source sentences or bullet text explicitly preferred, desired, a plus or nice-to-have. Preserve wording; no paraphrase or inferred preferences. -- a list of strings.\n- education_requirements: Copy complete source sentences or bullets specifying required education. Preserve all OR alternatives, equivalent-experience clauses and linked experience amounts together. Do not reduce a PhD/MS/BS alternative to a single degree. Exclude preferred-only education. -- a list of strings.\n- experience_requirements: Copy complete source sentences or bullets specifying required numeric years of experience. Preserve ranges, plus signs and education-dependent alternatives. Exclude preferred-only years and company history. -- a list of strings.",
+  "doc_ids": [
+    "pharma_arrowheadpharmacareers_5180582007",
+    "pharma_arrowheadpharmacareers_5188281007",
+    "pharma_arrowheadpharmacareers_5188291007",
+    "pharma_arrowheadpharmacareers_5210343007",
+    "pharma_arrowheadpharmacareers_5213007007",
+    "pharma_arrowheadpharmacareers_5234169007",
+    "pharma_arrowheadpharmacareers_5240945007",
+    "pharma_beamtherapeutics_8392998002",
+    "pharma_beamtherapeutics_8583823002",
+    "pharma_beamtherapeutics_8636699002",
+    "pharma_beamtherapeutics_8795551002",
+    "pharma_beamtherapeutics_8817599002",
+    "pharma_beamtherapeutics_8817994002",
+    "pharma_kymeratherapeutics_7726507003",
+    "pharma_kymeratherapeutics_7785662003",
+    "pharma_kymeratherapeutics_7991240003",
+    "pharma_recursionpharmaceuticals_8188707",
+    "pharma_relaytherapeutics_5985754004",
+    "pharma_relaytherapeutics_6123386004",
+    "pharma_revolutionmedicines_7695103003",
+    "pharma_revolutionmedicines_7720354003",
+    "pharma_revolutionmedicines_7812375003",
+    "pharma_revolutionmedicines_7836119003",
+    "pharma_revolutionmedicines_7860071003",
+    "pharma_revolutionmedicines_7984060003"
+  ],
+  "python": "3.11.14",
+  "max_new_tokens": 4096,
+  "truncation": false,
+  "model": "mlx-community/Phi-4-mini-instruct-4bit",
+  "backend": "mlx",
+  "reference_origin": "human",
+  "revised_prompt": "You label documents from a corpus about pharmaceutical and therapeutic biotechnology job postings. Fill in every field:\n- job_title: Copy job_title from the source table exactly. -- a short value taken from the document.\n- employer: Copy employer from the source table exactly. -- a short value taken from the document.\n- location: Copy the full location from the source table exactly; not_stated if absent. -- a short value taken from the document.\n- job_function: Classify the primary responsibility. clinical_development includes clinical operations and clinical data; commercial_medical_affairs includes field medical and medical affairs; quality includes QC and QA; data_technology is computational/IT roles unless primarily clinical data. Use unclear if insufficient evidence. -- one of research_discovery, clinical_development, regulatory, quality, manufacturing_supply, commercial_medical_affairs, data_technology, corporate_other, unclear.\n- work_arrangement: Use only an explicit statement about this specific role or an explicit remote/hybrid designation in its location. A city alone does not imply onsite. Travel is not remote work. Use not_stated for unresolved alternatives. -- one of onsite, hybrid, remote, not_stated.\n- required_qualifications: Copy complete source sentences or bullet text stating required skills, knowledge, certifications or experience. Include education alternatives intact. A Qualifications/Requirements section is required unless explicitly preferred. Exclude responsibilities and generic culture/benefits. -- a list of strings.\n- preferred_qualifications: Copy complete source sentences or bullet text explicitly preferred, desired, a plus or nice-to-have. Preserve wording; no paraphrase or inferred preferences. -- a list of strings.\n- education_requirements: Copy complete source sentences or bullets specifying required education. Preserve all OR alternatives, equivalent-experience clauses and linked experience amounts together. Do not reduce a PhD/MS/BS alternative to a single degree. Exclude preferred-only education. -- a list of strings.\n- experience_requirements: Copy complete source sentences or bullets specifying required numeric years of experience. Preserve ranges, plus signs and education-dependent alternatives. Exclude preferred-only years and company history. -- a list of strings.\n\nWORK-ARRANGEMENT EVIDENCE PROCEDURE (apply only to work_arrangement):\n1. Locate an explicit work-mode statement for this specific job in its description, source location, or role-specific recruitment tags. Interpret #LI-Remote as remote and #LI-Hybrid as hybrid. Explicit weekly partial onsite attendance (for example 1-3 days per week) is hybrid; explicit full-time onsite or five in-office days is onsite.\n2. A city, company headquarters address, laboratory/manufacturing responsibilities, travel requirement, or the word Field does NOT establish onsite, hybrid, or remote work. Do not infer a mode from what a job normally requires.\n3. Generic compensation text about salaries for candidates working onsite is conditional salary boilerplate, NOT this role's work arrangement. It must not override #LI-Remote, #LI-Hybrid, or an explicit role-specific statement.\n4. If there is no explicit role-specific work-mode evidence, output not_stated. If explicit alternatives remain unresolved, output not_stated.\nExamples: location Cambridge, MA with no role-specific mode statement -> not_stated. Location Redwood City with #LI-Remote plus generic onsite salary boilerplate -> remote.\nKeep every other field and its existing extraction rules unchanged. Do not add evidence keys to the JSON schema."
+}

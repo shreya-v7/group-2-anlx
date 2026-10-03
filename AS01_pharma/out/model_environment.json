@@ -1,0 +1,33 @@
+{
+  "model": "mlx-community/Phi-4-mini-instruct-4bit",
+  "source_model": "microsoft/Phi-4-mini-instruct",
+  "revision": "ac1c269cb4222a4e136a3d09edad301056c1f36a",
+  "model_url": "https://huggingface.co/mlx-community/Phi-4-mini-instruct-4bit",
+  "quantization_bits": 4,
+  "quantization_group_size": 64,
+  "hardware": "Apple M4, 16 GiB unified memory",
+  "temperature": 0,
+  "max_new_tokens": 4096,
+  "packages": {
+    "mlx": "0.32.2",
+    "mlx-lm": "0.31.3",
+    "transformers": "5.17.0",
+    "numpy": "2.4.6",
+    "scikit-learn": "1.9.1",
+    "matplotlib": "3.11.2",
+    "huggingface-hub": "1.32.0",
+    "tokenizers": "0.23.2",
+    "safetensors": "0.8.0"
+  },
+  "files": {
+    "model.safetensors": "9dcfcdc0a579494283f2d2317ad686123782ce461d1111690ede7c904ff3f87b",
+    "added_tokens.json": "d4f2aceb0f20b71dd1f4bcc7e052e4412946bf281840b8f83d39f259571af486",
+    "tokenizer_config.json": "76c79ba1828e98a574123dd5de047587219ed8c1ab20702d340bc10a7a32b6bd",
+    "special_tokens_map.json": "aff38493227d813e29fcf8406e8e90062f1f031aa47d589325e9c31d89ac7cc3",
+    "config.json": "431eafdf55dc6d4a76dc3e9f22b0d06eac42d9ac6dc7cbd7ff8ca1e38f18cdb1",
+    "tokenizer.json": "382cc235b56c725945e149cc25f191da667c836655efd0857b004320e90e91ea",
+    "README.md": "712f2599b4ce2fe8515382b4d8131112083f106a34f09419776979fc78126ca5",
+    "vocab.json": "6cb65a857824fa6615bb1782d95d882617a8bbce1da0317118586b36f39e98bd",
+    "model.safetensors.index.json": "958e2e0939857e9fb398e9e3d5344a84e345b00da2e4e7c396024d6a91bc1ab7"
+  }
+}

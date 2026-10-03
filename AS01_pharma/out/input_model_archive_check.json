@@ -1,0 +1,16 @@
+{
+  "checked_at": "2026-09-21T18:26:55.657200+00:00",
+  "llmbox-main.zip": {
+    "readable_zip": true,
+    "contents": "LLMBox source/config plus LoRA adapters; no complete Phi base-model weights",
+    "configuration_model": "microsoft/Phi-4-mini-instruct"
+  },
+  "Unconfirmed 233904.crdownload": {
+    "bytes": 3475091162,
+    "readable_zip": false,
+    "first_entry": "phi4-mini-instruct/",
+    "status": "Incomplete browser download; not used for inference"
+  },
+  "actual_model_used": "mlx-community/Phi-4-mini-instruct-4bit",
+  "actual_model_provenance": "model_environment.json"
+}

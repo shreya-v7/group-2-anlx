@@ -1,0 +1,329 @@
+[info] loaded 200 records from corpus.jsonl
+Loading ../.models/phi4-mini-instruct onto mps (once) ...
+[transformers] This model config has set a `rope_parameters['original_max_position_embeddings']` field, to be used together with `max_position_embeddings` to determine a scaling factor. Please set the `factor` field of `rope_parameters`with this ratio instead -- we recommend the use of this field over `original_max_position_embeddings`, as it is compatible with most model architectures.
+Loading weights:   0%|          | 0/194 [00:00<?, ?it/s]Loading weights: 100%|██████████| 194/194 [00:00<00:00, 3971.74it/s]
+  ready in 18.9s
+[warn] unusable model output, value left untouched: expected an object, got list
+[1/200] pharma_arrowheadpharmacareers_4958682007 (+14 candidate span(s), 65s elapsed)
+[2/200] pharma_arrowheadpharmacareers_5095740007 (+11 candidate span(s), 111s elapsed)
+[3/200] pharma_arrowheadpharmacareers_5095750007 (+18 candidate span(s), 163s elapsed)
+[warn] unusable model output, value left untouched: unparseable output: no JSON value found in model output
+[warn] unusable model output, value left untouched: expected an object, got list
+[warn] unusable model output, value left untouched: expected an object, got list
+[4/200] pharma_arrowheadpharmacareers_5124573007 (+6 candidate span(s), 387s elapsed)
+[warn] unusable model output, value left untouched: expected an object, got list
+[5/200] pharma_arrowheadpharmacareers_5130292007 (+16 candidate span(s), 438s elapsed)
+[6/200] pharma_arrowheadpharmacareers_5146360007 (+10 candidate span(s), 475s elapsed)
+[7/200] pharma_arrowheadpharmacareers_5151979007 (+14 candidate span(s), 515s elapsed)
+[8/200] pharma_arrowheadpharmacareers_5152086007 (+13 candidate span(s), 551s elapsed)
+[warn] unusable model output, value left untouched: expected an object, got list
+[warn] unusable model output, value left untouched: expected an object, got list
+[9/200] pharma_arrowheadpharmacareers_5153072007 (+5 candidate span(s), 575s elapsed)
+[warn] unusable model output, value left untouched: unparseable output: no JSON value found in model output
+[warn] unusable model output, value left untouched: expected an object, got list
+[10/200] pharma_arrowheadpharmacareers_5174150007 (+4 candidate span(s), 781s elapsed)
+[11/200] pharma_arrowheadpharmacareers_5180261007 (+22 candidate span(s), 846s elapsed)
+[warn] unusable model output, value left untouched: unparseable output: no JSON value found in model output
+[12/200] pharma_arrowheadpharmacareers_5180582007 (+8 candidate span(s), 1067s elapsed)
+[13/200] pharma_arrowheadpharmacareers_5181318007 (+6 candidate span(s), 1086s elapsed)
+[14/200] pharma_arrowheadpharmacareers_5181432007 (+25 candidate span(s), 1159s elapsed)
+[15/200] pharma_arrowheadpharmacareers_5188021007 (+13 candidate span(s), 1198s elapsed)
+[16/200] pharma_arrowheadpharmacareers_5188281007 (+18 candidate span(s), 1285s elapsed)
+[17/200] pharma_arrowheadpharmacareers_5188291007 (+13 candidate span(s), 1307s elapsed)
+[warn] unusable model output, value left untouched: unparseable output: no JSON value found in model output
+[warn] unusable model output, value left untouched: expected an object, got list
+[18/200] pharma_arrowheadpharmacareers_5191658007 (+6 candidate span(s), 1531s elapsed)
+[19/200] pharma_arrowheadpharmacareers_5194543007 (+48 candidate span(s), 1690s elapsed)
+[warn] unusable model output, value left untouched: unparseable output: no JSON value found in model output
+[20/200] pharma_arrowheadpharmacareers_5197095007 (+6 candidate span(s), 1906s elapsed)
+[21/200] pharma_arrowheadpharmacareers_5202407007 (+14 candidate span(s), 1960s elapsed)
+[22/200] pharma_arrowheadpharmacareers_5202419007 (+15 candidate span(s), 2019s elapsed)
+[23/200] pharma_arrowheadpharmacareers_5202437007 (+6 candidate span(s), 2050s elapsed)
+[24/200] pharma_arrowheadpharmacareers_5202441007 (+15 candidate span(s), 2108s elapsed)
+[warn] unusable model output, value left untouched: expected an object, got list
+[25/200] pharma_arrowheadpharmacareers_5203857007 (+9 candidate span(s), 2142s elapsed)
+[26/200] pharma_arrowheadpharmacareers_5205044007 (+6 candidate span(s), 2164s elapsed)
+[warn] unusable model output, value left untouched: expected an object, got list
+[27/200] pharma_arrowheadpharmacareers_5205813007 (+14 candidate span(s), 2219s elapsed)
+[28/200] pharma_arrowheadpharmacareers_5206021007 (+44 candidate span(s), 2447s elapsed)
+[29/200] pharma_arrowheadpharmacareers_5206287007 (+46 candidate span(s), 2642s elapsed)
+[30/200] pharma_arrowheadpharmacareers_5206415007 (+14 candidate span(s), 2689s elapsed)
+[warn] unusable model output, value left untouched: expected an object, got list
+[31/200] pharma_arrowheadpharmacareers_5210343007 (+5 candidate span(s), 2708s elapsed)
+[32/200] pharma_arrowheadpharmacareers_5213007007 (+17 candidate span(s), 2766s elapsed)
+[33/200] pharma_arrowheadpharmacareers_5214164007 (+7 candidate span(s), 2794s elapsed)
+[34/200] pharma_arrowheadpharmacareers_5214722007 (+7 candidate span(s), 2823s elapsed)
+[warn] unusable model output, value left untouched: unparseable output: no JSON value found in model output
+[35/200] pharma_arrowheadpharmacareers_5214730007 (+6 candidate span(s), 3064s elapsed)
+[36/200] pharma_arrowheadpharmacareers_5218951007 (+15 candidate span(s), 3122s elapsed)
+[37/200] pharma_arrowheadpharmacareers_5219951007 (+48 candidate span(s), 3319s elapsed)
+[38/200] pharma_arrowheadpharmacareers_5219968007 (+15 candidate span(s), 3373s elapsed)
+[warn] unusable model output, value left untouched: expected an object, got list
+[39/200] pharma_arrowheadpharmacareers_5220122007 (+6 candidate span(s), 3394s elapsed)
+[warn] unusable model output, value left untouched: expected an object, got list
+[40/200] pharma_arrowheadpharmacareers_5220383007 (+6 candidate span(s), 3419s elapsed)
+[41/200] pharma_arrowheadpharmacareers_5221763007 (+16 candidate span(s), 3478s elapsed)
+[warn] unusable model output, value left untouched: expected an object, got list
+[42/200] pharma_arrowheadpharmacareers_5224485007 (+6 candidate span(s), 3497s elapsed)
+[43/200] pharma_arrowheadpharmacareers_5227764007 (+9 candidate span(s), 3539s elapsed)
+[warn] unusable model output, value left untouched: unparseable output: no JSON value found in model output
+[44/200] pharma_arrowheadpharmacareers_5230678007 (+6 candidate span(s), 3783s elapsed)
+[warn] unusable model output, value left untouched: unparseable output: no JSON value found in model output
+[45/200] pharma_arrowheadpharmacareers_5232693007 (+7 candidate span(s), 4027s elapsed)
+[46/200] pharma_arrowheadpharmacareers_5232760007 (+15 candidate span(s), 4071s elapsed)
+[warn] unusable model output, value left untouched: unparseable output: no JSON value found in model output
+[47/200] pharma_arrowheadpharmacareers_5232943007 (+8 candidate span(s), 4310s elapsed)
+[48/200] pharma_arrowheadpharmacareers_5233461007 (+41 candidate span(s), 4475s elapsed)
+[49/200] pharma_arrowheadpharmacareers_5234169007 (+13 candidate span(s), 4524s elapsed)
+[50/200] pharma_arrowheadpharmacareers_5234184007 (+13 candidate span(s), 4565s elapsed)
+[51/200] pharma_arrowheadpharmacareers_5234199007 (+7 candidate span(s), 4586s elapsed)
+[52/200] pharma_arrowheadpharmacareers_5238395007 (+7 candidate span(s), 4606s elapsed)
+[53/200] pharma_arrowheadpharmacareers_5240945007 (+7 candidate span(s), 4628s elapsed)
+[warn] unusable model output, value left untouched: unparseable output: no JSON value found in model output
+[54/200] pharma_beamtherapeutics_8350466002 (+7 candidate span(s), 4871s elapsed)
+[55/200] pharma_beamtherapeutics_8378438002 (+40 candidate span(s), 5059s elapsed)
+[56/200] pharma_beamtherapeutics_8392998002 (+27 candidate span(s), 5162s elapsed)
+[57/200] pharma_beamtherapeutics_8501507002 (+18 candidate span(s), 5230s elapsed)
+[warn] unusable model output, value left untouched: unparseable output: no JSON value found in model output
+[58/200] pharma_beamtherapeutics_8583823002 (+7 candidate span(s), 5489s elapsed)
+[warn] unusable model output, value left untouched: unparseable output: no JSON value found in model output
+[warn] unusable model output, value left untouched: expected an object, got list
+[59/200] pharma_beamtherapeutics_8594598002 (+7 candidate span(s), 5789s elapsed)
+[60/200] pharma_beamtherapeutics_8596615002 (+7 candidate span(s), 5832s elapsed)
+[warn] unusable model output, value left untouched: unparseable output: no JSON value found in model output
+[warn] unusable model output, value left untouched: expected an object, got list
+[61/200] pharma_beamtherapeutics_8617840002 (+6 candidate span(s), 6117s elapsed)
+[62/200] pharma_beamtherapeutics_8618012002 (+8 candidate span(s), 6150s elapsed)
+[63/200] pharma_beamtherapeutics_8621019002 (+25 candidate span(s), 6265s elapsed)
+[64/200] pharma_beamtherapeutics_8621029002 (+8 candidate span(s), 6296s elapsed)
+[65/200] pharma_beamtherapeutics_8636699002 (+8 candidate span(s), 6325s elapsed)
+[66/200] pharma_beamtherapeutics_8641907002 (+18 candidate span(s), 6415s elapsed)
+[67/200] pharma_beamtherapeutics_8642712002 (+7 candidate span(s), 6459s elapsed)
+[warn] unusable model output, value left untouched: expected an object, got list
+[68/200] pharma_beamtherapeutics_8642789002 (+6 candidate span(s), 6478s elapsed)
+[69/200] pharma_beamtherapeutics_8687065002 (+10 candidate span(s), 6512s elapsed)
+[70/200] pharma_beamtherapeutics_8687101002 (+7 candidate span(s), 6541s elapsed)
+[71/200] pharma_beamtherapeutics_8693414002 (+35 candidate span(s), 6665s elapsed)
+[warn] unusable model output, value left untouched: unparseable output: no JSON value found in model output
+[72/200] pharma_beamtherapeutics_8760769002 (+7 candidate span(s), 6903s elapsed)
+[73/200] pharma_beamtherapeutics_8760825002 (+47 candidate span(s), 7143s elapsed)
+[warn] unusable model output, value left untouched: expected an object, got list
+[74/200] pharma_beamtherapeutics_8780049002 (+7 candidate span(s), 7179s elapsed)
+[warn] unusable model output, value left untouched: unparseable output: no JSON value found in model output
+[warn] unusable model output, value left untouched: expected an object, got list
+[75/200] pharma_beamtherapeutics_8790644002 (+6 candidate span(s), 7503s elapsed)
+[76/200] pharma_beamtherapeutics_8795480002 (+7 candidate span(s), 7544s elapsed)
+[77/200] pharma_beamtherapeutics_8795526002 (+19 candidate span(s), 7618s elapsed)
+[warn] unusable model output, value left untouched: expected an object, got list
+[78/200] pharma_beamtherapeutics_8795551002 (+6 candidate span(s), 7649s elapsed)
+[warn] unusable model output, value left untouched: unparseable output: no JSON value found in model output
+[warn] unusable model output, value left untouched: expected an object, got list
+[79/200] pharma_beamtherapeutics_8795574002 (+6 candidate span(s), 7887s elapsed)
+[warn] unusable model output, value left untouched: expected an object, got list
+[80/200] pharma_beamtherapeutics_8795603002 (+7 candidate span(s), 7916s elapsed)
+[81/200] pharma_beamtherapeutics_8795612002 (+18 candidate span(s), 7979s elapsed)
+[82/200] pharma_beamtherapeutics_8795629002 (+7 candidate span(s), 8008s elapsed)
+[83/200] pharma_beamtherapeutics_8795637002 (+6 candidate span(s), 8032s elapsed)
+[84/200] pharma_beamtherapeutics_8796651002 (+7 candidate span(s), 8054s elapsed)
+[warn] unusable model output, value left untouched: unparseable output: no JSON value found in model output
+[85/200] pharma_beamtherapeutics_8814985002 (+7 candidate span(s), 8276s elapsed)
+[86/200] pharma_beamtherapeutics_8815327002 (+38 candidate span(s), 8426s elapsed)
+[warn] unusable model output, value left untouched: unparseable output: no JSON value found in model output
+[87/200] pharma_beamtherapeutics_8817599002 (+7 candidate span(s), 8646s elapsed)
+[88/200] pharma_beamtherapeutics_8817994002 (+17 candidate span(s), 8707s elapsed)
+[89/200] pharma_beamtherapeutics_8821602002 (+12 candidate span(s), 8747s elapsed)
+[warn] unusable model output, value left untouched: expected an object, got list
+[90/200] pharma_kymeratherapeutics_7586370003 (+35 candidate span(s), 8944s elapsed)
+[warn] unusable model output, value left untouched: unparseable output: no JSON value found in model output
+[91/200] pharma_kymeratherapeutics_7726507003 (+5 candidate span(s), 9222s elapsed)
+[warn] unusable model output, value left untouched: unparseable output: no JSON value found in model output
+[92/200] pharma_kymeratherapeutics_7733671003 (+5 candidate span(s), 9561s elapsed)
+[warn] unusable model output, value left untouched: unparseable output: no JSON value found in model output
+[93/200] pharma_kymeratherapeutics_7748334003 (+5 candidate span(s), 9849s elapsed)
+[warn] unusable model output, value left untouched: unparseable output: no JSON value found in model output
+[94/200] pharma_kymeratherapeutics_7748991003 (+6 candidate span(s), 10142s elapsed)
+[warn] unusable model output, value left untouched: expected an object, got list
+[95/200] pharma_kymeratherapeutics_7785608003 (+7 candidate span(s), 10185s elapsed)
+[96/200] pharma_kymeratherapeutics_7785662003 (+16 candidate span(s), 10266s elapsed)
+[97/200] pharma_kymeratherapeutics_7797959003 (+8 candidate span(s), 10314s elapsed)
+[98/200] pharma_kymeratherapeutics_7812190003 (+12 candidate span(s), 10400s elapsed)
+[99/200] pharma_kymeratherapeutics_7815935003 (+8 candidate span(s), 10449s elapsed)
+[100/200] pharma_kymeratherapeutics_7820769003 (+38 candidate span(s), 10614s elapsed)
+[101/200] pharma_kymeratherapeutics_7826361003 (+15 candidate span(s), 10664s elapsed)
+[102/200] pharma_kymeratherapeutics_7849649003 (+10 candidate span(s), 10702s elapsed)
+[103/200] pharma_kymeratherapeutics_7854105003 (+39 candidate span(s), 10916s elapsed)
+[warn] unusable model output, value left untouched: unparseable output: no JSON value found in model output
+[warn] unusable model output, value left untouched: expected an object, got list
+[104/200] pharma_kymeratherapeutics_7864663003 (+4 candidate span(s), 11182s elapsed)
+[warn] unusable model output, value left untouched: expected an object, got list
+[105/200] pharma_kymeratherapeutics_7871963003 (+8 candidate span(s), 11230s elapsed)
+[warn] unusable model output, value left untouched: unparseable output: no JSON value found in model output
+[106/200] pharma_kymeratherapeutics_7871978003 (+5 candidate span(s), 11480s elapsed)
+[107/200] pharma_kymeratherapeutics_7894000003 (+8 candidate span(s), 11512s elapsed)
+[108/200] pharma_kymeratherapeutics_7905250003 (+8 candidate span(s), 11551s elapsed)
+[109/200] pharma_kymeratherapeutics_7905314003 (+25 candidate span(s), 11718s elapsed)
+[110/200] pharma_kymeratherapeutics_7926960003 (+8 candidate span(s), 11756s elapsed)
+[111/200] pharma_kymeratherapeutics_7931045003 (+8 candidate span(s), 11803s elapsed)
+[112/200] pharma_kymeratherapeutics_7965329003 (+7 candidate span(s), 11843s elapsed)
+[warn] unusable model output, value left untouched: unparseable output: no JSON value found in model output
+[113/200] pharma_kymeratherapeutics_7978154003 (+5 candidate span(s), 12145s elapsed)
+[warn] unusable model output, value left untouched: unparseable output: no JSON value found in model output
+[114/200] pharma_kymeratherapeutics_7979935003 (+5 candidate span(s), 12395s elapsed)
+[115/200] pharma_kymeratherapeutics_7983253003 (+31 candidate span(s), 12514s elapsed)
+[116/200] pharma_kymeratherapeutics_7989192003 (+10 candidate span(s), 12571s elapsed)
+[117/200] pharma_kymeratherapeutics_7990099003 (+14 candidate span(s), 12631s elapsed)
+[warn] unusable model output, value left untouched: unparseable output: no JSON value found in model output
+[118/200] pharma_kymeratherapeutics_7991240003 (+5 candidate span(s), 12871s elapsed)
+[119/200] pharma_recursionpharmaceuticals_7961602 (+8 candidate span(s), 12925s elapsed)
+[120/200] pharma_recursionpharmaceuticals_8049037 (+6 candidate span(s), 12963s elapsed)
+[121/200] pharma_recursionpharmaceuticals_8054131 (+7 candidate span(s), 13007s elapsed)
+[122/200] pharma_recursionpharmaceuticals_8054379 (+7 candidate span(s), 13042s elapsed)
+[123/200] pharma_recursionpharmaceuticals_8069513 (+8 candidate span(s), 13091s elapsed)
+[124/200] pharma_recursionpharmaceuticals_8156704 (+6 candidate span(s), 13124s elapsed)
+[warn] unusable model output, value left untouched: expected an object, got list
+[125/200] pharma_recursionpharmaceuticals_8157465 (+5 candidate span(s), 13164s elapsed)
+[126/200] pharma_recursionpharmaceuticals_8188707 (+16 candidate span(s), 13285s elapsed)
+[127/200] pharma_recursionpharmaceuticals_8205317 (+7 candidate span(s), 13329s elapsed)
+[128/200] pharma_recursionpharmaceuticals_8214932 (+7 candidate span(s), 13370s elapsed)
+[warn] unusable model output, value left untouched: expected an object, got list
+[129/200] pharma_relaytherapeutics_5985754004 (+12 candidate span(s), 13442s elapsed)
+[warn] unusable model output, value left untouched: expected an object, got list
+[warn] unusable model output, value left untouched: expected an object, got list
+[130/200] pharma_relaytherapeutics_6099031004 (+12 candidate span(s), 13519s elapsed)
+[131/200] pharma_relaytherapeutics_6119086004 (+6 candidate span(s), 13549s elapsed)
+[132/200] pharma_relaytherapeutics_6119088004 (+6 candidate span(s), 13576s elapsed)
+[warn] unusable model output, value left untouched: unparseable output: no JSON value found in model output
+[133/200] pharma_relaytherapeutics_6119089004 (+6 candidate span(s), 13829s elapsed)
+[134/200] pharma_relaytherapeutics_6123386004 (+6 candidate span(s), 13870s elapsed)
+[135/200] pharma_relaytherapeutics_6129110004 (+39 candidate span(s), 14061s elapsed)
+[warn] unusable model output, value left untouched: expected an object, got list
+[136/200] pharma_relaytherapeutics_6129122004 (+6 candidate span(s), 14087s elapsed)
+[137/200] pharma_relaytherapeutics_6133598004 (+6 candidate span(s), 14107s elapsed)
+[138/200] pharma_relaytherapeutics_6150448004 (+6 candidate span(s), 14126s elapsed)
+[warn] unusable model output, value left untouched: expected an object, got list
+[139/200] pharma_relaytherapeutics_6161286004 (+5 candidate span(s), 14152s elapsed)
+[warn] unusable model output, value left untouched: unparseable output: no JSON value found in model output
+[warn] unusable model output, value left untouched: expected an object, got list
+[warn] unusable model output, value left untouched: expected an object, got list
+[140/200] pharma_revolutionmedicines_7613277003 (+5 candidate span(s), 14373s elapsed)
+[warn] unusable model output, value left untouched: unparseable output: no JSON value found in model output
+[141/200] pharma_revolutionmedicines_7613773003 (+5 candidate span(s), 14596s elapsed)
+[142/200] pharma_revolutionmedicines_7648511003 (+27 candidate span(s), 14689s elapsed)
+[warn] unusable model output, value left untouched: unparseable output: no JSON value found in model output
+[143/200] pharma_revolutionmedicines_7677975003 (+5 candidate span(s), 14914s elapsed)
+[warn] unusable model output, value left untouched: unparseable output: no JSON value found in model output
+[144/200] pharma_revolutionmedicines_7695103003 (+5 candidate span(s), 15130s elapsed)
+[warn] unusable model output, value left untouched: unparseable output: no JSON value found in model output
+[warn] unusable model output, value left untouched: expected an object, got list
+[145/200] pharma_revolutionmedicines_7708726003 (+6 candidate span(s), 15352s elapsed)
+[146/200] pharma_revolutionmedicines_7720354003 (+8 candidate span(s), 15390s elapsed)
+[warn] unusable model output, value left untouched: expected an object, got list
+[warn] unusable model output, value left untouched: expected an object, got list
+[147/200] pharma_revolutionmedicines_7726527003 (+12 candidate span(s), 15434s elapsed)
+[148/200] pharma_revolutionmedicines_7732651003 (+9 candidate span(s), 15474s elapsed)
+[warn] unusable model output, value left untouched: unparseable output: no JSON value found in model output
+[149/200] pharma_revolutionmedicines_7751588003 (+5 candidate span(s), 15689s elapsed)
+[warn] unusable model output, value left untouched: unparseable output: no JSON value found in model output
+[warn] unusable model output, value left untouched: expected an object, got list
+[150/200] pharma_revolutionmedicines_7773974003 (+5 candidate span(s), 15900s elapsed)
+[151/200] pharma_revolutionmedicines_7774092003 (+11 candidate span(s), 15942s elapsed)
+[152/200] pharma_revolutionmedicines_7775246003 (+20 candidate span(s), 16010s elapsed)
+[warn] unusable model output, value left untouched: unparseable output: no JSON value found in model output
+[153/200] pharma_revolutionmedicines_7776945003 (+5 candidate span(s), 16225s elapsed)
+[154/200] pharma_revolutionmedicines_7776998003 (+9 candidate span(s), 16263s elapsed)
+[warn] unusable model output, value left untouched: unparseable output: no JSON value found in model output
+[155/200] pharma_revolutionmedicines_7777012003 (+5 candidate span(s), 16479s elapsed)
+[warn] unusable model output, value left untouched: expected an object, got list
+[156/200] pharma_revolutionmedicines_7792110003 (+10 candidate span(s), 16517s elapsed)
+[157/200] pharma_revolutionmedicines_7803101003 (+8 candidate span(s), 16555s elapsed)
+[warn] unusable model output, value left untouched: expected an object, got list
+[158/200] pharma_revolutionmedicines_7805306003 (+11 candidate span(s), 16594s elapsed)
+[warn] unusable model output, value left untouched: unparseable output: no JSON value found in model output
+[159/200] pharma_revolutionmedicines_7808341003 (+4 candidate span(s), 16810s elapsed)
+[warn] unusable model output, value left untouched: unparseable output: no JSON value found in model output
+[160/200] pharma_revolutionmedicines_7812375003 (+6 candidate span(s), 17029s elapsed)
+[warn] unusable model output, value left untouched: unparseable output: no JSON value found in model output
+[161/200] pharma_revolutionmedicines_7824979003 (+5 candidate span(s), 17254s elapsed)
+[162/200] pharma_revolutionmedicines_7825022003 (+15 candidate span(s), 17308s elapsed)
+[warn] unusable model output, value left untouched: unparseable output: no JSON value found in model output
+[163/200] pharma_revolutionmedicines_7826788003 (+4 candidate span(s), 17526s elapsed)
+[warn] unusable model output, value left untouched: expected an object, got list
+[164/200] pharma_revolutionmedicines_7829423003 (+7 candidate span(s), 17562s elapsed)
+[warn] unusable model output, value left untouched: unparseable output: no JSON value found in model output
+[warn] unusable model output, value left untouched: expected an object, got list
+[165/200] pharma_revolutionmedicines_7830316003 (+5 candidate span(s), 17784s elapsed)
+[warn] unusable model output, value left untouched: unparseable output: no JSON value found in model output
+[166/200] pharma_revolutionmedicines_7836119003 (+5 candidate span(s), 18003s elapsed)
+[167/200] pharma_revolutionmedicines_7849346003 (+10 candidate span(s), 18052s elapsed)
+[warn] unusable model output, value left untouched: expected an object, got list
+[168/200] pharma_revolutionmedicines_7849787003 (+22 candidate span(s), 18124s elapsed)
+[warn] unusable model output, value left untouched: unparseable output: no JSON value found in model output
+[169/200] pharma_revolutionmedicines_7850775003 (+6 candidate span(s), 18342s elapsed)
+[warn] unusable model output, value left untouched: unparseable output: no JSON value found in model output
+[170/200] pharma_revolutionmedicines_7860071003 (+6 candidate span(s), 18587s elapsed)
+[171/200] pharma_revolutionmedicines_7860827003 (+11 candidate span(s), 18648s elapsed)
+[172/200] pharma_revolutionmedicines_7867247003 (+10 candidate span(s), 18696s elapsed)
+[warn] unusable model output, value left untouched: unparseable output: no JSON value found in model output
+[173/200] pharma_revolutionmedicines_7872583003 (+4 candidate span(s), 18960s elapsed)
+[174/200] pharma_revolutionmedicines_7886363003 (+7 candidate span(s), 19000s elapsed)
+[warn] unusable model output, value left untouched: unparseable output: no JSON value found in model output
+[175/200] pharma_revolutionmedicines_7887615003 (+5 candidate span(s), 19261s elapsed)
+[warn] unusable model output, value left untouched: unparseable output: no JSON value found in model output
+[warn] unusable model output, value left untouched: expected an object, got list
+[176/200] pharma_revolutionmedicines_7896023003 (+5 candidate span(s), 19549s elapsed)
+[warn] unusable model output, value left untouched: expected an object, got list
+[177/200] pharma_revolutionmedicines_7921809003 (+12 candidate span(s), 19608s elapsed)
+[warn] unusable model output, value left untouched: unparseable output: no JSON value found in model output
+[178/200] pharma_revolutionmedicines_7934300003 (+5 candidate span(s), 19934s elapsed)
+[warn] unusable model output, value left untouched: unparseable output: no JSON value found in model output
+[warn] unusable model output, value left untouched: expected an object, got list
+[179/200] pharma_revolutionmedicines_7982309003 (+5 candidate span(s), 20214s elapsed)
+[warn] unusable model output, value left untouched: unparseable output: no JSON value found in model output
+[warn] unusable model output, value left untouched: expected an object, got list
+[180/200] pharma_revolutionmedicines_7982674003 (+4 candidate span(s), 20495s elapsed)
+[181/200] pharma_revolutionmedicines_7983853003 (+17 candidate span(s), 20562s elapsed)
+[182/200] pharma_revolutionmedicines_7984060003 (+41 candidate span(s), 20815s elapsed)
+[warn] unusable model output, value left untouched: unparseable output: no JSON value found in model output
+[183/200] pharma_revolutionmedicines_7985784003 (+5 candidate span(s), 21037s elapsed)
+[warn] unusable model output, value left untouched: expected an object, got list
+[184/200] pharma_revolutionmedicines_7990782003 (+12 candidate span(s), 21088s elapsed)
+[185/200] pharma_revolutionmedicines_7996594003 (+45 candidate span(s), 21305s elapsed)
+[warn] unusable model output, value left untouched: unparseable output: no JSON value found in model output
+[186/200] pharma_revolutionmedicines_7997422003 (+7 candidate span(s), 21533s elapsed)
+[187/200] pharma_revolutionmedicines_7997424003 (+7 candidate span(s), 21565s elapsed)
+[188/200] pharma_revolutionmedicines_7997783003 (+7 candidate span(s), 21595s elapsed)
+[warn] unusable model output, value left untouched: unparseable output: no JSON value found in model output
+[warn] unusable model output, value left untouched: expected an object, got list
+[189/200] pharma_revolutionmedicines_7998395003 (+5 candidate span(s), 21815s elapsed)
+[warn] unusable model output, value left untouched: unparseable output: no JSON value found in model output
+[warn] unusable model output, value left untouched: expected an object, got list
+[warn] unusable model output, value left untouched: expected an object, got list
+[190/200] pharma_revolutionmedicines_7999387003 (+4 candidate span(s), 22032s elapsed)
+[warn] unusable model output, value left untouched: expected an object, got list
+[191/200] pharma_revolutionmedicines_7999589003 (+7 candidate span(s), 22059s elapsed)
+[warn] unusable model output, value left untouched: unparseable output: no JSON value found in model output
+[192/200] pharma_tesseratherapeutics_5151655007 (+7 candidate span(s), 22300s elapsed)
+[193/200] pharma_tesseratherapeutics_5170380007 (+16 candidate span(s), 22369s elapsed)
+[warn] unusable model output, value left untouched: unparseable output: no JSON value found in model output
+[warn] unusable model output, value left untouched: expected an object, got list
+[194/200] pharma_tesseratherapeutics_5194541007 (+6 candidate span(s), 22586s elapsed)
+[195/200] pharma_tesseratherapeutics_5194773007 (+17 candidate span(s), 22640s elapsed)
+[196/200] pharma_tesseratherapeutics_5240104007 (+10 candidate span(s), 22682s elapsed)
+[warn] unusable model output, value left untouched: unparseable output: no JSON value found in model output
+[197/200] pharma_tesseratherapeutics_5240120007 (+7 candidate span(s), 22905s elapsed)
+[warn] unusable model output, value left untouched: expected an object, got list
+[198/200] pharma_ultragenyxpharmaceutical_4714053005 (+7 candidate span(s), 22953s elapsed)
+[warn] unusable model output, value left untouched: expected an object, got list
+[warn] unusable model output, value left untouched: expected an object, got list
+[warn] unusable model output, value left untouched: expected an object, got list
+[199/200] pharma_ultragenyxpharmaceutical_4718890005 (+7 candidate span(s), 22995s elapsed)
+[warn] unusable model output, value left untouched: expected an object, got list
+[warn] unusable model output, value left untouched: expected an object, got list
+[200/200] pharma_ultragenyxpharmaceutical_4732383005 (+6 candidate span(s), 23026s elapsed)
+
+[done] 200 records processed in 23026s
+[done] 2140 span(s) accepted and masked (209 model-proposed span(s) rejected as not verbatim).
+[done] by category: {'CONF': 797, 'PHI': 836, 'FIN': 146, 'PII': 361}
+[done] wrote corpus.masked.jsonl
+[done] audit report: out/masking_report.json
+[done] review corpus.masked.jsonl and the report before replacing corpus.jsonl.

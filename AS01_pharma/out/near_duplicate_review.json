@@ -1,0 +1,62 @@
+[
+  {
+    "doc_id_a": "pharma_recursionpharmaceuticals_8054131",
+    "title_a": "Senior Computational Biologist - Early Discovery Oncology",
+    "internal_id_a": 3490716,
+    "doc_id_b": "pharma_recursionpharmaceuticals_8054379",
+    "title_b": "Senior Computational Biologist \u2013 Early Discovery Immunology",
+    "internal_id_b": 3490821,
+    "similarity": 0.99,
+    "decision": "Retain both: distinct source job identifiers and different titles, specialties, seniority, shifts or markets. Similar template text remains a corpus limitation."
+  },
+  {
+    "doc_id_a": "pharma_arrowheadpharmacareers_5151979007",
+    "title_a": "Lab Assistant, Manufacturing (2nd shift)",
+    "internal_id_a": 4639424007,
+    "doc_id_b": "pharma_arrowheadpharmacareers_5152086007",
+    "title_b": "Lab Assistant, Manufacturing",
+    "internal_id_b": 4639471007,
+    "similarity": 0.984,
+    "decision": "Retain both: distinct source job identifiers and different titles, specialties, seniority, shifts or markets. Similar template text remains a corpus limitation."
+  },
+  {
+    "doc_id_a": "pharma_revolutionmedicines_7849787003",
+    "title_a": "Medical Science Liaison, BeLux",
+    "internal_id_a": 5815948003,
+    "doc_id_b": "pharma_revolutionmedicines_7996594003",
+    "title_b": "Medical Science Liaison, France",
+    "internal_id_b": 5886514003,
+    "similarity": 0.976,
+    "decision": "Retain both: distinct source job identifiers and different titles, specialties, seniority, shifts or markets. Similar template text remains a corpus limitation."
+  },
+  {
+    "doc_id_a": "pharma_beamtherapeutics_8815327002",
+    "title_a": "Director, FP&A (Commercial)",
+    "internal_id_a": 6527984002,
+    "doc_id_b": "pharma_beamtherapeutics_8817599002",
+    "title_b": "Director, FP&A (Clinical)",
+    "internal_id_b": 6528895002,
+    "similarity": 0.958,
+    "decision": "Retain both: distinct source job identifiers and different titles, specialties, seniority, shifts or markets. Similar template text remains a corpus limitation."
+  },
+  {
+    "doc_id_a": "pharma_kymeratherapeutics_7726507003",
+    "title_a": "Clinical Trial Manager ",
+    "internal_id_a": 5761147003,
+    "doc_id_b": "pharma_kymeratherapeutics_7797959003",
+    "title_b": "Associate Director, Clinical Operations",
+    "internal_id_b": 5792160003,
+    "similarity": 0.91,
+    "decision": "Retain both: distinct source job identifiers and different titles, specialties, seniority, shifts or markets. Similar template text remains a corpus limitation."
+  },
+  {
+    "doc_id_a": "pharma_ultragenyxpharmaceutical_4714053005",
+    "title_a": "Medical Director, Japan",
+    "internal_id_a": 4444469005,
+    "doc_id_b": "pharma_ultragenyxpharmaceutical_4718890005",
+    "title_b": "Medical Science Manager (Central-Southern\u00a0Italy)",
+    "internal_id_b": 4446855005,
+    "similarity": 0.906,
+    "decision": "Retain both: distinct source job identifiers and different titles, specialties, seniority, shifts or markets. Similar template text remains a corpus limitation."
+  }
+]

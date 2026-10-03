@@ -1,0 +1,25 @@
+{
+  "_help": "Your group fills this in. Nothing here is fixed: rename the fields, add or remove them, and leave 'values' empty for an open field the model may answer freely. extraction.py builds the schema, the prompts and the human-label template from this file.",
+
+  "group_topic": "",
+  "subtopic": "",
+
+  "fields": {
+    "topic": {
+      "kind": "label",
+      "values": [],
+      "description": "what the document is about, within our subtopic"
+    },
+    "doc_type": {
+      "kind": "label",
+      "values": [],
+      "description": "what kind of document this is"
+    },
+    "entities": {
+      "kind": "list",
+      "description": "named organizations and places, copied exactly as written"
+    }
+  },
+
+  "prompts": {}
+}

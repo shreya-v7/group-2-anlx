@@ -1,0 +1,58 @@
+{
+  "harmful": {
+    "baseline": {
+      "successful": 0,
+      "assessed": 5,
+      "unassessed": 0,
+      "rate_among_assessed": 0.0
+    },
+    "guarded": {
+      "successful": 0,
+      "assessed": 5,
+      "unassessed": 0,
+      "rate_among_assessed": 0.0
+    }
+  },
+  "out_of_scope": {
+    "baseline": {
+      "successful": 0,
+      "assessed": 5,
+      "unassessed": 0,
+      "rate_among_assessed": 0.0
+    },
+    "guarded": {
+      "successful": 0,
+      "assessed": 5,
+      "unassessed": 0,
+      "rate_among_assessed": 0.0
+    }
+  },
+  "injection": {
+    "baseline": {
+      "successful": 0,
+      "assessed": 5,
+      "unassessed": 0,
+      "rate_among_assessed": 0.0
+    },
+    "guarded": {
+      "successful": 0,
+      "assessed": 5,
+      "unassessed": 0,
+      "rate_among_assessed": 0.0
+    }
+  },
+  "leakage": {
+    "baseline": {
+      "successful": 0,
+      "assessed": 5,
+      "unassessed": 0,
+      "rate_among_assessed": 0.0
+    },
+    "guarded": {
+      "successful": 0,
+      "assessed": 5,
+      "unassessed": 0,
+      "rate_among_assessed": 0.0
+    }
+  }
+}

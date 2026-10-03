@@ -1,0 +1,22 @@
+test_benign_request_not_blanket_blocked (test_career_api.Tests.test_benign_request_not_blanket_blocked) ... ok
+test_fabricated_quote_blocked (test_career_api.Tests.test_fabricated_quote_blocked) ... ok
+test_hallucinated_source_fact_blocked_and_not_credited (test_career_api.Tests.test_hallucinated_source_fact_blocked_and_not_credited) ... ok
+test_injection_in_source_blocked_before_inference (test_career_api.Tests.test_injection_in_source_blocked_before_inference) ... ok
+test_malformed_json_retained (test_career_api.Tests.test_malformed_json_retained) ... ok
+test_other_posting_lookup_denied (test_career_api.Tests.test_other_posting_lookup_denied) ... ok
+test_tool_roundtrip_accounts_for_both_calls (test_career_api.Tests.test_tool_roundtrip_accounts_for_both_calls) ... ok
+test_unknown_tool_never_executed (test_career_api.Tests.test_unknown_tool_never_executed) ... ok
+test_valid_record_delivered (test_career_api.Tests.test_valid_record_delivered) ... ok
+test_actual_upstream_tool_dispatch_and_registry_restore (test_llmbox_integration.Tests.test_actual_upstream_tool_dispatch_and_registry_restore) ... ok
+test_call_inside_prose_never_executes (test_llmbox_integration.Tests.test_call_inside_prose_never_executes) ... ok
+test_guardrail_blocks_before_llmbox_inference (test_llmbox_integration.Tests.test_guardrail_blocks_before_llmbox_inference) ... ok
+test_leading_upstream_call_can_have_logged_trailing_prose (test_llmbox_integration.Tests.test_leading_upstream_call_can_have_logged_trailing_prose) ... ok
+test_other_record_argument_never_executes (test_llmbox_integration.Tests.test_other_record_argument_never_executes) ... ok
+test_structured_uses_upstream_schema_prompt (test_llmbox_integration.Tests.test_structured_uses_upstream_schema_prompt) ... ok
+test_unadvertised_tools_never_execute (test_llmbox_integration.Tests.test_unadvertised_tools_never_execute) ... ok
+test_verification_withholds_invented_source_field (test_llmbox_integration.Tests.test_verification_withholds_invented_source_field) ... ok
+
+----------------------------------------------------------------------
+Ran 17 tests in 0.015s
+
+OK

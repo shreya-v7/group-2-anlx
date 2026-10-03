@@ -1,0 +1,7 @@
+{
+  "paired_cases": 30,
+  "expected_case_ids_match": true,
+  "probe_hash_match": true,
+  "token_totals_match": true,
+  "human_labels": "pending"
+}

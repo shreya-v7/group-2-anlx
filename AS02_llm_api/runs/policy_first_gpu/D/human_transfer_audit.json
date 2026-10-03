@@ -1,0 +1,8 @@
+{
+  "input_judgments_transferred": 30,
+  "agreement_count": 24,
+  "agreement_denominator": 30,
+  "agreement_rate": 0.8,
+  "complete_output_pairs_transferred": 13,
+  "changed_output_pairs_requiring_new_human_review": 17
+}

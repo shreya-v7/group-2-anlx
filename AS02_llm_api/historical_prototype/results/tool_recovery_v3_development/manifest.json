@@ -1,0 +1,23 @@
+{
+  "status": "complete",
+  "purpose": "Exploratory v3 development-only routing; current record bound server-side; not C2 evaluation",
+  "count": 3,
+  "tool_successes": 0,
+  "input_ids": [
+    "pharma_arrowheadpharmacareers_5206287007",
+    "pharma_revolutionmedicines_7824979003",
+    "pharma_arrowheadpharmacareers_5230678007"
+  ],
+  "backend": "mlx",
+  "model": "/Users/shreyaverma/Projects/applications of nlx and llms/.models/phi-4-mini-instruct-4bit",
+  "code_sha256": "a52d1f6b4b2e734b2e28791d6892c79c45fb49e849163bb38cf924220fbf3239",
+  "settings": {
+    "seed": 2822,
+    "temperature": 0.2,
+    "top_p": 0.8,
+    "max_new_tokens": 256,
+    "do_sample": true,
+    "top_k": 0,
+    "repetition_penalty": 1.0
+  }
+}

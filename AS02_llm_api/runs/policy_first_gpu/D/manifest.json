@@ -1,0 +1,7 @@
+{
+  "status": "complete",
+  "regime": "D",
+  "backend": "LLMBox Modes + custom MLX GenerationManager",
+  "is_smoke_test": false,
+  "completed_count": 30
+}

@@ -1,0 +1,110 @@
+[
+  {
+    "cluster_id": 0,
+    "name": "Kymera: targeted protein degradation",
+    "corpus_n": 29,
+    "evaluation_n": 3,
+    "all_fields_correct": 0,
+    "field_correct": 12,
+    "field_total": 27,
+    "field_accuracy": 0.4444444444444444,
+    "field_errors": {
+      "job_function": 3,
+      "work_arrangement": 3,
+      "preferred_qualifications": 3,
+      "education_requirements": 2,
+      "experience_requirements": 2,
+      "required_qualifications": 2
+    }
+  },
+  {
+    "cluster_id": 1,
+    "name": "Relay: discovery and development",
+    "corpus_n": 11,
+    "evaluation_n": 2,
+    "all_fields_correct": 0,
+    "field_correct": 9,
+    "field_total": 18,
+    "field_accuracy": 0.5,
+    "field_errors": {
+      "work_arrangement": 2,
+      "required_qualifications": 2,
+      "preferred_qualifications": 2,
+      "job_function": 1,
+      "education_requirements": 1,
+      "experience_requirements": 1
+    }
+  },
+  {
+    "cluster_id": 2,
+    "name": "Beam: gene editing and operations",
+    "corpus_n": 36,
+    "evaluation_n": 6,
+    "all_fields_correct": 0,
+    "field_correct": 26,
+    "field_total": 54,
+    "field_accuracy": 0.48148148148148145,
+    "field_errors": {
+      "job_function": 5,
+      "work_arrangement": 6,
+      "required_qualifications": 5,
+      "preferred_qualifications": 5,
+      "education_requirements": 5,
+      "experience_requirements": 2
+    }
+  },
+  {
+    "cluster_id": 3,
+    "name": "Smaller employers: mixed biotech",
+    "corpus_n": 19,
+    "evaluation_n": 1,
+    "all_fields_correct": 0,
+    "field_correct": 6,
+    "field_total": 9,
+    "field_accuracy": 0.6666666666666666,
+    "field_errors": {
+      "required_qualifications": 1,
+      "preferred_qualifications": 1,
+      "education_requirements": 1
+    }
+  },
+  {
+    "cluster_id": 4,
+    "name": "Revolution: oncology and corporate",
+    "corpus_n": 52,
+    "evaluation_n": 6,
+    "all_fields_correct": 0,
+    "field_correct": 34,
+    "field_total": 54,
+    "field_accuracy": 0.6296296296296297,
+    "field_errors": {
+      "job_function": 2,
+      "work_arrangement": 4,
+      "required_qualifications": 5,
+      "preferred_qualifications": 2,
+      "education_requirements": 3,
+      "experience_requirements": 4
+    }
+  },
+  {
+    "cluster_id": 5,
+    "name": "Arrowhead: RNAi and operations",
+    "corpus_n": 53,
+    "evaluation_n": 7,
+    "all_fields_correct": 0,
+    "field_correct": 21,
+    "field_total": 63,
+    "field_accuracy": 0.3333333333333333,
+    "field_errors": {
+      "employer": 7,
+      "job_function": 6,
+      "required_qualifications": 5,
+      "preferred_qualifications": 4,
+      "work_arrangement": 6,
+      "education_requirements": 5,
+      "experience_requirements": 5,
+      "job_title": 2,
+      "location": 2
+    }
+  }
+]

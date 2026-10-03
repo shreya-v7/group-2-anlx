@@ -1,0 +1,7 @@
+{
+  "status": "complete",
+  "count": 50,
+  "backend": "deterministic_source_table_lookup",
+  "source_sha256": "2a2cf7318b715f78c49ffee65a3bfa3e2850654b02249ab506bc862f3d7c5a47",
+  "split_manifest_sha256": "d31c98679b025f076dd998755ba375683be363bf8c640c38b062282b2435a17a"
+}

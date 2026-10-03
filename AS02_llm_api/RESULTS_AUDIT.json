@@ -1,0 +1,53 @@
+{
+  "B1": {
+    "rows": 50,
+    "metrics_recomputed": true,
+    "delivered_outputs_identical_to_historical": 50
+  },
+  "B3": {
+    "rows": 50,
+    "metrics_recomputed": true,
+    "delivered_outputs_identical_to_historical": 50
+  },
+  "C1": {
+    "rows": 50,
+    "metrics_recomputed": true,
+    "delivered_outputs_identical_to_historical": 50
+  },
+  "C2": {
+    "rows": 50,
+    "metrics_recomputed": true,
+    "delivered_outputs_identical_to_historical": 50
+  },
+  "C3": {
+    "rows": 50,
+    "metrics_recomputed": true,
+    "delivered_outputs_identical_to_historical": 50
+  },
+  "C4": {
+    "rows": 50,
+    "metrics_recomputed": true,
+    "delivered_outputs_identical_to_historical": 50
+  },
+  "D": {
+    "paired_cases": 30,
+    "identical_input_objects_verified": true,
+    "input_judgments_transferred": 30,
+    "agreement_count": 24,
+    "agreement_denominator": 30,
+    "agreement_rate": 0.8,
+    "complete_output_pairs_transferred": 13,
+    "changed_output_pairs_requiring_new_human_review": 17
+  },
+  "chronology": {
+    "policy_frozen_at_utc": "2026-09-30T01:11:33.450882+00:00",
+    "successful_attempt_started_at_utc": "2026-09-30T01:12:19.990512+00:00",
+    "run_started_at_utc": "2026-09-30T01:12:21.036726+00:00",
+    "run_ended_at_utc": "2026-09-30T02:32:44.079901+00:00",
+    "policy_v1_sha256": "54f2e2ee4904cea4a287d3df93504e7eebd4093e4171acd10b13e893bf11f13d",
+    "unchanged_frozen_files": 37,
+    "first_attempt": "Retained GPU-access failure before any inference"
+  },
+  "checked_at_utc": "2026-09-30T06:19:29.167385+00:00",
+  "status": "PASS"
+}

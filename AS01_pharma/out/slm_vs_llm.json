@@ -1,0 +1,140 @@
+{
+  "n_records": 25,
+  "phi_model": "mlx-community/Phi-4-mini-instruct-4bit",
+  "llm_provider": "gemini",
+  "llm_model": "gemini-flash-latest (8 records) and gemini-3.5-flash (17 records)",
+  "same_prompt": true,
+  "same_schema": true,
+  "same_human_labels": true,
+  "full_record_agreement": {
+    "phi": 0.0,
+    "llm": 0.48
+  },
+  "field_agreement": {
+    "phi": 0.48,
+    "llm": 0.924
+  },
+  "schema_valid": {
+    "phi": 0.92,
+    "llm": 1.0
+  },
+  "mean_latency_s": {
+    "phi": 31.09,
+    "llm": 25.5
+  },
+  "field_accuracy": {
+    "job_title": {
+      "phi": 0.92,
+      "llm": 1.0,
+      "delta": 0.08
+    },
+    "employer": {
+      "phi": 0.72,
+      "llm": 1.0,
+      "delta": 0.28
+    },
+    "location": {
+      "phi": 0.92,
+      "llm": 1.0,
+      "delta": 0.08
+    },
+    "job_function": {
+      "phi": 0.32,
+      "llm": 0.92,
+      "delta": 0.6
+    },
+    "work_arrangement": {
+      "phi": 0.16,
+      "llm": 1.0,
+      "delta": 0.84
+    },
+    "required_qualifications": {
+      "phi": 0.2,
+      "llm": 0.72,
+      "delta": 0.52
+    },
+    "preferred_qualifications": {
+      "phi": 0.32,
+      "llm": 0.72,
+      "delta": 0.4
+    },
+    "education_requirements": {
+      "phi": 0.32,
+      "llm": 0.96,
+      "delta": 0.64
+    },
+    "experience_requirements": {
+      "phi": 0.44,
+      "llm": 1.0,
+      "delta": 0.56
+    }
+  },
+  "list_field_scores": {
+    "required_qualifications": {
+      "phi": {
+        "precision": 0.81,
+        "recall": 0.669,
+        "f1": 0.733
+      },
+      "llm": {
+        "precision": 0.975,
+        "recall": 0.983,
+        "f1": 0.979
+      }
+    },
+    "preferred_qualifications": {
+      "phi": {
+        "precision": 0.383,
+        "recall": 0.603,
+        "f1": 0.469
+      },
+      "llm": {
+        "precision": 0.95,
+        "recall": 0.838,
+        "f1": 0.891
+      }
+    },
+    "education_requirements": {
+      "phi": {
+        "precision": 0.321,
+        "recall": 0.36,
+        "f1": 0.34
+      },
+      "llm": {
+        "precision": 0.96,
+        "recall": 0.96,
+        "f1": 0.96
+      }
+    },
+    "experience_requirements": {
+      "phi": {
+        "precision": 0.433,
+        "recall": 0.433,
+        "f1": 0.433
+      },
+      "llm": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      }
+    }
+  },
+  "full_record_ids": {
+    "both_correct": [],
+    "llm_only_correct": [
+      "pharma_arrowheadpharmacareers_5188291007",
+      "pharma_beamtherapeutics_8392998002",
+      "pharma_beamtherapeutics_8795551002",
+      "pharma_beamtherapeutics_8817599002",
+      "pharma_beamtherapeutics_8817994002",
+      "pharma_kymeratherapeutics_7726507003",
+      "pharma_kymeratherapeutics_7991240003",
+      "pharma_relaytherapeutics_6123386004",
+      "pharma_revolutionmedicines_7695103003",
+      "pharma_revolutionmedicines_7812375003",
+      "pharma_revolutionmedicines_7836119003",
+      "pharma_revolutionmedicines_7860071003"
+    ],
+    "phi_only_correct": []
+  }
+}

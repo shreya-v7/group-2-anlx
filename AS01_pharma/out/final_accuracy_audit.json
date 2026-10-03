@@ -1,0 +1,19 @@
+{
+  "checked_at": "2026-09-22T06:13:49.032021+00:00",
+  "status": "PASS",
+  "checks": [
+    "seed-820 sample reproduced",
+    "baseline and recovery input hashes unchanged",
+    "all baseline metrics recalculated from 25 saved predictions",
+    "all recovery metrics recalculated from 19 saved predictions",
+    "field fixes/regressions independently recounted",
+    "valid predictions meet schema",
+    "human annotation status verified"
+  ],
+  "baseline_matching_fields": 108,
+  "baseline_field_denominator": 225,
+  "baseline_valid_records": 23,
+  "recovery_work_arrangement_fixes": 6,
+  "recovery_schema_failures": 2,
+  "recovery_other_field_regressions": 3
+}

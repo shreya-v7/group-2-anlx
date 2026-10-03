@@ -1,0 +1,91 @@
+{
+  "B1": {
+    "unique_expected_inputs": 50,
+    "recomputed_metrics_match": true,
+    "token_totals_match": true,
+    "code_hash_matches": {
+      "career_api.py": true,
+      "experiments.py": true,
+      "safety.py": false,
+      "test_career_api.py": true
+    },
+    "note": "safety.py was extended with a toxicity instrument for the separate D run; it is not imported by these B/C runs."
+  },
+  "B3": {
+    "unique_expected_inputs": 50,
+    "recomputed_metrics_match": true,
+    "token_totals_match": true,
+    "code_hash_matches": {
+      "career_api.py": true,
+      "review_results.py": true,
+      "experiments.py": true,
+      "safety.py": true,
+      "test_career_api.py": true,
+      "build_review.py": true,
+      "non_llm.py": true
+    },
+    "note": "safety.py was extended with a toxicity instrument for the separate D run; it is not imported by these B/C runs."
+  },
+  "C1": {
+    "unique_expected_inputs": 50,
+    "recomputed_metrics_match": true,
+    "token_totals_match": true,
+    "code_hash_matches": {
+      "career_api.py": true,
+      "review_results.py": true,
+      "experiments.py": true,
+      "safety.py": true,
+      "test_career_api.py": true,
+      "build_review.py": true,
+      "non_llm.py": true
+    },
+    "note": "safety.py was extended with a toxicity instrument for the separate D run; it is not imported by these B/C runs."
+  },
+  "C2": {
+    "unique_expected_inputs": 50,
+    "recomputed_metrics_match": true,
+    "token_totals_match": true,
+    "code_hash_matches": {
+      "career_api.py": true,
+      "review_results.py": true,
+      "experiments.py": true,
+      "safety.py": true,
+      "test_career_api.py": true,
+      "build_review.py": true,
+      "non_llm.py": true
+    },
+    "note": "safety.py was extended with a toxicity instrument for the separate D run; it is not imported by these B/C runs."
+  },
+  "C3": {
+    "unique_expected_inputs": 50,
+    "recomputed_metrics_match": true,
+    "token_totals_match": true,
+    "code_hash_matches": {
+      "career_api.py": true,
+      "review_results.py": true,
+      "cost_calculator.py": true,
+      "experiments.py": true,
+      "safety.py": true,
+      "test_career_api.py": true,
+      "build_review.py": true,
+      "non_llm.py": true
+    },
+    "note": "safety.py was extended with a toxicity instrument for the separate D run; it is not imported by these B/C runs."
+  },
+  "C4": {
+    "unique_expected_inputs": 50,
+    "recomputed_metrics_match": true,
+    "token_totals_match": true,
+    "code_hash_matches": {
+      "career_api.py": true,
+      "review_results.py": true,
+      "cost_calculator.py": true,
+      "experiments.py": true,
+      "safety.py": true,
+      "test_career_api.py": true,
+      "build_review.py": true,
+      "non_llm.py": true
+    },
+    "note": "safety.py was extended with a toxicity instrument for the separate D run; it is not imported by these B/C runs."
+  }
+}

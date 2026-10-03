@@ -1,0 +1,26 @@
+{
+  "status": "done",
+  "n_records": 25,
+  "n_fields": 9,
+  "total_fields": 225,
+  "reference_origin": "human",
+  "human_reviewed": true,
+  "job_function_counts": {
+    "manufacturing_supply": 6,
+    "data_technology": 2,
+    "corporate_other": 4,
+    "clinical_development": 5,
+    "research_discovery": 3,
+    "commercial_medical_affairs": 3,
+    "regulatory": 1,
+    "quality": 1
+  },
+  "work_arrangement_counts": {
+    "onsite": 3,
+    "not_stated": 15,
+    "hybrid": 3,
+    "remote": 4
+  },
+  "all_list_values_found_verbatim_in_source": true,
+  "reviewed_by": "Shreya Verma"
+}

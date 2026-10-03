@@ -1,0 +1,196 @@
+{
+  "target": 200,
+  "n_records": 200,
+  "seed": 820,
+  "sampling": "Deterministic randomized within-employer queues, round-robin employer allocation until target reached.",
+  "sources": {
+    "arrowheadpharmacareers": {
+      "url": "https://boards-api.greenhouse.io/v1/boards/arrowheadpharmacareers/jobs?content=true",
+      "retrieved_at": "2026-09-20T02:03:02.423371+00:00",
+      "http_status": 200,
+      "company": "Arrowhead Pharmaceuticals",
+      "raw_sha256": "3cc5b617225b58502912f6100b59b7ed5cef03fcaa92720d2dc420e63a4bb54c",
+      "available_posts": 92,
+      "eligible_unique_posts": 89,
+      "selected_records": 53
+    },
+    "beamtherapeutics": {
+      "url": "https://boards-api.greenhouse.io/v1/boards/beamtherapeutics/jobs?content=true",
+      "retrieved_at": "2026-09-20T02:02:16.348112+00:00",
+      "http_status": 200,
+      "company": "Beam Therapeutics",
+      "raw_sha256": "0a939aab0125b0b3e871eb10ce55a207ce73afc765f94584a8104861920cd15b",
+      "available_posts": 39,
+      "eligible_unique_posts": 36,
+      "selected_records": 36
+    },
+    "kymeratherapeutics": {
+      "url": "https://boards-api.greenhouse.io/v1/boards/kymeratherapeutics/jobs?content=true",
+      "retrieved_at": "2026-09-20T02:02:51.703156+00:00",
+      "http_status": 200,
+      "company": "Kymera Therapeutics",
+      "raw_sha256": "fc2b2875357417d1e49884aedc635c343949d819d51c0712e033a14ad3f4f981",
+      "available_posts": 30,
+      "eligible_unique_posts": 29,
+      "selected_records": 29
+    },
+    "recursionpharmaceuticals": {
+      "url": "https://boards-api.greenhouse.io/v1/boards/recursionpharmaceuticals/jobs?content=true",
+      "retrieved_at": "2026-09-20T02:02:12.997978+00:00",
+      "http_status": 200,
+      "company": "Recursion",
+      "raw_sha256": "e5e095f1b7bc9951995684bb0c6efcb021d3c5ccd0ebb2206d70755a08c80591",
+      "available_posts": 16,
+      "eligible_unique_posts": 10,
+      "selected_records": 10
+    },
+    "relaytherapeutics": {
+      "url": "https://boards-api.greenhouse.io/v1/boards/relaytherapeutics/jobs?content=true",
+      "retrieved_at": "2026-09-20T02:02:51.710060+00:00",
+      "http_status": 200,
+      "company": "Relay Therapeutics",
+      "raw_sha256": "625fe8335354546f894e7c4df5777145406b88801f7f0830519ab299f3478377",
+      "available_posts": 11,
+      "eligible_unique_posts": 11,
+      "selected_records": 11
+    },
+    "revolutionmedicines": {
+      "url": "https://boards-api.greenhouse.io/v1/boards/revolutionmedicines/jobs?content=true",
+      "retrieved_at": "2026-09-20T02:02:16.457423+00:00",
+      "http_status": 200,
+      "company": "Revolution Medicines",
+      "raw_sha256": "4ed56609d48d874142e22953d6b0f6802f127ed1cdc0f9dc09928a11b3f5b104",
+      "available_posts": 254,
+      "eligible_unique_posts": 247,
+      "selected_records": 52
+    },
+    "tesseratherapeutics": {
+      "url": "https://boards-api.greenhouse.io/v1/boards/tesseratherapeutics/jobs?content=true",
+      "retrieved_at": "2026-09-20T02:02:58.309411+00:00",
+      "http_status": 200,
+      "company": "Tessera Therapeutics",
+      "raw_sha256": "87b88e73d94170c48ef6d8a71385f16baea9db0767cc5f6c62d2e8054a38a984",
+      "available_posts": 7,
+      "eligible_unique_posts": 6,
+      "selected_records": 6
+    },
+    "ultragenyxpharmaceutical": {
+      "url": "https://boards-api.greenhouse.io/v1/boards/ultragenyxpharmaceutical/jobs?content=true",
+      "retrieved_at": "2026-09-20T02:02:16.379094+00:00",
+      "http_status": 200,
+      "company": "Ultragenyx Pharmaceutical",
+      "raw_sha256": "8ee92bf23f375f1d880a2bf047d5ea4e62d3c10b5960d056a08c0e87aee36e7a",
+      "available_posts": 3,
+      "eligible_unique_posts": 3,
+      "selected_records": 3
+    }
+  },
+  "excluded": [
+    {
+      "board": "arrowheadpharmacareers",
+      "posting_id": 5183421007,
+      "reason": "duplicate internal job ID within employer"
+    },
+    {
+      "board": "arrowheadpharmacareers",
+      "posting_id": 5220696007,
+      "reason": "duplicate internal job ID within employer"
+    },
+    {
+      "board": "arrowheadpharmacareers",
+      "posting_id": 5220701007,
+      "reason": "duplicate internal job ID within employer"
+    },
+    {
+      "board": "beamtherapeutics",
+      "posting_id": 6305863002,
+      "reason": "prospect/general-interest post (no internal job ID)"
+    },
+    {
+      "board": "beamtherapeutics",
+      "posting_id": 6440268002,
+      "reason": "prospect/general-interest post (no internal job ID)"
+    },
+    {
+      "board": "beamtherapeutics",
+      "posting_id": 8820724002,
+      "reason": "exact normalized description duplicate within employer"
+    },
+    {
+      "board": "kymeratherapeutics",
+      "posting_id": 7784135003,
+      "reason": "exact normalized description duplicate within employer"
+    },
+    {
+      "board": "recursionpharmaceuticals",
+      "posting_id": 3955652,
+      "reason": "prospect/general-interest post (no internal job ID)"
+    },
+    {
+      "board": "recursionpharmaceuticals",
+      "posting_id": 7540026,
+      "reason": "prospect/general-interest post (no internal job ID)"
+    },
+    {
+      "board": "recursionpharmaceuticals",
+      "posting_id": 8156705,
+      "reason": "duplicate internal job ID within employer"
+    },
+    {
+      "board": "recursionpharmaceuticals",
+      "posting_id": 8214940,
+      "reason": "duplicate internal job ID within employer"
+    },
+    {
+      "board": "recursionpharmaceuticals",
+      "posting_id": 8214947,
+      "reason": "duplicate internal job ID within employer"
+    },
+    {
+      "board": "recursionpharmaceuticals",
+      "posting_id": 8214949,
+      "reason": "duplicate internal job ID within employer"
+    },
+    {
+      "board": "revolutionmedicines",
+      "posting_id": 7731519003,
+      "reason": "exact normalized description duplicate within employer"
+    },
+    {
+      "board": "revolutionmedicines",
+      "posting_id": 7736313003,
+      "reason": "exact normalized description duplicate within employer"
+    },
+    {
+      "board": "revolutionmedicines",
+      "posting_id": 7823333003,
+      "reason": "exact normalized description duplicate within employer"
+    },
+    {
+      "board": "revolutionmedicines",
+      "posting_id": 7859148003,
+      "reason": "exact normalized description duplicate within employer"
+    },
+    {
+      "board": "revolutionmedicines",
+      "posting_id": 7859150003,
+      "reason": "exact normalized description duplicate within employer"
+    },
+    {
+      "board": "revolutionmedicines",
+      "posting_id": 7989145003,
+      "reason": "duplicate internal job ID within employer"
+    },
+    {
+      "board": "revolutionmedicines",
+      "posting_id": 7996323003,
+      "reason": "duplicate internal job ID within employer"
+    },
+    {
+      "board": "tesseratherapeutics",
+      "posting_id": 4034391007,
+      "reason": "prospect/general-interest post (no internal job ID)"
+    }
+  ],
+  "not_selected_eligible": 231
+}

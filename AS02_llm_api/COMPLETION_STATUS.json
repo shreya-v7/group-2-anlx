@@ -1,0 +1,13 @@
+{
+  "status": "complete",
+  "completed_at_utc": "2026-09-30T06:19:29.167941+00:00",
+  "policy_initial_sha256": "54f2e2ee4904cea4a287d3df93504e7eebd4093e4171acd10b13e893bf11f13d",
+  "policy_revised_sha256": "428248e16cede79575413b0985f39bb129cb61d1a9260b91d50f1a97c551f127",
+  "main_requests": 300,
+  "paired_safety_cases": 30,
+  "tests_passed": 17,
+  "integrity_audit": "PASS",
+  "successful_attempt": "ATTEMPT_2_STATUS.json",
+  "preserved_initial_failure": "RUN_STATUS.json; GPU inaccessible before inference",
+  "prior_experiment_history": "Retained; not backdated or replaced"
+}

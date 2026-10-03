@@ -1,0 +1,18 @@
+
+========================================================================
+CORPUS VALIDATION
+========================================================================
+  [PASS]  record schema              all 200 records conform
+  [PASS]  corpus size                200 records
+  [PASS]  tabular share              100.0% (200/200), minimum is 20%
+  [PASS]  source diversity           4 domains, largest 33% of corpus
+  [WARN]  near-duplicates            6.0% of records
+  [PASS]  license notes              8 distinct note(s)
+  [PASS]  sources.csv columns        200 source(s) listed
+  [PASS]  source coverage            every corpus domain is documented
+  [PASS]  sources.csv record_count   sums to 200, corpus has 200
+========================================================================
+
+SUBMISSION LOOKS VALID
+Warnings are not blocking, but each one is something the memo should address.
+

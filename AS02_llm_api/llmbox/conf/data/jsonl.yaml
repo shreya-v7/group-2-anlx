@@ -1,0 +1,6 @@
+# path is mandatory (???) -- pass data.path=/path/to/file.jsonl on the
+# command line when using this data source.
+type: jsonl
+path: ???
+min_turns: 1
+eval_split: 0.1

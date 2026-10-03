@@ -1,0 +1,26 @@
+Loaded 200 records from corpus.jsonl
+[transformers] This model config has set a `rope_parameters['original_max_position_embeddings']` field, to be used together with `max_position_embeddings` to determine a scaling factor. Please set the `factor` field of `rope_parameters`with this ratio instead -- we recommend the use of this field over `original_max_position_embeddings`, as it is compatible with most model architectures.
+Loaded local MLX Phi from /private/tmp/assignment1-phi-model
+
+Rerunning 19 failed record(s) with the revised prompt ...
+      1/19  pharma_arrowheadpharmacareers_5188281007 Senior Scientist II, Discovery Analytical Chemistry
+      2/19  pharma_arrowheadpharmacareers_5188291007 Senior ERP Solution Architect - Finance (Microsoft Dynamics 365)
+      3/19  pharma_arrowheadpharmacareers_5213007007 Coordinator II, Translational Biomarkers
+      4/19  pharma_arrowheadpharmacareers_5234169007 Lead, Technical Transfer
+      5/19  pharma_beamtherapeutics_8392998002 Vice President, Compliance
+      6/19  pharma_beamtherapeutics_8583823002 Director, Pharmacovigilance
+      7/19  pharma_beamtherapeutics_8636699002 Director/Senior Director, CMC Operations
+      8/19  pharma_beamtherapeutics_8795551002 mRNA Science Co-op
+      9/19  pharma_beamtherapeutics_8817599002 Director, FP&A (Clinical)
+  !  10/19  pharma_beamtherapeutics_8817994002 Senior Director, Field Key Account Management (East)
+     11/19  pharma_kymeratherapeutics_7726507003 Clinical Trial Manager
+  !  12/19  pharma_kymeratherapeutics_7785662003 Director or Senior Director, Regulatory Affairs
+     13/19  pharma_kymeratherapeutics_7991240003 Director, Data Management
+     14/19  pharma_relaytherapeutics_5985754004 Senior Manager, Drug Product
+     15/19  pharma_relaytherapeutics_6123386004 VP, Head of Drug Discovery
+     16/19  pharma_revolutionmedicines_7695103003 Director, Molecular Pathology, Translational Sciences, Translational Research.
+     17/19  pharma_revolutionmedicines_7720354003 Global Development Lead (GDL), Clinical Development
+     18/19  pharma_revolutionmedicines_7836119003 Senior QA Manager, GMP GxP Auditing & Vendor Management
+     19/19  pharma_revolutionmedicines_7984060003 Senior Vice President, Head of Corporate Development
+  wrote out/recovery.json
+  wrote out/recovery_manifest.json

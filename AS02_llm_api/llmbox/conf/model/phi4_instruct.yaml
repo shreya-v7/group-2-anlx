@@ -1,0 +1,33 @@
+# Defaulting to the 3.8B "Phi-4-mini-instruct" variant here (not the 14B
+# "microsoft/phi-4") since that's the checkout your chat_phi4mini.py script
+# already runs locally. Switch model_id to "microsoft/phi-4" if you want the
+# larger model instead.
+#
+# trust_remote_code=false: Microsoft's model card shows trust_remote_code=True,
+# but the cached custom modeling_phi3.py has drifted from current transformers
+# internals in more than one place now (LossKwargs -> TransformersKwargs rename,
+# _tied_weights_keys list->dict format, ...). "phi3" is a long-supported native
+# architecture in transformers, so loading natively sidesteps that entire class
+# of breakage. If you hit behavioral differences you believe trace back to
+# Phi-4-mini-specific code in Microsoft's custom file, switch this back to true
+# -- you'll then need src.generation.GenerationManager._ensure_remote_code_compat()
+# (and possibly further one-off shims) to keep the old custom code loading.
+#
+# Note on tool calling: Phi-4-mini-instruct's own chat template renders tool
+# definitions as <|tool|>...<|/tool|> in the system prompt and expects a
+# "functools[...]"-prefixed JSON reply, rather than any OpenAI-style
+# structured tool-call object. tool_calling_format=functools_prompt below
+# builds that system prompt and parses/dispatches the functools[...] reply
+# locally against src/tools.py's TOOL_REGISTRY -- see GenerationManager.
+name: phi4_instruct
+source: local
+model_id: microsoft/Phi-4-mini-instruct
+local_path: ./models/llms/microsoft/Phi-4-mini-instruct
+architecture: phi3
+dtype: bfloat16
+device: auto
+trust_remote_code: false
+supports_tool_calling: true
+supports_structured_output: true
+tool_calling_format: functools_prompt
+chat_template_kwargs: {}

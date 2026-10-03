@@ -1,0 +1,15 @@
+{
+  "api_human_seconds_per_posting": 171.0,
+  "human_seconds_saved_per_posting": 159.0,
+  "time_break_even_postings": 12,
+  "break_even_status": "finite under supplied assumptions",
+  "measured_model_seconds_per_request": 14.662585619140081,
+  "metrics_regime": "C1",
+  "limitations": [
+    "Time-only estimate; electricity, hardware, money and organizational error consequences not priced.",
+    "Usability must come from human review, not schema-validity rate.",
+    "Assumes sequential waiting, review and correction; adjust blocked_wait_fraction for work done while waiting.",
+    "Usable fraction is from 10 sequential C1 reviews, not all 50.",
+    "Extract/review times are from one posting; correction time is from a second posting that needed edits."
+  ]
+}
