@@ -1,4 +1,4 @@
-"""Presentation guide: Oct 2 text plus the full team names."""
+"""Presentation guide built from presentation_script.md."""
 from html import escape
 from pathlib import Path
 from reportlab.lib.pagesizes import A4
@@ -6,9 +6,7 @@ from reportlab.lib.styles import ParagraphStyle
 from reportlab.platypus import Paragraph, SimpleDocTemplate
 
 R = Path(__file__).resolve().parent
-md = (R.parent / 'final_pass_20261002/documents/Presentation_Guide.md').read_text()
-md = md.replace('# Poster presentation guide\n',
-                '# Poster presentation guide\n\nTeam: Shreya Verma, Chih-yu Li, William Sun\n', 1)
+md = (R / 'presentation_script.md').read_text()
 (R / 'documents/Presentation_Guide.md').write_text(md)
 H1 = ParagraphStyle('h1', fontName='Helvetica-Bold', fontSize=18, leading=23, spaceBefore=8, spaceAfter=10)
 H2 = ParagraphStyle('h2', fontName='Helvetica-Bold', fontSize=12.5, leading=16, spaceBefore=6, spaceAfter=6)

@@ -124,7 +124,7 @@ The larger B3 sampling/output budget did not improve this measured task over B1.
 
 C1’s zero strict schema passes were strongly affected by Markdown wrappers, consistent with requesting rather than constraining the format [10, 11]. All 50 current C1 outputs exactly match the prior integrated series. In its retained diagnostic, 46 contain complete fenced JSON blocks. A separate diagnostic that removes only the complete enclosing fence produces 43 schema-valid answers, of which 31 pass the additional source and literal-quote checks. This diagnosis changes how we understand the failure, but does not replace the primary scores or establish semantic completeness. The same outputs were inspected after the experiment; a repaired parser must be tested prospectively on new records.
 
-C4 withholds all 50 answers, leaving no useful coverage. Calling this result safe automation would ignore the loss of service. Likewise, a verbatim quotation can still be a responsibility rather than a qualification or omit a necessary alternative. Guardrails must be evaluated jointly with task completion and review burden.
+C4 withholds all 50 answers, leaving no useful coverage. All 50 withholdings were schema failures: C4 received the same fenced model outputs as C1 (50/50 identical). Removing the complete fence before validation, as the Tech parser does, 31 of 50 would have passed every C4 check; this is a post-hoc diagnostic, not a delivered result. Calling this result safe automation would ignore the loss of service. Likewise, a verbatim quotation can still be a responsibility rather than a qualification or omit a necessary alternative. Guardrails must be evaluated jointly with task completion and review burden.
 
 ## Reproducibility
 
@@ -152,7 +152,7 @@ The model wrapped its JSON in Markdown fences here too: 28 of 50 C1 answers and 
 
 ## Repair instead of withholding
 
-The largest step came from C4. Its cleanup changed 33 of 50 records, mostly by dropping or shortening skills that did not appear in the posting as names, and raised usable records from 17 to 39. Pharma C4 withheld every answer that failed verification and delivered nothing. Both verifiers check answers against the posting; they differ in what happens next. Repair keeps service, withholding removes it, and both still need review.
+The largest step came from C4. Its cleanup changed 33 of 50 records, mostly by dropping or shortening skills that did not appear in the posting as names, and raised usable records from 17 to 39. Pharma C4 withheld every answer that failed verification and delivered nothing, but its failures were formatting, not content: with complete fences removed, 31 of 50 Pharma answers would have passed its stricter checks (all five source facts and verbatim quotes). Most of the 0 versus 39 gap is therefore the parser; the remaining difference is repair versus withholding, measured on different scores. Both verifiers check answers against the posting; they differ in what happens next. Repair keeps service, withholding removes it, and both still need review.
 
 ## What the usable rate does not show
 

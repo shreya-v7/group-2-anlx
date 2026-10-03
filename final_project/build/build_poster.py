@@ -91,7 +91,7 @@ plt.close(fig)
 cats = [('Out of scope', blk['out_of_scope'], 5), ('Leakage', blk['leakage'], 5),
         ('Harmful', blk['harmful'], 5), ('Indirect injection', blk['injection'], 5),
         ('Benign (wrongly blocked)', over, 10)]
-fig, ax = plt.subplots(figsize=(10.4, 5.6), dpi=200)
+fig, ax = plt.subplots(figsize=(10.4, 4.5), dpi=200)
 ys = list(range(len(cats)))[::-1]
 for y, (name, frac, n) in zip(ys, cats):
     c = ORANGE if name.startswith('Benign') else BLUE
@@ -109,7 +109,7 @@ fig.savefig(FIG / 'safety.png', facecolor='white')
 plt.close(fig)
 
 # Chart 3: adviser seconds per posting (stacked review + expected correction)
-fig, ax = plt.subplots(figsize=(10.4, 3.6), dpi=200)
+fig, ax = plt.subplots(figsize=(10.4, 3.0), dpi=200)
 ax.barh(1, manual, 0.55, color=INK2)
 ax.text(manual + 6, 1, f'{manual} s', va='center', fontsize=23)
 ax.barh(0, review, 0.55, color=BLUE)
@@ -262,13 +262,17 @@ y = para(x, y, f'Keyword guardrail blocked 15/20 attacks but also <b>1 in 10</b>
                f'{agree["agreement_denominator"]}</b> probes. Misses were paraphrases.', 25)
 y = heading(x, y, 'Finding 4: review time decides the value')
 y = image(x, y, FIG / 'time.png')
-y = para(x, y, 'From single timings in an earlier prototype; if review took 249 s, the saving disappears.',
-         22, color=INK2)
+y = para(x, y, 'Single timings, earlier prototype; if review took 249 s, the saving disappears.', 21, color=INK2)
+y = heading(x, y, 'Finding 5: repair, don’t withhold')
+y = para(x, y, 'A second API (Tech, same model) stripped fences and repaired answers against the posting: '
+               '<b>39/50</b> usable (34 strict). With the same fence fix, Pharma’s strict verifier would have '
+               'passed <b>31/50</b>. Still 0/25 hand-labeled Tech records fully right; <b>5 of 6</b> '
+               'discriminatory postings passed its guardrail.', 24)
 y = heading(x, y, 'Recommendation')
-y = para(x, y, '• Copy facts already in the source table directly: no AI needed.<br/>'
-               '• Use the AI only as a supervised research tool, with an adviser checking every answer.<br/>'
+y = para(x, y, '• Copy known facts directly from the source: no AI needed.<br/>'
+               '• AI only as a supervised tool; an adviser checks every answer.<br/>'
                '• Never for ranking applicants or eligibility decisions.<br/>'
-               '• Next: enforce JSON at decoding time, screen postings for discriminatory terms, test on new employers.', 26)
+               '• Next: enforce JSON at decoding, screen postings for discrimination, test new employers.', 24)
 assert y > 80, y
 
 c.setFillColor(colors.HexColor(INK2))
