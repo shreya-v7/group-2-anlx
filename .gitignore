@@ -6,3 +6,6 @@ __pycache__/
 .venv*/
 .models/
 *.safetensors
+*.patch
+models/*
+.venv

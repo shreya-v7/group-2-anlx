@@ -1,0 +1,68 @@
+{
+  "n": 50,
+  "usable_rate": 0.02,
+  "parse_rate": 0.02,
+  "schema_valid_rate": 0.02,
+  "schema_errors": [
+    [
+      "no JSON value found in model output",
+      49
+    ]
+  ],
+  "company_acc": 0.02,
+  "company_acc_when_in_source": 0.027,
+  "company_acc_when_not_in_source": 0.0,
+  "n_company_not_in_source": 13,
+  "company_fabricated_rate": 0.0,
+  "company_null_when_not_in_source": 1.0,
+  "n_location_unsupported": 0,
+  "seniority_acc": 0.02,
+  "seniority_errors": [
+    [
+      "None",
+      49
+    ]
+  ],
+  "location_acc": 0.0,
+  "n_location_scored": 18,
+  "skills_total": 10,
+  "skill_grounding_precision": 1.0,
+  "skill_atomic_rate": 1.0,
+  "skills_ok_rate": 0.02,
+  "salary_hallucination_rate": 0.0,
+  "n_salary_hallucinated": 0,
+  "n_no_salary_in_source": 34,
+  "latency_mean_s": 2.557,
+  "latency_p50_s": 3.794,
+  "latency_p95_s": 4.212,
+  "input_tokens_mean": 871.4,
+  "output_tokens_mean": 31.3,
+  "output_tokens_p95": 53.0,
+  "output_tokens_max": 109,
+  "n_hit_max_new_tokens": 0,
+  "generations_per_request": 0.58,
+  "tool_call_rate": 0.0,
+  "tool_args_ok_rate": null,
+  "repair_rate": 0.0,
+  "blocked": 49,
+  "block_rules": {
+    "llm_injection": 12,
+    "llm_out_of_scope": 9,
+    "not_contract": 28
+  },
+  "guardrail_latency_mean_s": 0.515,
+  "guardrail_tokens_mean": 286.3,
+  "human_labels": {
+    "n": 25,
+    "all_fields_correct": 0.0,
+    "role_category_acc": 0.04,
+    "seniority_acc": 0.04,
+    "required_skills_acc": 0.64,
+    "location_type_acc": 0.0,
+    "company_acc": 0.04,
+    "salary_min_acc": 0.68,
+    "skills_precision": 0.7,
+    "skills_recall": 0.2333,
+    "skills_f1": 0.35
+  }
+}

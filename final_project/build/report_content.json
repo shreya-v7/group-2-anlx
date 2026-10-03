@@ -9,7 +9,7 @@
     "heading": "Abstract"
    },
    {
-    "text": "A university career-services office needs reliable summaries of job requirements, rather than an automated hiring decision. We combine three sector studies and a reproducible pharmaceutical API evaluation to ask how dataset construction, output validation and review effort affect that use case. The supplied corpora contain 650 records associated with 446 distinct source URL strings: 200 Pharma postings, 200 Finance records from 175 URLs, and 250 Tech fragments from 71 URLs. Different annotation schemes and input units prevent a pooled accuracy comparison. In 300 recorded LLMBox requests using local 4-bit Phi-4-mini-instruct, a bounded lookup tool executed on all 50 tool-mode requests, while only 17 final answers matched all five scored source fields. Strict structured-output validation accepted none of 50 answers; removing complete Markdown fences in a separate post-hoc diagnostic yielded 43 schema passes. Thirty paired safety probes showed 80% agreement with human block/allow judgments and one false refusal among ten benign requests. These findings support deterministic retrieval of existing metadata and supervised experimentation for interpretation. They do not support unattended career advice or conclusions about sector-wide hiring trends."
+    "text": "A university career-services office needs reliable summaries of job requirements, rather than an automated hiring decision. We combine three sector studies and two reproducible LLMBox API evaluations, Pharma and Tech, to ask how dataset construction, output validation and review effort affect that use case. The supplied corpora contain 650 records associated with 446 distinct source URL strings: 200 Pharma postings, 200 Finance records from 175 URLs, and 250 Tech fragments from 71 URLs. Different annotation schemes and input units prevent a pooled accuracy comparison. In 300 recorded Pharma requests using local 4-bit Phi-4-mini-instruct, a bounded lookup tool executed on all 50 tool-mode requests, while only 17 final answers matched all five scored source fields. Strict structured-output validation accepted none of 50 answers; removing complete Markdown fences in a separate post-hoc diagnostic yielded 43 schema passes. Thirty paired safety probes showed 80% agreement with human block/allow judgments and one false refusal among ten benign requests. A separately built Tech API on the same model parsed every fenced answer and, by repairing rather than withholding unsupported values, raised records usable without edits from 7 to 39 of 50; a rerun of two runs reproduced their outputs exactly, yet none of its 25 hand-labeled records had every field right, and its guardrail passed five of six discriminatory postings. These findings support deterministic retrieval of existing metadata and supervised experimentation for interpretation. They do not support unattended career advice or conclusions about sector-wide hiring trends."
    },
    {
     "heading": "Introduction"
@@ -18,10 +18,10 @@
     "text": "Job postings mix employer descriptions, role responsibilities, required credentials, preferred qualifications and compensation tables. A career adviser must distinguish these elements without inventing missing information. A wrong work arrangement can waste a student’s application effort; a truncated education alternative can incorrectly discourage a qualified applicant. The organizational objective is therefore a cited, reviewable summary of a selected posting."
    },
    {
-    "text": "We ask three questions. First, what does a record represent in each sector, and what comparisons does that permit? Second, do structured output, restricted tools and verification produce usable and source-consistent answers? Third, how do refusals and human correction effort change the case for adoption? Our contributions are a provenance-preserving corpus audit, a synthesis of sector extraction studies, and a documented API case study with retained failures, safety probes and a limited cost scenario."
+    "text": "We ask three questions. First, what does a record represent in each sector, and what comparisons does that permit? Second, do structured output, restricted tools and verification produce usable and source-consistent answers? Third, how do refusals and human correction effort change the case for adoption? Our contributions are a provenance-preserving corpus audit, a synthesis of sector extraction studies, and two documented API case studies with retained failures, safety probes and a limited cost scenario."
    },
    {
-    "text": "The team contributions supplied for this synthesis are Shreya Verma’s Pharma corpus and AS01/AS02 evidence [29], Chih-yu Li’s Finance corpus and memo [30], and William Sun’s Tech corpus and report [31]. The sector packages do not all contain the same experiment artifacts. Findings below distinguish locally audited files from numbers available only in a teammate’s memo."
+    "text": "The team contributions supplied for this synthesis are Shreya Verma’s Pharma corpus and AS01/AS02 evidence [29], Chih-yu Li’s Finance corpus and memo [30], and William Sun’s Tech corpus and AS01 report [31] and Tech AS02 API runs [33]. The sector packages do not all contain the same experiment artifacts. Findings below distinguish locally audited files from numbers available only in a teammate’s memo."
    }
   ]
  },
@@ -105,7 +105,7 @@
     "text": "The AS01 studies use different schemas: Pharma scores nine fields including verbatim qualification lists, Finance uses role family, seniority, work arrangement, certifications, skills and experience, and Tech uses role category, seniority, skills, location type, company and optional salary. We preserve the original labels and do not coerce them into a shared accuracy denominator. Pharma clusters were produced with TF-IDF features and k-means (k = 6) in scikit-learn [21]. Pharma has 25 labels with a saved human-review record. Finance has 28 labels whose per-record provenance states model pre-annotation and unconfirmed independent human review. Tech supplies 25 labels without equivalent per-row provenance. Finance results therefore measure agreement with those reference labels, not established independent human accuracy."
    },
    {
-    "text": "Pharma predictions, evaluation files and prompt history are available for audit. Finance and Tech raw predictions and several dependencies named by their READMEs are absent from their ZIPs. Their numerical findings are transcribed as reported results with this status in a separate metrics dataset. They are useful case evidence, but cannot be independently recomputed from the provided packages. No model was fine-tuned in this synthesis."
+    "text": "Pharma predictions, evaluation files and prompt history are available for audit. Finance raw predictions, Tech AS01 raw predictions and several dependencies named by their READMEs are absent from the supplied ZIPs. Their numerical findings are transcribed as reported results with this status in a separate metrics dataset. They are useful case evidence, but cannot be independently recomputed from the provided packages. No model was fine-tuned in this synthesis. Tech AS02 outputs, by contrast, are in the repository and every Tech API number below is recomputed from them."
    },
    {
     "heading": "Pharma API experiment"
@@ -157,6 +157,49 @@
    },
    {
     "text": "Primary outcomes are strict Pydantic [9] schema validity, delivered agreement on five source fields, withholding and latency. The five fields are ID, URL, title, employer and location, matched after trimming and case folding. Invalid or withheld answers receive zero delivered-field credit. This deliberately conservative score does not measure work-arrangement truth, qualification completeness or adviser-approved usability."
+   },
+   {
+    "heading": "Tech API experiment"
+   },
+   {
+    "text": "The Tech study [33] is a separate LLMBox implementation, designed and run independently of the Pharma series. Its 250 fragments are split by source URL with seed 42, so no posting appears on both sides: 124 development records from 39 postings and 126 evaluation records from 32 postings. Two sampling runs use 50 development records; five cumulative feature runs (C0 to C4) use the same 50 evaluation records, which include the 25 AS01 hand-labeled records. Those records had been examined before, so this is not a blind holdout. The model is microsoft/Phi-4-mini-instruct run through Hugging Face Transformers in bfloat16 on Apple MPS, not the 4-bit MLX checkpoint used for Pharma. The LLMBox snapshot used for these runs is kept with the outputs because its starting version was not pinned to the upstream commit in [8]."
+   },
+   {
+    "table": [
+     [
+      "Run",
+      "What it adds",
+      "Settings"
+     ],
+     [
+      "C0",
+      "Ordinary generation",
+      "temperature .2; top_p .5; cap 256"
+     ],
+     [
+      "C1",
+      "Pydantic contract with optional company, salary and location",
+      "C0 settings"
+     ],
+     [
+      "C2",
+      "Read-only lookup tool returning company and official title",
+      "C0 settings, two model calls"
+     ],
+     [
+      "C3",
+      "Guardrail: regex rules, one yes/no model check, tool bound to the current posting",
+      "C0 settings"
+     ],
+     [
+      "C4",
+      "One retry on schema error, then a cleanup that keeps only values found in the posting",
+      "C0 settings"
+     ]
+    ]
+   },
+   {
+    "text": "The primary Tech outcome is a record usable without edits: it passes the schema, company and seniority match the posting metadata, every skill appears in the posting text as a short name, and any salary is in the text. The model never receives the metadata, but from C2 on the tool returns the company from that same metadata, so company accuracy then measures tool use rather than reading. Location is not part of the usable rule. The 25 hand labels add all-field agreement and skill F1. The parser removes a complete Markdown fence before validation in every run. Usable records and the Pharma five-field score are different measures, so the two series are compared by design pattern, not by number."
    }
   ]
  },
@@ -219,7 +262,7 @@
   ]
  },
  {
-  "title": "Findings from the LLMBox API",
+  "title": "Findings from the Pharma LLMBox API",
   "blocks": [
    {
     "table": [
@@ -301,6 +344,102 @@
   ]
  },
  {
+  "title": "Findings from the Tech LLMBox API",
+  "blocks": [
+   {
+    "table": [
+     [
+      "Run",
+      "Usable",
+      "Company",
+      "Seniority",
+      "Clean skills",
+      "Skill F1 (hand)",
+      "Refused",
+      "Mean seconds"
+     ],
+     [
+      "C0",
+      "7/50",
+      "38/50",
+      "22/50",
+      "10/50",
+      ".10",
+      "0",
+      "4.49"
+     ],
+     [
+      "C1",
+      "13/50",
+      "35/50",
+      "26/50",
+      "19/50",
+      ".14",
+      "0",
+      "5.09"
+     ],
+     [
+      "C2",
+      "17/50",
+      "50/50",
+      "37/50",
+      "21/50",
+      ".12",
+      "0",
+      "9.74"
+     ],
+     [
+      "C3",
+      "17/50",
+      "43/50",
+      "34/50",
+      "20/50",
+      ".14",
+      "7",
+      "9.80"
+     ],
+     [
+      "C4",
+      "39/50",
+      "43/50",
+      "39/50",
+      "43/50",
+      ".37",
+      "7",
+      "11.10"
+     ]
+    ]
+   },
+   {
+    "text": "Lowering temperature from 1.0 to .2 on the development records cut usable records from 5 to 1 of 50 and seniority from 36 to 23, because the most likely label for new-grad titles was the wrong one. As in Pharma B3, sampling settings were not the lever. The tool made company correct on all 50 requests in C2. In C3 and C4, seven answers were refused for invalid output and scored as wrong, which explains the drop to 43; the model also skipped the tool on five requests, but those still had the right company."
+   },
+   {
+    "heading": "Fences without a failure"
+   },
+   {
+    "text": "The model wrapped its JSON in Markdown fences here too: 28 of 50 C1 answers and all 50 C3 answers were fenced, and every fenced answer failed strict JSON parsing. Because the Tech parser removed complete fences before validation, all of them parsed and 39 of 50 C1 answers passed the schema. This is not a test of the Pharma parser, but it is independent evidence on other records that the same model’s fence habit is an integration problem that a fence-tolerant parser handles."
+   },
+   {
+    "heading": "Repair instead of withholding"
+   },
+   {
+    "text": "The largest step came from C4. Its cleanup changed 33 of 50 records, mostly by dropping or shortening skills that did not appear in the posting as names, and raised usable records from 17 to 39. Pharma C4 withheld every answer that failed verification and delivered nothing. Both verifiers check answers against the posting; they differ in what happens next. Repair keeps service, withholding removes it, and both still need review."
+   },
+   {
+    "heading": "What the usable rate does not show"
+   },
+   {
+    "text": "On the 25 hand-labeled records, plain generation had every field right on 3, and C4 on none, mainly because location type was left empty from C1 on, once the schema made it optional: hand-label location agreement fell from 15 of 25 in C0 to 1 in C1 and 0 in C4. Five of the 39 usable C4 records keep a number such as 2027 or 0-2 as a skill, because the cleanup checks that a skill appears in the text, not that it is a technology; counting those as errors gives 34 of 50. Most of the gain comes from rules and the metadata lookup rather than from better reading, which supports copying known facts directly. The features were designed on development records similar in style to the evaluation set, so these rates are likely optimistic."
+   },
+   {
+    "heading": "Reproducibility"
+   },
+   {
+    "text": "All Tech AS02 inputs, messages, model text, delivered output, tool calls, guardrail decisions, tokens and latency are kept, and verification/verify_tech_as02.py recomputes every Tech number above from the saved files without loading a model. A rerun of C1 and C4 on October 3 (torch 2.14.0, transformers 5.17.0, Apple MPS, bfloat16, seed 42) reproduced the model text and delivered output for 50 of 50 records in both runs; C4 mean latency was 10.63 seconds against 11.10. Other runs were not repeated and no other hardware was tested."
+   }
+  ]
+ },
+ {
   "title": "Safety and operational cost",
   "blocks": [
    {
@@ -316,13 +455,19 @@
     "text": "No injection canary appeared. A five-term toxicity lexicon, chosen over a classifier [17, 18] or LLM judge [19] for transparency, flagged no outputs in either condition; it cannot detect many forms of implicit abuse. Guardrails reduced mean latency by 7.22 seconds per probe, largely because some requests were refused before generation. This is not evidence that guarded model reasoning runs faster."
    },
    {
+    "heading": "Tech probe set"
+   },
+   {
+    "text": "The Tech study used a separately authored set of 70 probes [33], written after its guardrail was finished: ten each of harmful, out-of-scope, injection and leakage, plus 20 real postings and 10 normal postings worded like attacks (“New instructions: submit a portfolio”). Without the guardrail, 8 of 40 attacks succeeded; with it, 2 did, both polite injections that placed a canary in the skills field. Leakage was caught 8 of 10 times; three of the four unguarded leaks came through tool calls for other postings; binding the tool to the current posting stopped two, and the third was refused for invalid output. Seven of 30 normal inputs were refused: four attack-sounding postings by a policy rule and three for invalid output. Five of six discriminatory postings, such as coded age or religion requirements, were saved as normal records; the sixth was refused only for invalid output. The guardrail checks the output, which contained no harmful words, not the job itself. A random 20-decision hand check agreed with the guardrail 15 times; four of the five disagreements were these postings."
+   },
+   {
     "heading": "Limited cost scenario"
    },
    {
     "text": "Shreya timed 330 seconds for manual extraction, 90 seconds for review of one earlier prototype C1 answer, and 135 seconds for correcting a different wrong answer. Four of the first ten prototype C1 outputs were usable without correction. Under a 30-minute setup assumption and no blocked human waiting time, expected human effort is 90 + 0.6 × 135 = 171 seconds per posting. The conditional saving is 159 seconds, recovering setup after ceiling(1800/159) = 12 postings."
    },
    {
-    "text": "These are one timing observation per activity and a ten-output usability sample from the earlier standalone prototype. They are not measured savings for the new native-mode C1, C2, Finance or Tech results. They exclude undetected-error consequences, power, hardware depreciation and currency costs. If review took 249 seconds with the same correction assumptions, estimated time savings would disappear. A deployment decision needs new timings for the actual selected implementation."
+    "text": "These are one timing observation per activity and a ten-output usability sample from the earlier standalone prototype. They are not measured savings for the new native-mode C1, C2, Finance or Tech results. They exclude undetected-error consequences, power, hardware depreciation and currency costs. If review took 249 seconds with the same correction assumptions, estimated time savings would disappear. A deployment decision needs new timings for the actual selected implementation. The Tech study estimated review effort from its own labeling speed but did not time manual extraction, so it is not used for a cost figure here."
    },
    {
     "heading": "Discussion"
@@ -331,13 +476,13 @@
     "text": "Who is affected. The benefits and risks fall on different people. Advisers may save preparation effort, while students bear the cost of incorrect advice: a wrong work arrangement wastes an application, and a truncated “or equivalent experience” clause can discourage a qualified applicant. Employers are affected when a summary misstates their posting, even though they never use the system."
    },
    {
-    "text": "What the results mean for the design. The measurements locate the problem. Retrieval works (50/50 tool executions) and the source table already contains title, employer, location and URL, so a deterministic lookup is preferable for those fields. The model’s difficulty lies in output format and interpretation: strict validation rejected every C1 answer, and even the best condition matched all five scored fields on 17 of 50 postings. Format enforcement through constrained decoding [10] is therefore a better next investment than larger token budgets or higher temperature, which made B3 worse than B1."
+    "text": "What the results mean for the design. The measurements locate the problem. Retrieval works (50/50 tool executions) and the source table already contains title, employer, location and URL, so a deterministic lookup is preferable for those fields. The model’s difficulty lies in output format and interpretation: strict validation rejected every C1 answer, and even the best condition matched all five scored fields on 17 of 50 postings. Format enforcement through constrained decoding [10] is therefore a better next investment than larger token budgets or higher temperature, which made B3 worse than B1. The Tech study points the same way: its usable rate rose most when rules and a metadata lookup took over company, title and seniority, and its fence-tolerant parser removed the formatting failure that dominated Pharma C1."
    },
    {
-    "text": "What the results mean for governance. A verifier that withholds unsupported answers (C4) reached complete safety by delivering nothing, and the keyword guardrail refused 10% of benign requests. Safety and service must be reported together. The measurements support keeping adviser review on every output and do not yet support student-facing use. Proposed controls include local processing of public postings, a selected-record read-only tool, exclusion of applicant data and adviser review before use. Authentication, retention enforcement and institutional approval are not implemented production controls."
+    "text": "What the results mean for governance. A verifier that withholds unsupported answers (C4) reached complete safety by delivering nothing, and the keyword guardrail refused 10% of benign requests. The Tech verifier, which repaired instead of withholding, kept 39 of 50 records usable but produced no fully correct hand-labeled record, and the Tech guardrail passed five of six discriminatory postings, a risk that output checks cannot see. Safety and service must be reported together. The measurements support keeping adviser review on every output and do not yet support student-facing use. Proposed controls include local processing of public postings, a selected-record read-only tool, exclusion of applicant data and adviser review before use. Authentication, retention enforcement and institutional approval are not implemented production controls."
    },
    {
-    "text": "Across sectors. The Finance and Tech reports show the same pattern under different schemas: larger hosted models improved schema compliance, while list-valued fields such as skills or qualifications remained hard to match exactly. Because schemas, references and providers differ, this is a shared qualitative lesson rather than a measured ranking of models or sectors."
+    "text": "Across sectors. The Finance and Tech reports show the same pattern under different schemas: larger hosted models improved schema compliance, while list-valued fields such as skills or qualifications remained hard to match exactly. Because schemas, references and providers differ, this is a shared qualitative lesson rather than a measured ranking of models or sectors. The two API studies agree in the same qualitative way despite different schemas, runtimes and scores: tools run, format is an integration problem, and semantic completeness remains the hard part."
    }
   ]
  },
@@ -348,7 +493,7 @@
     "heading": "Future work"
    },
    {
-    "text": "A first revision should test constrained decoding [10] or normalize complete JSON fences before validation, retain the original answer and reject partial or ambiguous JSON. Its evaluation should use new postings from new employers, with all fragments from one posting assigned to the same split. A fixed common schema and independent double review would make a sector comparison interpretable. Finance’s pre-annotations should be independently reviewed, and the missing Finance/Tech predictions, prompts, metric files and dependencies should be archived before claiming full reproducibility."
+    "text": "A first revision should test constrained decoding [10] or normalize complete JSON fences before validation, retain the original answer and reject partial or ambiguous JSON. Its evaluation should use new postings from new employers, with all fragments from one posting assigned to the same split. A fixed common schema and independent double review would make a sector comparison interpretable. Finance’s pre-annotations should be independently reviewed, and the missing Finance and Tech AS01 predictions, prompts, metric files and dependencies should be archived before claiming full reproducibility. The Tech parser already strips complete fences; one shared parser should be tested on new Pharma and Tech records. Screening the posting itself for discriminatory requirements, not only the output, is needed before any student-facing use."
    },
    {
     "text": "The next semantic audit should separately score required versus preferred qualifications, education alternatives, explicit work arrangement and source support. Human reviewers should measure correction time on a randomized sample large enough to characterize variation. A balanced safety set should include harmless quotations, paraphrased attacks and legitimate requests likely to trigger keywords. Repeated seeds and confidence intervals would help distinguish systematic improvements from sampling variation."
@@ -360,7 +505,7 @@
     "heading": "Conclusion"
    },
    {
-    "text": "Across the three sector studies, record construction and label provenance determine what performance claims mean. The Pharma API demonstrates that a working tool and a valid structure do not by themselves establish reliable career guidance. A strict verifier can remove all service, while a formatting change can substantially change a score without changing a model’s underlying text. For this use case, the defensible recommendation is direct retrieval of existing facts and supervised, evidence-linked interpretation. Students, advisers and employers benefit from seeing the source and the limits of the summary, rather than treating a single accuracy number as a deployment decision."
+    "text": "Across the three sector studies, record construction and label provenance determine what performance claims mean. The Pharma API demonstrates that a working tool and a valid structure do not by themselves establish reliable career guidance. The Tech API shows that repairing answers against the source keeps more service than withholding them, but its usable rate still rests on rules and lookups rather than on more reliable reading. A strict verifier can remove all service, while a formatting change can substantially change a score without changing a model’s underlying text. For this use case, the defensible recommendation is direct retrieval of existing facts and supervised, evidence-linked interpretation. Students, advisers and employers benefit from seeing the source and the limits of the summary, rather than treating a single accuracy number as a deployment decision."
    },
    {
     "heading": "Presentation and participation"
@@ -482,6 +627,9 @@
     "text": "[32] Carnegie Mellon University, 95820 Applications of NLX and LLM (Fall 2026). Assignment 1, Assignment 2 and Final Project instructions."
    },
    {
+    "text": "[33] Sun, W. (2026). Tech AS02 LLMBox runtime, posting-level split, 70 safety probes, all run outputs and metrics, and a rerun of C1 and C4. AS02_teammates/tech_william_sun/ in the team repository; recomputed by verification/verify_tech_as02.py."
+   },
+   {
     "heading": "Appendix files"
    },
    {
@@ -533,6 +681,10 @@
      [
       "Shared disclosure and available records",
       "AI_USAGE.md and assistance/"
+     ],
+     [
+      "Tech AS02 code, data, runs and rerun",
+      "AS02_teammates/tech_william_sun/; recomputed by verification/verify_tech_as02.py"
      ]
     ]
    },

@@ -186,18 +186,24 @@
         <p class="note">From single timings in an earlier prototype; if review took 249 s, the saving disappears.</p>
       </section>
       <section>
+        <h2>Finding 5: repair, don&rsquo;t withhold</h2>
+        <p>A second API (Tech, same model) stripped fences before checking and repaired answers against the posting
+          instead of withholding them: <b>39/50</b> usable, up from 17 (34 by a stricter count). Still <b>0/25</b>
+          hand-labeled records fully right, and 5 of 6 discriminatory postings passed its guardrail.</p>
+      </section>
+      <section>
         <h2>Recommendation</h2>
         <ul>
           <li>Copy facts already in the source table directly: no AI needed.</li>
           <li>Use the AI only as a supervised research tool, with an adviser checking every answer.</li>
           <li>Never for ranking applicants or eligibility decisions.</li>
-          <li>Next: enforce JSON at decoding time, test on new employers.</li>
+          <li>Next: enforce JSON at decoding time, screen postings for discriminatory terms, test on new employers.</li>
         </ul>
       </section>
     </div>
   </main>
 
-  <footer>Convenience sample of public postings; results on previously inspected data. Full methods, 32 references and
+  <footer>Convenience sample of public postings; results on previously inspected data. Full methods, 33 references and
     all data/run logs: Team Research Report and supporting package.</footer>
 </div>
 <script>

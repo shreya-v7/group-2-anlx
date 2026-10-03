@@ -1,0 +1,4 @@
+type: chat_log
+path: ../chat_log
+min_turns: 1
+eval_split: 0.1

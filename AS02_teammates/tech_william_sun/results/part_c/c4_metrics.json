@@ -1,0 +1,83 @@
+{
+  "n": 50,
+  "usable_rate": 0.78,
+  "parse_rate": 0.86,
+  "schema_valid_rate": 0.86,
+  "schema_errors": [
+    [
+      "no JSON value found in model output",
+      7
+    ]
+  ],
+  "company_acc": 0.86,
+  "company_acc_when_in_source": 0.8378,
+  "company_acc_when_not_in_source": 0.9231,
+  "n_company_not_in_source": 13,
+  "company_fabricated_rate": 0.0,
+  "company_null_when_not_in_source": 0.0769,
+  "n_location_unsupported": 0,
+  "seniority_acc": 0.78,
+  "seniority_errors": [
+    [
+      "None",
+      7
+    ],
+    [
+      "intern",
+      2
+    ],
+    [
+      "senior",
+      2
+    ]
+  ],
+  "location_acc": 0.0,
+  "n_location_scored": 18,
+  "skills_total": 138,
+  "skill_grounding_precision": 1.0,
+  "skill_atomic_rate": 1.0,
+  "skills_ok_rate": 0.86,
+  "salary_hallucination_rate": 0.0,
+  "n_salary_hallucinated": 0,
+  "n_no_salary_in_source": 34,
+  "latency_mean_s": 11.097,
+  "latency_p50_s": 10.52,
+  "latency_p95_s": 20.994,
+  "input_tokens_mean": 2480.5,
+  "output_tokens_mean": 171.8,
+  "output_tokens_p95": 348.0,
+  "output_tokens_max": 404,
+  "n_hit_max_new_tokens": 0,
+  "generations_per_request": 2.04,
+  "tool_call_rate": 0.9,
+  "tool_args_ok_rate": 1.0,
+  "repair_rate": 0.14,
+  "records_corrected": 0.66,
+  "corrections": {
+    "skill_dropped": 119,
+    "skill_split": 34,
+    "verifier_skipped": 7,
+    "seniority_title_rule": 5,
+    "location_unstated": 3,
+    "skills_truncated": 1
+  },
+  "blocked": 7,
+  "block_rules": {
+    "not_contract": 7
+  },
+  "guardrail_latency_mean_s": 0.489,
+  "guardrail_tokens_mean": 250.5,
+  "human_labels": {
+    "n": 25,
+    "all_fields_correct": 0.0,
+    "role_category_acc": 0.84,
+    "seniority_acc": 0.8,
+    "required_skills_acc": 0.52,
+    "location_type_acc": 0.0,
+    "company_acc": 0.84,
+    "salary_min_acc": 0.84,
+    "skills_precision": 0.3171,
+    "skills_recall": 0.4333,
+    "skills_f1": 0.3662
+  }
+}

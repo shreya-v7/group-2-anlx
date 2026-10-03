@@ -1,0 +1,60 @@
+{
+  "group_topic": "job_market",
+  "subtopic": "tech_jobs",
+  "fields": {
+    "role_category": {
+      "kind": "label",
+      "values": [
+        "software_engineering",
+        "data_science_ml",
+        "devops_infra",
+        "product_management",
+        "design_ux",
+        "security",
+        "other"
+      ],
+      "description": "primary functional category of the role"
+    },
+    "seniority": {
+      "kind": "label",
+      "values": [
+        "intern",
+        "entry",
+        "mid",
+        "senior",
+        "staff",
+        "principal",
+        "manager",
+        "director",
+        "vp"
+      ],
+      "description": "seniority level of the position"
+    },
+    "required_skills": {
+      "kind": "list",
+      "description": "technical skills, languages, frameworks, or tools explicitly required"
+    },
+    "location_type": {
+      "kind": "label",
+      "values": [
+        "remote",
+        "hybrid",
+        "onsite"
+      ],
+      "description": "work arrangement"
+    },
+    "company": {
+      "kind": "label",
+      "values": [],
+      "description": "hiring company name"
+    },
+    "salary_min": {
+      "kind": "number",
+      "required": false,
+      "description": "minimum annual salary in USD, if stated"
+    }
+  },
+  "prompts": {
+    "v3_fewshot": "Extract structured fields from a tech job posting document. Return ONLY a JSON object.\n\nRules:\n- role_category: one of software_engineering, data_science_ml, devops_infra, product_management, design_ux, security, other.\n- seniority: one of intern, entry, mid, senior, staff, principal, manager, director, vp. Roles titled \"New Grad\", \"New College Grad\", \"Entry Level\", \"Junior\", \"Associate\", or \"I\" (e.g. \"Engineer I\") are always \"entry\".\n- required_skills: list ONLY specific technology names (e.g. \"Python\", \"AWS\", \"Docker\"). Never include degree requirements, soft skills, or full sentences. Return [] if no specific technologies are named.\n- location_type: one of remote, hybrid, onsite.\n- company: the hiring company name exactly as written.\n- salary_min: the minimum base salary as a number in USD. Omit this field entirely if no salary is stated.\n\nExample input: \"Qualifications for Software Engineer New Grad at Acme Corp. Required: BS in CS. Familiarity with Python, C++, or Java. Experience with cloud platforms such as AWS or GCP. Strong communication skills.\"\nExample output: {\"role_category\": \"software_engineering\", \"seniority\": \"entry\", \"required_skills\": [\"Python\", \"C++\", \"Java\", \"AWS\", \"GCP\"], \"location_type\": \"onsite\", \"company\": \"Acme Corp\"}\n\nExample input: \"Compensation for Data Analyst I at BigCo. Base salary: $75,000-$95,000 USD. Benefits include 401k matching and health insurance.\"\nExample output: {\"role_category\": \"data_science_ml\", \"seniority\": \"entry\", \"required_skills\": [], \"location_type\": \"onsite\", \"company\": \"BigCo\", \"salary_min\": 75000}\n\nNow extract from the following document. Return ONLY the JSON object, no explanation."
+  }
+}

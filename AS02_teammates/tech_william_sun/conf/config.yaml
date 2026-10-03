@@ -1,0 +1,11 @@
+defaults:
+  - config_schema
+  - model: gemma3_270m
+  - mode: chat
+  - data: chat_log
+  - optimizer: adamw
+  - _self_
+
+seed: 42
+system_prompt: "You are a helpful assistant."
+output_dir: outputs
