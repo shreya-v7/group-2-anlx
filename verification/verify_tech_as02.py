@@ -3,6 +3,9 @@
     python verification/verify_tech_as02.py
     python verification/verify_tech_as02.py --rerun /path/to/fresh/results/part_c
 
+Without --rerun, the committed same-machine rerun in
+AS02_teammates/tech_william_sun/results/rerun/part_c is checked if present.
+
 Needs Python 3.10+ and pydantic. Exits 1 if a recomputed number differs from
 the saved metrics or a data check fails.
 
@@ -39,6 +42,7 @@ except ImportError as exc:  # pragma: no cover
 DATA = T / "data" / "simplifyjobs"
 SPLITS = DATA / "splits"
 RES = T / "results"
+RERUN_DIR = RES / "rerun" / "part_c"
 FENCE = re.compile(r"```(?:json)?\s*(.*?)```", re.S)
 NUMERIC_SKILL = re.compile(r"[\d\s\-/+.]+")
 
@@ -193,22 +197,32 @@ def verify_part_d() -> None:
 
 
 def verify_rerun(rerun: Path) -> None:
-    print(f"[rerun] {rerun} vs saved part_c outputs")
+    print(f"[rerun] {rerun.relative_to(REPO) if rerun.is_relative_to(REPO) else rerun} vs saved part_c outputs")
+    found = False
     for run in ("c0", "c1", "c2", "c3", "c4"):
-        path = rerun / f"{run}.jsonl"
+        path, saved_path = rerun / f"{run}.jsonl", RES / "part_c" / f"{run}.jsonl"
         if not path.exists():
             continue
+        if path.read_bytes() == saved_path.read_bytes():
+            print(f"  skip {run}: byte-identical to the saved file (copied, not rerun)")
+            continue
+        found = True
         new = {r["doc_id"]: r for r in read_jsonl(path)}
-        old = {r["doc_id"]: r for r in read_jsonl(RES / "part_c" / f"{run}.jsonl")}
+        old = {r["doc_id"]: r for r in read_jsonl(saved_path)}
+        check(f"{run} rerun covers the same 50 records", set(new) == set(old) and len(new) == 50)
         common = sorted(set(new) & set(old))
         same_model = sum(model_text(new[d]) == model_text(old[d]) for d in common)
         same_out = sum(new[d].get("raw_output") == old[d].get("raw_output") for d in common)
         _, _, rep = recompute(rerun, run, SPLITS / "eval_sample50.jsonl", validate_text)
         saved = json.loads((RES / "part_c" / f"{run}_metrics.json").read_text())
         lat = st.mean(r.get("latency_s") or 0 for r in new.values())
-        print(f"  {run}: rows={len(new)} identical model text={same_model}/{len(common)} "
-              f"identical delivered={same_out}/{len(common)} usable rerun={rep['usable_rate']} saved={saved['usable_rate']} "
-              f"s/req rerun={lat:.2f} saved={saved['latency_mean_s']}")
+        check(f"{run} rerun reproduces model text and delivered output",
+              same_model == same_out == len(common),
+              f"model text {same_model}/{len(common)}, delivered {same_out}/{len(common)}, "
+              f"usable rerun={rep['usable_rate']} saved={saved['usable_rate']}, "
+              f"s/req rerun={lat:.2f} saved={saved['latency_mean_s']:.2f}")
+    if not found:
+        print("  no rerun files that differ from the saved outputs")
 
 
 def main() -> None:
@@ -224,7 +238,9 @@ def main() -> None:
     if args.rerun:
         if not args.rerun.is_dir():
             sys.exit(f"--rerun {args.rerun} is not a folder")
-        verify_rerun(args.rerun)
+        verify_rerun(args.rerun.resolve())
+    elif RERUN_DIR.is_dir():
+        verify_rerun(RERUN_DIR)
     print(f"\n{'ALL CHECKS PASSED' if not failures else 'FAILED: ' + ', '.join(failures)}")
     sys.exit(1 if failures else 0)
 
