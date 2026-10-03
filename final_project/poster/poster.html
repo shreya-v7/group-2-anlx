@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Group 2 Poster</title>
+<!--
+  36 x 24 inch poster. Edit text directly. To change a bar, edit its number
+  AND its style="--v: N" value (N = percent of the bar track, 0-100).
+  Print: open in Chrome > Print > Save as PDF, paper size 36x24 in (set by @page), margins None,
+  background graphics ON.
+-->
+<style>
+  @page { size: 36in 24in; margin: 0; }
+  :root {
+    --navy: #173e50; --teal: #187d86; --ink: #0b0b0b; --ink2: #52514e; --muted: #8a8984;
+    --rule: #cdd9dc; --head: #e6f0f2; --surface: #fcfcfb; --blue: #2a78d6; --orange: #eb6834; --aqua: #1baf7a;
+    --gray-bar: #52514e;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: #d9d9d6; }
+  body { font-family: Helvetica, Arial, sans-serif; color: var(--ink); }
+  .poster { width: 36in; height: 24in; background: var(--surface); position: relative; overflow: hidden;
+            transform-origin: top left; }
+  header { background: var(--navy); color: #fff; height: 3.2in; padding: 0.55in 0.9in 0; }
+  header h1 { font-size: 92px; font-weight: 700; letter-spacing: -0.5px; }
+  header .authors { font-size: 47px; margin-top: 22px; }
+  header .affil { font-size: 36px; margin-top: 14px; opacity: 0.92; }
+  main { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.7in; padding: 0.5in 0.9in 0; }
+  section { margin-bottom: 18px; }
+  h2 { color: var(--teal); font-size: 56px; font-weight: 700; border-left: 14px solid var(--teal);
+       padding-left: 30px; margin-bottom: 22px; line-height: 1.15; }
+  p { font-size: 39px; line-height: 1.32; margin-bottom: 22px; }
+  p.lead { font-size: 44px; font-weight: 700; color: var(--navy); }
+  p.note { font-size: 30px; color: var(--ink2); }
+  ul { font-size: 37px; line-height: 1.35; padding-left: 44px; }
+  li { margin-bottom: 10px; }
+  table { width: 100%; border-collapse: collapse; font-size: 35px; margin-bottom: 18px; }
+  th, td { text-align: left; padding: 13px 14px; border-bottom: 1.5px solid var(--rule); }
+  th { background: var(--head); font-weight: 400; }
+  .flow { display: flex; flex-direction: column; gap: 0; margin-bottom: 20px; }
+  .flow .step { border: 2px solid #9fb6bc; background: var(--head); border-radius: 14px; text-align: center;
+                font-size: 37px; padding: 16px; }
+  .flow .step.model { background: #fde9df; font-weight: 700; }
+  .flow .step.review { font-weight: 700; }
+  .flow .arrow { text-align: center; font-size: 34px; line-height: 1; color: var(--ink2); padding: 4px 0; }
+  .chart { margin: 8px 0 20px; }
+  .row { display: grid; grid-template-columns: 330px 1fr; align-items: center; column-gap: 18px; margin-bottom: 14px; }
+  .row .label { font-size: 32px; text-align: right; }
+  .track { position: relative; }
+  .bar { height: 30px; width: calc(var(--v) * 0.86%); border-radius: 0 6px 6px 0; display: inline-block;
+         vertical-align: middle; min-width: 3px; }
+  .val { font-size: 30px; margin-left: 12px; vertical-align: middle; }
+  .bar.blue { background: var(--blue); } .bar.orange { background: var(--orange); }
+  .bar.gray { background: var(--gray-bar); } .bar.aqua { background: var(--aqua); }
+  .pair .bar { height: 22px; } .pair .line { margin: 1px 0; } .pair .row { margin-bottom: 6px; }
+  .legend { font-size: 29px; color: var(--ink2); margin: 4px 0 6px 348px; }
+  .legend i { display: inline-block; width: 30px; height: 22px; vertical-align: middle; margin: 0 10px 0 0; border-radius: 3px; }
+  .legend span { margin-right: 34px; }
+  .axis { font-size: 27px; color: var(--muted); margin-left: 348px; }
+  .stack { display: flex; height: 44px; width: calc(var(--v) * 0.86%); }
+  .stack div { height: 100%; display: flex; align-items: center; justify-content: center; font-size: 26px; }
+  .stack .rev { background: var(--blue); color: #fff; border-radius: 0; }
+  .stack .fix { background: var(--aqua); color: var(--ink); margin-left: 3px; border-radius: 0 6px 6px 0; }
+  footer { position: absolute; bottom: 0.45in; left: 0.9in; right: 0.9in; font-size: 28px; color: var(--ink2); }
+  @media print { html, body { background: none; } .poster { transform: none !important; } }
+</style>
+</head>
+<body>
+<div class="poster" id="poster">
+  <header>
+    <h1>Can a small AI model summarize job postings for career advisers?</h1>
+    <div class="authors">Shreya Verma · Chih-yu Li · William Sun &nbsp;|&nbsp; Pharma · Finance · Tech job postings</div>
+    <div class="affil">95820 Applications of NLX and LLM · Carnegie Mellon University · October 2026</div>
+  </header>
+
+  <main>
+    <!-- Column 1 -->
+    <div>
+      <section>
+        <h2>The question</h2>
+        <p>A university career office wants short, <b>source-linked summaries</b> of job postings (title, employer,
+          location, work arrangement, requirements) that an adviser checks before students see them. Not hiring decisions.</p>
+      </section>
+      <section>
+        <h2>The data: 650 public job postings</h2>
+        <table>
+          <tr><th>Sector</th><th>Records</th><th>Source URLs</th><th>Employers</th></tr>
+          <tr><td>Pharma</td><td>200</td><td>200</td><td>8</td></tr>
+          <tr><td>Finance</td><td>200</td><td>175</td><td>27</td></tr>
+          <tr><td>Tech</td><td>250</td><td>71</td><td>68</td></tr>
+        </table>
+        <p class="note">Collected Sept 18–20, 2026 from public job-board APIs (Greenhouse, Lever), NYC Open Data and
+          employer career pages. Tech rows are often fragments of one posting, so more rows do not mean more jobs.</p>
+      </section>
+      <section>
+        <h2>How the API works</h2>
+        <div class="flow">
+          <div class="step">Job posting</div><div class="arrow">▼</div>
+          <div class="step">LLMBox API mode</div><div class="arrow">▼</div>
+          <div class="step model">Phi-4-mini (local, 4-bit)</div><div class="arrow">▼</div>
+          <div class="step">Schema + source checks</div><div class="arrow">▼</div>
+          <div class="step review">Adviser review</div>
+        </div>
+        <p class="note">Everything runs on a laptop: no posting leaves the machine. We tested six designs on 50 postings
+          each (300 requests), then attacked the API with 30 safety probes.</p>
+      </section>
+    </div>
+
+    <!-- Column 2 -->
+    <div>
+      <section>
+        <h2>Finding 1: tool works, answers don’t</h2>
+        <p class="lead">The lookup tool ran 50/50 times. But only 17/50 answers got all five source facts right.</p>
+        <div class="legend"><span><i style="background:var(--blue)"></i>valid JSON</span><span><i style="background:var(--orange)"></i>all 5 facts right</span></div>
+        <div class="chart pair">
+          <!-- --v = count out of 50, as a percent (count x 2) -->
+          <div class="row"><div class="label">B1 plain generate</div><div class="track">
+            <div class="line"><span class="bar blue" style="--v:20"></span><span class="val">10</span></div>
+            <div class="line"><span class="bar orange" style="--v:12"></span><span class="val">6</span></div></div></div>
+          <div class="row"><div class="label">B3 hotter, longer</div><div class="track">
+            <div class="line"><span class="bar blue" style="--v:10"></span><span class="val">5</span></div>
+            <div class="line"><span class="bar orange" style="--v:4"></span><span class="val">2</span></div></div></div>
+          <div class="row"><div class="label">C1 structured output</div><div class="track">
+            <div class="line"><span class="bar blue" style="--v:0"></span><span class="val">0</span></div>
+            <div class="line"><span class="bar orange" style="--v:0"></span><span class="val">0</span></div></div></div>
+          <div class="row"><div class="label">C2 tool lookup</div><div class="track">
+            <div class="line"><span class="bar blue" style="--v:44"></span><span class="val">22</span></div>
+            <div class="line"><span class="bar orange" style="--v:34"></span><span class="val">17</span></div></div></div>
+          <div class="row"><div class="label">C3 guardrail</div><div class="track">
+            <div class="line"><span class="bar blue" style="--v:0"></span><span class="val">0</span></div>
+            <div class="line"><span class="bar orange" style="--v:0"></span><span class="val">0</span></div></div></div>
+          <div class="row"><div class="label">C4 strict verifier</div><div class="track">
+            <div class="line"><span class="bar blue" style="--v:0"></span><span class="val">0 &nbsp;<i>all 50 withheld</i></span></div>
+            <div class="line"><span class="bar orange" style="--v:0"></span><span class="val">0</span></div></div></div>
+          <div class="axis">answers out of 50 (bar length = share of 50)</div>
+        </div>
+        <p class="note">Five facts: posting ID, URL, title, employer, location. One run per design.</p>
+      </section>
+      <section>
+        <h2>Finding 2: formatting hid answers</h2>
+        <p>The model wrapped its JSON in Markdown fences, so the strict checker rejected <b>all 50</b> structured answers.
+          Stripping the fences afterwards gave <b>43/50</b> valid, <b>31/50</b> source-correct: a diagnosis, not a new result.</p>
+        <p class="lead" style="font-size:38px">A checker that refuses anything unverified (C4) blocked all 50 answers.
+          Perfectly safe, completely useless.</p>
+      </section>
+      <section>
+        <h2>Same lesson in all three sectors</h2>
+        <table>
+          <tr><th>Sector (AS01 test set)</th><th>Phi valid JSON</th><th>Larger hosted model</th></tr>
+          <tr><td>Pharma (25)</td><td>23/25</td><td>Gemini Flash: 25/25</td></tr>
+          <tr><td>Finance (28)</td><td>12/28</td><td>gpt-oss-120b: 28/28</td></tr>
+          <tr><td>Tech (25)</td><td>7/25</td><td>GPT-5-mini: 24/25</td></tr>
+        </table>
+        <p class="note">Bigger models fixed the format; skill and qualification lists stayed hard. Schemas differ, so this
+          is not a ranking; Finance/Tech figures from teammate memos.</p>
+      </section>
+    </div>
+
+    <!-- Column 3 -->
+    <div>
+      <section>
+        <h2>Finding 3: safety has a service cost</h2>
+        <div class="chart">
+          <!-- --v = percent blocked -->
+          <div class="row"><div class="label">Out of scope</div><div><span class="bar blue" style="--v:100"></span><span class="val">5/5</span></div></div>
+          <div class="row"><div class="label">Leakage</div><div><span class="bar blue" style="--v:80"></span><span class="val">4/5</span></div></div>
+          <div class="row"><div class="label">Harmful</div><div><span class="bar blue" style="--v:60"></span><span class="val">3/5</span></div></div>
+          <div class="row"><div class="label">Indirect injection</div><div><span class="bar blue" style="--v:60"></span><span class="val">3/5</span></div></div>
+          <div class="row"><div class="label">Benign (wrongly blocked)</div><div><span class="bar orange" style="--v:10"></span><span class="val">1/10</span></div></div>
+          <div class="axis">share of probes blocked by the guardrail</div>
+        </div>
+        <p>Keyword guardrail blocked 15/20 attacks but also <b>1 in 10</b> normal requests (above our 5% limit).
+          It agreed with human judgment on <b>24/30</b> probes. Misses were paraphrases.</p>
+      </section>
+      <section>
+        <h2>Finding 4: review time is the cost</h2>
+        <div class="chart">
+          <!-- --v = seconds / 400 * 100 -->
+          <div class="row"><div class="label">By hand</div><div><span class="bar gray" style="--v:82.5;height:44px"></span><span class="val">330 s</span></div></div>
+          <div class="row"><div class="label">API + adviser</div><div style="display:flex;align-items:center">
+            <div class="stack" style="--v:42.75"><div class="rev" style="flex:90">review</div><div class="fix" style="flex:81">fix</div></div>
+            <span class="val">171 s</span></div></div>
+          <div class="axis">adviser seconds per posting (earlier prototype timing)</div>
+        </div>
+        <p class="note">From single timings in an earlier prototype; if review took 249 s, the saving disappears.</p>
+      </section>
+      <section>
+        <h2>Recommendation</h2>
+        <ul>
+          <li>Copy facts already in the source table directly: no AI needed.</li>
+          <li>Use the AI only as a supervised research tool, with an adviser checking every answer.</li>
+          <li>Never for ranking applicants or eligibility decisions.</li>
+          <li>Next: enforce JSON at decoding time, test on new employers.</li>
+        </ul>
+      </section>
+    </div>
+  </main>
+
+  <footer>Convenience sample of public postings; results on previously inspected data. Full methods, 32 references and
+    all data/run logs: Team Research Report and supporting package.</footer>
+</div>
+<script>
+  function fit() {
+    var p = document.getElementById('poster');
+    var s = Math.min(1, (window.innerWidth - 16) / p.offsetWidth);
+    p.style.transform = 'scale(' + s + ')';
+    document.body.style.height = (p.offsetHeight * s + 16) + 'px';
+  }
+  window.addEventListener('resize', fit); fit();
+</script>
+</body>
+</html>
