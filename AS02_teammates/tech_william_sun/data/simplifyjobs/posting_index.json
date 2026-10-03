@@ -1,0 +1,1002 @@
+{
+  "tech_001": {
+    "company": "Meow",
+    "role_title": "Software Engineer - New Graduate"
+  },
+  "tech_002": {
+    "company": "Meow",
+    "role_title": "Software Engineer - New Graduate"
+  },
+  "tech_003": {
+    "company": "Meow",
+    "role_title": "Software Engineer - New Graduate"
+  },
+  "tech_004": {
+    "company": "Meow",
+    "role_title": "Software Engineer - New Graduate"
+  },
+  "tech_005": {
+    "company": "Radiant",
+    "role_title": "2027 New Graduate - Software Engineer"
+  },
+  "tech_006": {
+    "company": "Radiant",
+    "role_title": "2027 New Graduate - Software Engineer"
+  },
+  "tech_007": {
+    "company": "Radiant",
+    "role_title": "2027 New Graduate - Software Engineer"
+  },
+  "tech_008": {
+    "company": "Radiant",
+    "role_title": "2027 New Graduate - Software Engineer"
+  },
+  "tech_009": {
+    "company": "Visa",
+    "role_title": "Software Engineer, New College Grad - 2027"
+  },
+  "tech_010": {
+    "company": "Visa",
+    "role_title": "Software Engineer, New College Grad - 2027"
+  },
+  "tech_011": {
+    "company": "Visa",
+    "role_title": "Software Engineer, New College Grad - 2027"
+  },
+  "tech_012": {
+    "company": "Visa",
+    "role_title": "Software Engineer, New College Grad - 2027"
+  },
+  "tech_013": {
+    "company": "NVIDIA",
+    "role_title": "AI Compiler Engineer - New College Grad 2027"
+  },
+  "tech_014": {
+    "company": "NVIDIA",
+    "role_title": "AI Compiler Engineer - New College Grad 2027"
+  },
+  "tech_015": {
+    "company": "NVIDIA",
+    "role_title": "AI Compiler Engineer - New College Grad 2027"
+  },
+  "tech_016": {
+    "company": "NVIDIA",
+    "role_title": "AI Compiler Engineer - New College Grad 2027"
+  },
+  "tech_017": {
+    "company": "Headlands Technologies",
+    "role_title": "C++ Software Developer - New Grad"
+  },
+  "tech_018": {
+    "company": "Headlands Technologies",
+    "role_title": "C++ Software Developer - New Grad"
+  },
+  "tech_019": {
+    "company": "Headlands Technologies",
+    "role_title": "C++ Software Developer - New Grad"
+  },
+  "tech_020": {
+    "company": "RTX (Raytheon)",
+    "role_title": "Software Engineer I"
+  },
+  "tech_021": {
+    "company": "RTX (Raytheon)",
+    "role_title": "Software Engineer I"
+  },
+  "tech_022": {
+    "company": "RTX (Raytheon)",
+    "role_title": "Software Engineer I"
+  },
+  "tech_023": {
+    "company": "LexisNexis Risk Solutions (RELX)",
+    "role_title": "Software Engineer 1"
+  },
+  "tech_024": {
+    "company": "LexisNexis Risk Solutions (RELX)",
+    "role_title": "Software Engineer 1"
+  },
+  "tech_025": {
+    "company": "LexisNexis Risk Solutions (RELX)",
+    "role_title": "Software Engineer 1"
+  },
+  "tech_026": {
+    "company": "LexisNexis Risk Solutions (RELX)",
+    "role_title": "Software Engineer 1"
+  },
+  "tech_027": {
+    "company": "ICF",
+    "role_title": "Junior Software Engineer (Entry Level)"
+  },
+  "tech_028": {
+    "company": "ICF",
+    "role_title": "Junior Software Engineer (Entry Level)"
+  },
+  "tech_029": {
+    "company": "ICF",
+    "role_title": "Junior Software Engineer (Entry Level)"
+  },
+  "tech_030": {
+    "company": "ICF",
+    "role_title": "Junior Software Engineer (Entry Level)"
+  },
+  "tech_031": {
+    "company": "General Motors",
+    "role_title": "Software Engineer, Data Software Engineering and Cloud Platforms, Early Careers"
+  },
+  "tech_032": {
+    "company": "General Motors",
+    "role_title": "Software Engineer, Data Software Engineering and Cloud Platforms, Early Careers"
+  },
+  "tech_033": {
+    "company": "General Motors",
+    "role_title": "Software Engineer, Data Software Engineering and Cloud Platforms, Early Careers"
+  },
+  "tech_034": {
+    "company": "General Motors",
+    "role_title": "Software Engineer, Data Software Engineering and Cloud Platforms, Early Careers"
+  },
+  "tech_035": {
+    "company": "Tower Research Capital",
+    "role_title": "New Grad C++ Software Developer"
+  },
+  "tech_036": {
+    "company": "Tower Research Capital",
+    "role_title": "New Grad C++ Software Developer"
+  },
+  "tech_037": {
+    "company": "Tower Research Capital",
+    "role_title": "New Grad C++ Software Developer"
+  },
+  "tech_038": {
+    "company": "Superhuman",
+    "role_title": "Software Engineer, Early Career"
+  },
+  "tech_039": {
+    "company": "Superhuman",
+    "role_title": "Software Engineer, Early Career"
+  },
+  "tech_040": {
+    "company": "Superhuman",
+    "role_title": "Software Engineer, Early Career"
+  },
+  "tech_041": {
+    "company": "Superhuman",
+    "role_title": "Software Engineer, Early Career"
+  },
+  "tech_042": {
+    "company": "RTX (Raytheon)",
+    "role_title": "Software Engineer I (Req 01873222)"
+  },
+  "tech_043": {
+    "company": "RTX (Raytheon)",
+    "role_title": "Software Engineer I (Req 01873222)"
+  },
+  "tech_044": {
+    "company": "RTX (Raytheon)",
+    "role_title": "Software Engineer I (Req 01873222)"
+  },
+  "tech_045": {
+    "company": "RTX",
+    "role_title": "Leadership Development Program - Engineering, Software Discipline"
+  },
+  "tech_046": {
+    "company": "Mimecast",
+    "role_title": "Software Engineer I, Endpoint Sensor"
+  },
+  "tech_047": {
+    "company": "Mimecast",
+    "role_title": "Software Engineer I, Endpoint Sensor"
+  },
+  "tech_048": {
+    "company": "Mimecast",
+    "role_title": "Software Engineer I, Endpoint Sensor"
+  },
+  "tech_049": {
+    "company": "Mimecast",
+    "role_title": "Software Engineer I, Endpoint Sensor"
+  },
+  "tech_050": {
+    "company": "AutoStore",
+    "role_title": "Entry Level Software Engineer"
+  },
+  "tech_051": {
+    "company": "AutoStore",
+    "role_title": "Entry Level Software Engineer"
+  },
+  "tech_052": {
+    "company": "AutoStore",
+    "role_title": "Entry Level Software Engineer"
+  },
+  "tech_053": {
+    "company": "Klaviyo",
+    "role_title": "Software Engineer I"
+  },
+  "tech_054": {
+    "company": "Klaviyo",
+    "role_title": "Software Engineer I"
+  },
+  "tech_055": {
+    "company": "Klaviyo",
+    "role_title": "Software Engineer I"
+  },
+  "tech_056": {
+    "company": "Klaviyo",
+    "role_title": "Software Engineer I"
+  },
+  "tech_057": {
+    "company": "True Anomaly",
+    "role_title": "Software Engineer I, Elixir (New Grad)"
+  },
+  "tech_058": {
+    "company": "True Anomaly",
+    "role_title": "Software Engineer I, Elixir (New Grad)"
+  },
+  "tech_059": {
+    "company": "True Anomaly",
+    "role_title": "Software Engineer I, Elixir (New Grad)"
+  },
+  "tech_060": {
+    "company": "True Anomaly",
+    "role_title": "Software Engineer I, Elixir (New Grad)"
+  },
+  "tech_061": {
+    "company": "SpaceX",
+    "role_title": "New Graduate Engineer, Software (Starship)"
+  },
+  "tech_062": {
+    "company": "SpaceX",
+    "role_title": "New Graduate Engineer, Software (Starship)"
+  },
+  "tech_063": {
+    "company": "SpaceX",
+    "role_title": "New Graduate Engineer, Software (Starship)"
+  },
+  "tech_064": {
+    "company": "SpaceX",
+    "role_title": "New Graduate Engineer, Software (Starship)"
+  },
+  "tech_065": {
+    "company": "CTG (Cegeka)",
+    "role_title": "Junior Software Engineer - Manufacturing Systems"
+  },
+  "tech_066": {
+    "company": "CTG (Cegeka)",
+    "role_title": "Junior Software Engineer - Manufacturing Systems"
+  },
+  "tech_067": {
+    "company": "Garmin",
+    "role_title": "Software Engineer 1 (Android)"
+  },
+  "tech_068": {
+    "company": "Garmin",
+    "role_title": "Software Engineer 1 (Android)"
+  },
+  "tech_069": {
+    "company": "Garmin",
+    "role_title": "Software Engineer 1 (Android)"
+  },
+  "tech_070": {
+    "company": "Nexthop Systems",
+    "role_title": "Software Engineer - Hardware Diagnostics - New Grad"
+  },
+  "tech_071": {
+    "company": "Nexthop Systems",
+    "role_title": "Software Engineer - Hardware Diagnostics - New Grad"
+  },
+  "tech_072": {
+    "company": "Nexthop Systems",
+    "role_title": "Software Engineer - Hardware Diagnostics - New Grad"
+  },
+  "tech_073": {
+    "company": "AeroVironment",
+    "role_title": "Software Engineer I"
+  },
+  "tech_074": {
+    "company": "AeroVironment",
+    "role_title": "Software Engineer I"
+  },
+  "tech_075": {
+    "company": "AeroVironment",
+    "role_title": "Software Engineer I"
+  },
+  "tech_076": {
+    "company": "AeroVironment",
+    "role_title": "Software Engineer I"
+  },
+  "tech_077": {
+    "company": "ID.me",
+    "role_title": "Software Development Engineer - New Grad Summer 2027"
+  },
+  "tech_078": {
+    "company": "ID.me",
+    "role_title": "Software Development Engineer - New Grad Summer 2027"
+  },
+  "tech_079": {
+    "company": "ID.me",
+    "role_title": "Software Development Engineer - New Grad Summer 2027"
+  },
+  "tech_080": {
+    "company": "ID.me",
+    "role_title": "Software Development Engineer - New Grad Summer 2027"
+  },
+  "tech_081": {
+    "company": "General Dynamics Mission Systems",
+    "role_title": "Entry Level Software Engineer"
+  },
+  "tech_082": {
+    "company": "General Dynamics Mission Systems",
+    "role_title": "Entry Level Software Engineer"
+  },
+  "tech_083": {
+    "company": "General Dynamics Mission Systems",
+    "role_title": "Entry Level Software Engineer"
+  },
+  "tech_084": {
+    "company": "General Dynamics Mission Systems",
+    "role_title": "Entry Level Software Engineer"
+  },
+  "tech_085": {
+    "company": "DoorDash",
+    "role_title": "Software Engineer I, Entry-Level"
+  },
+  "tech_086": {
+    "company": "DoorDash",
+    "role_title": "Software Engineer I, Entry-Level"
+  },
+  "tech_087": {
+    "company": "DoorDash",
+    "role_title": "Software Engineer I, Entry-Level"
+  },
+  "tech_088": {
+    "company": "DoorDash",
+    "role_title": "Software Engineer I, Entry-Level"
+  },
+  "tech_089": {
+    "company": "Sift",
+    "role_title": "Software Engineer - New College Graduate"
+  },
+  "tech_090": {
+    "company": "Sift",
+    "role_title": "Software Engineer - New College Graduate"
+  },
+  "tech_091": {
+    "company": "Sift",
+    "role_title": "Software Engineer - New College Graduate"
+  },
+  "tech_092": {
+    "company": "Sift",
+    "role_title": "Software Engineer - New College Graduate"
+  },
+  "tech_093": {
+    "company": "Arch",
+    "role_title": "Software Engineer | Early Careers, 2027 Start"
+  },
+  "tech_094": {
+    "company": "Arch",
+    "role_title": "Software Engineer | Early Careers, 2027 Start"
+  },
+  "tech_095": {
+    "company": "Arch",
+    "role_title": "Software Engineer | Early Careers, 2027 Start"
+  },
+  "tech_096": {
+    "company": "Arch",
+    "role_title": "Software Engineer | Early Careers, 2027 Start"
+  },
+  "tech_097": {
+    "company": "Kikoff",
+    "role_title": "Software Engineer - Recent Grad"
+  },
+  "tech_098": {
+    "company": "Kikoff",
+    "role_title": "Software Engineer - Recent Grad"
+  },
+  "tech_099": {
+    "company": "Kikoff",
+    "role_title": "Software Engineer - Recent Grad"
+  },
+  "tech_100": {
+    "company": "Applied Materials",
+    "role_title": "Software Engineer, New College Grad - Master's"
+  },
+  "tech_101": {
+    "company": "Applied Materials",
+    "role_title": "Software Engineer, New College Grad - Master's"
+  },
+  "tech_102": {
+    "company": "Applied Materials",
+    "role_title": "Software Engineer, New College Grad - Master's"
+  },
+  "tech_103": {
+    "company": "Applied Materials",
+    "role_title": "Software Engineer, New College Grad - Master's"
+  },
+  "tech_104": {
+    "company": "American Express",
+    "role_title": "Software Engineer I, Enterprise Technology Services"
+  },
+  "tech_105": {
+    "company": "American Express",
+    "role_title": "Software Engineer I, Enterprise Technology Services"
+  },
+  "tech_106": {
+    "company": "American Express",
+    "role_title": "Software Engineer I, Enterprise Technology Services"
+  },
+  "tech_107": {
+    "company": "American Express",
+    "role_title": "Software Engineer I, Enterprise Technology Services"
+  },
+  "tech_108": {
+    "company": "American Express",
+    "role_title": "Software Engineer I, Enterprise Technology Services"
+  },
+  "tech_109": {
+    "company": "Tebra",
+    "role_title": "Software Engineer I"
+  },
+  "tech_110": {
+    "company": "Tebra",
+    "role_title": "Software Engineer I"
+  },
+  "tech_111": {
+    "company": "Tebra",
+    "role_title": "Software Engineer I"
+  },
+  "tech_112": {
+    "company": "Tebra",
+    "role_title": "Software Engineer I"
+  },
+  "tech_113": {
+    "company": "Valon",
+    "role_title": "Software Engineer New Grad"
+  },
+  "tech_114": {
+    "company": "Valon",
+    "role_title": "Software Engineer New Grad"
+  },
+  "tech_115": {
+    "company": "Valon",
+    "role_title": "Software Engineer New Grad"
+  },
+  "tech_116": {
+    "company": "Valon",
+    "role_title": "Software Engineer New Grad"
+  },
+  "tech_117": {
+    "company": "InterSystems",
+    "role_title": "Core Development Program - Software Engineer Rotational"
+  },
+  "tech_118": {
+    "company": "InterSystems",
+    "role_title": "Core Development Program - Software Engineer Rotational"
+  },
+  "tech_119": {
+    "company": "InterSystems",
+    "role_title": "Core Development Program - Software Engineer Rotational"
+  },
+  "tech_120": {
+    "company": "InterSystems",
+    "role_title": "Core Development Program - Software Engineer Rotational"
+  },
+  "tech_121": {
+    "company": "Stripe",
+    "role_title": "Software Engineer, New Grad"
+  },
+  "tech_122": {
+    "company": "Stripe",
+    "role_title": "Software Engineer, New Grad"
+  },
+  "tech_123": {
+    "company": "Stripe",
+    "role_title": "Software Engineer, New Grad"
+  },
+  "tech_124": {
+    "company": "Sierra",
+    "role_title": "Software Engineer, Agent (New Grad 2027)"
+  },
+  "tech_125": {
+    "company": "Sierra",
+    "role_title": "Software Engineer, Agent (New Grad 2027)"
+  },
+  "tech_126": {
+    "company": "Sierra",
+    "role_title": "Software Engineer, Agent (New Grad 2027)"
+  },
+  "tech_127": {
+    "company": "Sierra",
+    "role_title": "Software Engineer, Agent (New Grad 2027)"
+  },
+  "tech_128": {
+    "company": "IXL Learning",
+    "role_title": "Software Engineer, New Grad"
+  },
+  "tech_129": {
+    "company": "IXL Learning",
+    "role_title": "Software Engineer, New Grad"
+  },
+  "tech_130": {
+    "company": "IXL Learning",
+    "role_title": "Software Engineer, New Grad"
+  },
+  "tech_131": {
+    "company": "Whatnot",
+    "role_title": "Software Engineer, 2027 New Grad"
+  },
+  "tech_132": {
+    "company": "Whatnot",
+    "role_title": "Software Engineer, 2027 New Grad"
+  },
+  "tech_133": {
+    "company": "Whatnot",
+    "role_title": "Software Engineer, 2027 New Grad"
+  },
+  "tech_134": {
+    "company": "Whatnot",
+    "role_title": "Software Engineer, 2027 New Grad"
+  },
+  "tech_135": {
+    "company": "Everlaw",
+    "role_title": "Software Engineer I"
+  },
+  "tech_136": {
+    "company": "Everlaw",
+    "role_title": "Software Engineer I"
+  },
+  "tech_137": {
+    "company": "Everlaw",
+    "role_title": "Software Engineer I"
+  },
+  "tech_138": {
+    "company": "Google",
+    "role_title": "Software Engineer, Early Career, Campus"
+  },
+  "tech_139": {
+    "company": "Google",
+    "role_title": "Software Engineer, Early Career, Campus"
+  },
+  "tech_140": {
+    "company": "Google",
+    "role_title": "Software Engineer, Early Career, Campus"
+  },
+  "tech_141": {
+    "company": "Amazon",
+    "role_title": "Software Development Engineer, AWS Data Services - 2026"
+  },
+  "tech_142": {
+    "company": "Amazon",
+    "role_title": "Software Development Engineer, AWS Data Services - 2026"
+  },
+  "tech_143": {
+    "company": "Amazon",
+    "role_title": "Software Development Engineer, AWS Data Services - 2026"
+  },
+  "tech_144": {
+    "company": "Amazon",
+    "role_title": "Software Development Engineer, AWS Data Services - 2026"
+  },
+  "tech_145": {
+    "company": "Amazon",
+    "role_title": "Software Development Engineer - 2026"
+  },
+  "tech_146": {
+    "company": "Amazon",
+    "role_title": "Software Development Engineer - 2026"
+  },
+  "tech_147": {
+    "company": "Amazon",
+    "role_title": "Software Development Engineer - 2026"
+  },
+  "tech_148": {
+    "company": "HP",
+    "role_title": "Data Analyst"
+  },
+  "tech_149": {
+    "company": "HP",
+    "role_title": "Data Analyst"
+  },
+  "tech_150": {
+    "company": "HP",
+    "role_title": "Data Analyst"
+  },
+  "tech_151": {
+    "company": "Rolls-Royce",
+    "role_title": "Junior Machine Learning Engineer"
+  },
+  "tech_152": {
+    "company": "Rolls-Royce",
+    "role_title": "Junior Machine Learning Engineer"
+  },
+  "tech_153": {
+    "company": "BDO",
+    "role_title": "Business Analyst, Data & Analytics - New Grad"
+  },
+  "tech_154": {
+    "company": "BDO",
+    "role_title": "Business Analyst, Data & Analytics - New Grad"
+  },
+  "tech_155": {
+    "company": "BDO",
+    "role_title": "Business Analyst, Data & Analytics - New Grad"
+  },
+  "tech_156": {
+    "company": "Qualcomm",
+    "role_title": "Machine Learning Engineer, AI Processors (New Grad)"
+  },
+  "tech_157": {
+    "company": "Qualcomm",
+    "role_title": "Machine Learning Engineer, AI Processors (New Grad)"
+  },
+  "tech_158": {
+    "company": "Qualcomm",
+    "role_title": "Machine Learning Engineer, AI Processors (New Grad)"
+  },
+  "tech_159": {
+    "company": "Capital One",
+    "role_title": "Associate, Data Scientist - New Grad 2027"
+  },
+  "tech_160": {
+    "company": "Capital One",
+    "role_title": "Associate, Data Scientist - New Grad 2027"
+  },
+  "tech_161": {
+    "company": "Sun Life",
+    "role_title": "Student, Junior Security Data Analyst"
+  },
+  "tech_162": {
+    "company": "Sun Life",
+    "role_title": "Student, Junior Security Data Analyst"
+  },
+  "tech_163": {
+    "company": "ID.me",
+    "role_title": "Summer 2027 - Data Scientist (New Grad)"
+  },
+  "tech_164": {
+    "company": "ID.me",
+    "role_title": "Summer 2027 - Data Scientist (New Grad)"
+  },
+  "tech_165": {
+    "company": "Capital One",
+    "role_title": "Associate, Data Analyst - New Grad 2027"
+  },
+  "tech_166": {
+    "company": "Capital One",
+    "role_title": "Associate, Data Analyst - New Grad 2027"
+  },
+  "tech_167": {
+    "company": "Canadian Tire",
+    "role_title": "Data Science Associate, Finance Rotational Program - New Grad 2027"
+  },
+  "tech_168": {
+    "company": "Canadian Tire",
+    "role_title": "Data Science Associate, Finance Rotational Program - New Grad 2027"
+  },
+  "tech_169": {
+    "company": "SMX",
+    "role_title": "Junior Data Analytics & Reporting Specialist"
+  },
+  "tech_170": {
+    "company": "SMX",
+    "role_title": "Junior Data Analytics & Reporting Specialist"
+  },
+  "tech_171": {
+    "company": "Trulioo",
+    "role_title": "Junior Software Engineer"
+  },
+  "tech_172": {
+    "company": "Trulioo",
+    "role_title": "Junior Software Engineer"
+  },
+  "tech_173": {
+    "company": "Cadence",
+    "role_title": "Software Engineer (New College Grad Dec 2026)"
+  },
+  "tech_174": {
+    "company": "Cadence",
+    "role_title": "Software Engineer (New College Grad Dec 2026)"
+  },
+  "tech_175": {
+    "company": "Safelite/Belron",
+    "role_title": "Predictive Analytics Global Early Career Professional"
+  },
+  "tech_176": {
+    "company": "Safelite/Belron",
+    "role_title": "Predictive Analytics Global Early Career Professional"
+  },
+  "tech_177": {
+    "company": "American Express",
+    "role_title": "Data Engineer I, Enterprise Technology Services - New Grad 2027"
+  },
+  "tech_178": {
+    "company": "American Express",
+    "role_title": "Data Engineer I, Enterprise Technology Services - New Grad 2027"
+  },
+  "tech_179": {
+    "company": "American Express",
+    "role_title": "Data Engineer I, Enterprise Technology Services - New Grad 2027"
+  },
+  "tech_180": {
+    "company": "National Software Management",
+    "role_title": "Entry Level Data/Business Analyst"
+  },
+  "tech_181": {
+    "company": "National Software Management",
+    "role_title": "Entry Level Data/Business Analyst"
+  },
+  "tech_182": {
+    "company": "Expression",
+    "role_title": "Junior Data Engineer (DEA)"
+  },
+  "tech_183": {
+    "company": "Expression",
+    "role_title": "Junior Data Engineer (DEA)"
+  },
+  "tech_184": {
+    "company": "True Anomaly",
+    "role_title": "Data Engineer I"
+  },
+  "tech_185": {
+    "company": "True Anomaly",
+    "role_title": "Data Engineer I"
+  },
+  "tech_186": {
+    "company": "True Anomaly",
+    "role_title": "Software Engineer I, Data Science (New Grad)"
+  },
+  "tech_187": {
+    "company": "True Anomaly",
+    "role_title": "Software Engineer I, Data Science (New Grad)"
+  },
+  "tech_188": {
+    "company": "KBR",
+    "role_title": "Data Engineer, JR"
+  },
+  "tech_189": {
+    "company": "KBR",
+    "role_title": "Data Engineer, JR"
+  },
+  "tech_190": {
+    "company": "ByteDance",
+    "role_title": "Large Language Model Inference System Engineer Graduate"
+  },
+  "tech_191": {
+    "company": "ByteDance",
+    "role_title": "Large Language Model Inference System Engineer Graduate"
+  },
+  "tech_192": {
+    "company": "ByteDance",
+    "role_title": "Large Language Model Inference System Engineer Graduate"
+  },
+  "tech_193": {
+    "company": "ByteDance",
+    "role_title": "Large Language Model Inference System Engineer Graduate"
+  },
+  "tech_194": {
+    "company": "Restaurant Brands International",
+    "role_title": "Data Engineer I, Burger King"
+  },
+  "tech_195": {
+    "company": "Restaurant Brands International",
+    "role_title": "Data Engineer I, Burger King"
+  },
+  "tech_196": {
+    "company": "Restaurant Brands International",
+    "role_title": "Data Engineer I, Burger King"
+  },
+  "tech_197": {
+    "company": "TikTok",
+    "role_title": "Machine Learning Engineer Graduate (Performance Monetization)"
+  },
+  "tech_198": {
+    "company": "TikTok",
+    "role_title": "Machine Learning Engineer Graduate (Performance Monetization)"
+  },
+  "tech_199": {
+    "company": "TikTok",
+    "role_title": "Machine Learning Engineer Graduate (Performance Monetization)"
+  },
+  "tech_200": {
+    "company": "TikTok",
+    "role_title": "Machine Learning Engineer Graduate (Performance Monetization)"
+  },
+  "tech_201": {
+    "company": "NVIDIA",
+    "role_title": "Research Scientist, Robotics Research - PhD New College Grad"
+  },
+  "tech_202": {
+    "company": "NVIDIA",
+    "role_title": "Research Scientist, Robotics Research - PhD New College Grad"
+  },
+  "tech_203": {
+    "company": "NVIDIA",
+    "role_title": "Research Scientist, Robotics Research - PhD New College Grad"
+  },
+  "tech_204": {
+    "company": "NVIDIA",
+    "role_title": "Research Scientist, Robotics Research - PhD New College Grad"
+  },
+  "tech_205": {
+    "company": "Nakupuna Companies",
+    "role_title": "Junior Knowledge Management Analyst"
+  },
+  "tech_206": {
+    "company": "Nakupuna Companies",
+    "role_title": "Junior Knowledge Management Analyst"
+  },
+  "tech_207": {
+    "company": "Nakupuna Companies",
+    "role_title": "Junior Knowledge Management Analyst"
+  },
+  "tech_208": {
+    "company": "Nakupuna Companies",
+    "role_title": "Junior Knowledge Management Analyst"
+  },
+  "tech_209": {
+    "company": "Sallie Mae",
+    "role_title": "Associate, Analytics - Early Career Development Program"
+  },
+  "tech_210": {
+    "company": "Sallie Mae",
+    "role_title": "Associate, Analytics - Early Career Development Program"
+  },
+  "tech_211": {
+    "company": "Sallie Mae",
+    "role_title": "Associate, Analytics - Early Career Development Program"
+  },
+  "tech_212": {
+    "company": "Sallie Mae",
+    "role_title": "Associate, Analytics - Early Career Development Program"
+  },
+  "tech_213": {
+    "company": "Snowflake",
+    "role_title": "AI Research Scientist, New Grad - Agents & Reinforcement Learning"
+  },
+  "tech_214": {
+    "company": "Snowflake",
+    "role_title": "AI Research Scientist, New Grad - Agents & Reinforcement Learning"
+  },
+  "tech_215": {
+    "company": "Snowflake",
+    "role_title": "AI Research Scientist, New Grad - Agents & Reinforcement Learning"
+  },
+  "tech_216": {
+    "company": "Snowflake",
+    "role_title": "AI Research Scientist, New Grad - Agents & Reinforcement Learning"
+  },
+  "tech_217": {
+    "company": "NVIDIA",
+    "role_title": "Research Scientist, Efficient Deep Learning - New College Grad"
+  },
+  "tech_218": {
+    "company": "NVIDIA",
+    "role_title": "Research Scientist, Efficient Deep Learning - New College Grad"
+  },
+  "tech_219": {
+    "company": "NVIDIA",
+    "role_title": "Research Scientist, Efficient Deep Learning - New College Grad"
+  },
+  "tech_220": {
+    "company": "Apogee Engineering",
+    "role_title": "Technical Intelligence Analyst, Junior"
+  },
+  "tech_221": {
+    "company": "Apogee Engineering",
+    "role_title": "Technical Intelligence Analyst, Junior"
+  },
+  "tech_222": {
+    "company": "Allen Control Systems (ACS)",
+    "role_title": "Computer Vision & Machine Learning, Associate"
+  },
+  "tech_223": {
+    "company": "Allen Control Systems (ACS)",
+    "role_title": "Computer Vision & Machine Learning, Associate"
+  },
+  "tech_224": {
+    "company": "Allen Control Systems (ACS)",
+    "role_title": "Computer Vision & Machine Learning, Associate"
+  },
+  "tech_225": {
+    "company": "Allen Control Systems (ACS)",
+    "role_title": "Computer Vision & Machine Learning, Associate"
+  },
+  "tech_226": {
+    "company": "AMERICAN SYSTEMS",
+    "role_title": "Data Engineer - Junior"
+  },
+  "tech_227": {
+    "company": "AMERICAN SYSTEMS",
+    "role_title": "Data Engineer - Junior"
+  },
+  "tech_228": {
+    "company": "AMERICAN SYSTEMS",
+    "role_title": "Data Engineer - Junior"
+  },
+  "tech_229": {
+    "company": "NVIDIA",
+    "role_title": "Research Scientist, Generative AI for Physical AI - PhD New College Grad"
+  },
+  "tech_230": {
+    "company": "NVIDIA",
+    "role_title": "Research Scientist, Generative AI for Physical AI - PhD New College Grad"
+  },
+  "tech_231": {
+    "company": "NVIDIA",
+    "role_title": "Research Scientist, Generative AI for Physical AI - PhD New College Grad"
+  },
+  "tech_232": {
+    "company": "GlobalFoundries",
+    "role_title": "Global Tapeout and Mask Operations, Biz App and Data Engineer (New College Graduate)"
+  },
+  "tech_233": {
+    "company": "GlobalFoundries",
+    "role_title": "Global Tapeout and Mask Operations, Biz App and Data Engineer (New College Graduate)"
+  },
+  "tech_234": {
+    "company": "GlobalFoundries",
+    "role_title": "Global Tapeout and Mask Operations, Biz App and Data Engineer (New College Graduate)"
+  },
+  "tech_235": {
+    "company": "Waymo",
+    "role_title": "Machine Learning Engineer Perception LLM/VLM (PhD, New Grad)"
+  },
+  "tech_236": {
+    "company": "Waymo",
+    "role_title": "Machine Learning Engineer Perception LLM/VLM (PhD, New Grad)"
+  },
+  "tech_237": {
+    "company": "Waymo",
+    "role_title": "Machine Learning Engineer Perception LLM/VLM (PhD, New Grad)"
+  },
+  "tech_238": {
+    "company": "Waymo",
+    "role_title": "Machine Learning Engineer Perception LLM/VLM (PhD, New Grad)"
+  },
+  "tech_239": {
+    "company": "SQexperts LLC",
+    "role_title": "Entry Level Business Analyst / Data Analyst"
+  },
+  "tech_240": {
+    "company": "SQexperts LLC",
+    "role_title": "Entry Level Business Analyst / Data Analyst"
+  },
+  "tech_241": {
+    "company": "Data Cloud Merge",
+    "role_title": "Entry Level Business Analyst"
+  },
+  "tech_242": {
+    "company": "Data Cloud Merge",
+    "role_title": "Entry Level Business Analyst"
+  },
+  "tech_243": {
+    "company": "Perpay",
+    "role_title": "Junior Strategic Analyst"
+  },
+  "tech_244": {
+    "company": "Perpay",
+    "role_title": "Junior Strategic Analyst"
+  },
+  "tech_245": {
+    "company": "Perpay",
+    "role_title": "Junior Strategic Analyst"
+  },
+  "tech_246": {
+    "company": "Perpay",
+    "role_title": "Junior Strategic Analyst"
+  },
+  "tech_247": {
+    "company": "Brain Co.",
+    "role_title": "Early Career Machine Learning Engineer, Applied AI"
+  },
+  "tech_248": {
+    "company": "Brain Co.",
+    "role_title": "Early Career Machine Learning Engineer, Applied AI"
+  },
+  "tech_249": {
+    "company": "Brain Co.",
+    "role_title": "Early Career Machine Learning Engineer, Applied AI"
+  },
+  "tech_250": {
+    "company": "Brain Co.",
+    "role_title": "Early Career Machine Learning Engineer, Applied AI"
+  }
+}

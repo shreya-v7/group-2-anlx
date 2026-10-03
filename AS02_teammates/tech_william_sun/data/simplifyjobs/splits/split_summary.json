@@ -1,0 +1,30 @@
+{
+  "seed": 42,
+  "unit": "posting (source_url)",
+  "records": {
+    "dev": 124,
+    "eval": 126
+  },
+  "postings": {
+    "dev": 39,
+    "eval": 32
+  },
+  "posting_overlap": 0,
+  "samples": {
+    "dev_sample50": 50,
+    "eval_sample50": 50
+  },
+  "human_labeled_in_eval_sample": 25,
+  "modality": {
+    "dev_sample50": {
+      "text": 24,
+      "table": 25,
+      "mixed": 1
+    },
+    "eval_sample50": {
+      "text": 23,
+      "table": 27,
+      "mixed": 0
+    }
+  }
+}
