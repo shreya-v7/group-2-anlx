@@ -268,12 +268,12 @@ y = heading(x, y, 'Recommendation')
 y = para(x, y, '• Copy facts already in the source table directly: no AI needed.<br/>'
                '• Use the AI only as a supervised research tool, with an adviser checking every answer.<br/>'
                '• Never for ranking applicants or eligibility decisions.<br/>'
-               '• Next: enforce JSON at decoding time, test on new employers.', 26)
+               '• Next: enforce JSON at decoding time, screen postings for discriminatory terms, test on new employers.', 26)
 assert y > 80, y
 
 c.setFillColor(colors.HexColor(INK2))
 c.setFont('Helvetica', 20)
 c.drawString(64, 42, 'Convenience sample of public postings; results on previously inspected data. Full methods, '
-                     '32 references and all data/run logs: Team Research Report and supporting package.')
+                     '33 references and all data/run logs: Team Research Report and supporting package.')
 c.save()
 print('poster built')
