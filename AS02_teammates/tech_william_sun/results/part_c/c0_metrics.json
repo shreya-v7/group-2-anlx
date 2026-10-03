@@ -1,0 +1,82 @@
+{
+  "n": 50,
+  "usable_rate": 0.14,
+  "parse_rate": 1.0,
+  "schema_valid_rate": 0.92,
+  "schema_errors": [
+    [
+      "$.salary_min: Input should be a valid integer, unable to parse string as an integer",
+      3
+    ],
+    [
+      "$.seniority: Input should be '\u2026', '\u2026', '\u2026', '\u2026', '\u2026', '\u2026', '\u2026', '\u2026' or '\u2026'",
+      1
+    ]
+  ],
+  "company_acc": 0.76,
+  "company_acc_when_in_source": 0.973,
+  "company_acc_when_not_in_source": 0.1538,
+  "n_company_not_in_source": 13,
+  "company_fabricated_rate": 0.12,
+  "company_null_when_not_in_source": 0.4615,
+  "n_location_unsupported": 47,
+  "seniority_acc": 0.44,
+  "seniority_errors": [
+    [
+      "senior",
+      14
+    ],
+    [
+      "intern",
+      7
+    ],
+    [
+      "mid",
+      4
+    ],
+    [
+      "staff",
+      2
+    ],
+    [
+      "junior",
+      1
+    ]
+  ],
+  "location_acc": 0.6667,
+  "n_location_scored": 18,
+  "skills_total": 286,
+  "skill_grounding_precision": 0.6084,
+  "skill_atomic_rate": 0.7587,
+  "skills_ok_rate": 0.2,
+  "salary_hallucination_rate": 0.0,
+  "n_salary_hallucinated": 0,
+  "n_no_salary_in_source": 34,
+  "latency_mean_s": 4.491,
+  "latency_p50_s": 3.939,
+  "latency_p95_s": 7.022,
+  "input_tokens_mean": 319.3,
+  "output_tokens_mean": 98.7,
+  "output_tokens_p95": 160.0,
+  "output_tokens_max": 172,
+  "n_hit_max_new_tokens": 0,
+  "generations_per_request": 1,
+  "repair_rate": 0.0,
+  "blocked": 0,
+  "block_rules": {},
+  "guardrail_latency_mean_s": null,
+  "guardrail_tokens_mean": 0,
+  "human_labels": {
+    "n": 25,
+    "all_fields_correct": 0.12,
+    "role_category_acc": 0.84,
+    "seniority_acc": 0.56,
+    "required_skills_acc": 0.2,
+    "location_type_acc": 0.6,
+    "company_acc": 0.76,
+    "salary_min_acc": 0.84,
+    "skills_precision": 0.0625,
+    "skills_recall": 0.2333,
+    "skills_f1": 0.0986
+  }
+}

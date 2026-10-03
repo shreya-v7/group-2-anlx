@@ -1,0 +1,37 @@
+{
+  "run": "b3",
+  "n": 5,
+  "agreement": 1.0,
+  "labels": [
+    {
+      "doc_id": "tech_211",
+      "human_usable": false,
+      "metric_usable": false,
+      "note": "seniority should be entry (May 2027 grad, full-time); location not stated; soft-skill sentences in skills"
+    },
+    {
+      "doc_id": "tech_048",
+      "human_usable": false,
+      "metric_usable": false,
+      "note": "skills are copied requirement sentences, not skill names (should be C++, Linux, eBPF...); location not stated"
+    },
+    {
+      "doc_id": "tech_004",
+      "human_usable": false,
+      "metric_usable": false,
+      "note": "seniority senior on new-grad role; company not in text, model used \"early-stage startups\"; extra salary_max key; skills and salary correct"
+    },
+    {
+      "doc_id": "tech_238",
+      "human_usable": false,
+      "metric_usable": false,
+      "note": "all 6 skills invented; compensation-only text has no skills (should be empty list); seniority mid; salary, company, location correct"
+    },
+    {
+      "doc_id": "tech_096",
+      "human_usable": false,
+      "metric_usable": false,
+      "note": "generic skills invented (same as AS01: \"programming languages\", \"problem-solving\"); compensation-only text, should be empty; all other fields correct"
+    }
+  ]
+}

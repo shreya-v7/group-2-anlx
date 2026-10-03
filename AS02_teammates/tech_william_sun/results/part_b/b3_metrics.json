@@ -1,0 +1,73 @@
+{
+  "n": 50,
+  "usable_rate": 0.02,
+  "parse_rate": 1.0,
+  "schema_valid_rate": 0.32,
+  "schema_errors": [
+    [
+      "$.salary_min: expected number, got NoneType",
+      21
+    ],
+    [
+      "$.salary_min: expected number, got str",
+      9
+    ],
+    [
+      "$.seniority: '\u2026' not in ['\u2026', '\u2026', '\u2026', '\u2026', '\u2026', '\u2026', '\u2026', '\u2026', '\u2026']",
+      3
+    ],
+    [
+      "$: unexpected key(s) salary_max",
+      1
+    ]
+  ],
+  "company_acc": 0.66,
+  "company_acc_when_in_source": 0.9643,
+  "company_acc_when_not_in_source": 0.2727,
+  "n_company_not_in_source": 22,
+  "seniority_acc": 0.46,
+  "seniority_errors": [
+    [
+      "mid",
+      14
+    ],
+    [
+      "intern",
+      6
+    ],
+    [
+      "senior",
+      4
+    ],
+    [
+      "junior",
+      2
+    ],
+    [
+      "not specified",
+      1
+    ]
+  ],
+  "location_acc": 0.4091,
+  "n_location_scored": 22,
+  "skills_total": 299,
+  "skill_grounding_precision": 0.6455,
+  "skill_atomic_rate": 0.7559,
+  "skills_ok_rate": 0.2,
+  "salary_hallucination_rate": 0.0,
+  "n_salary_hallucinated": 0,
+  "n_no_salary_in_source": 37,
+  "latency_mean_s": 4.53,
+  "latency_p50_s": 4.24,
+  "latency_p95_s": 6.864,
+  "input_tokens_mean": 307.1,
+  "output_tokens_mean": 100.7,
+  "output_tokens_p95": 157.0,
+  "output_tokens_max": 168,
+  "n_hit_max_new_tokens": 0,
+  "hyperparameters": {
+    "temperature": 0.2,
+    "top_p": 0.5,
+    "max_new_tokens": 256
+  }
+}

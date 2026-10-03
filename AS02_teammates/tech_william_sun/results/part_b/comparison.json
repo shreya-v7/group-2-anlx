@@ -1,0 +1,74 @@
+{
+  "usable_rate": {
+    "b1": 0.1,
+    "b3": 0.02
+  },
+  "parse_rate": {
+    "b1": 1.0,
+    "b3": 1.0
+  },
+  "schema_valid_rate": {
+    "b1": 0.3,
+    "b3": 0.32
+  },
+  "company_acc": {
+    "b1": 0.64,
+    "b3": 0.66
+  },
+  "company_acc_when_in_source": {
+    "b1": 0.9286,
+    "b3": 0.9643
+  },
+  "company_acc_when_not_in_source": {
+    "b1": 0.2727,
+    "b3": 0.2727
+  },
+  "seniority_acc": {
+    "b1": 0.72,
+    "b3": 0.46
+  },
+  "location_acc": {
+    "b1": 0.3636,
+    "b3": 0.4091
+  },
+  "skill_grounding_precision": {
+    "b1": 0.6192,
+    "b3": 0.6455
+  },
+  "skill_atomic_rate": {
+    "b1": 0.7,
+    "b3": 0.7559
+  },
+  "skills_ok_rate": {
+    "b1": 0.24,
+    "b3": 0.2
+  },
+  "salary_hallucination_rate": {
+    "b1": 0.0,
+    "b3": 0.0
+  },
+  "latency_mean_s": {
+    "b1": 4.413,
+    "b3": 4.53
+  },
+  "latency_p95_s": {
+    "b1": 6.741,
+    "b3": 6.864
+  },
+  "input_tokens_mean": {
+    "b1": 307.1,
+    "b3": 307.1
+  },
+  "output_tokens_mean": {
+    "b1": 97.5,
+    "b3": 100.7
+  },
+  "output_tokens_p95": {
+    "b1": 154.0,
+    "b3": 157.0
+  },
+  "n_hit_max_new_tokens": {
+    "b1": 0,
+    "b3": 0
+  }
+}
