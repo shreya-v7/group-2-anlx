@@ -22,5 +22,5 @@ for blockt in [x.strip() for x in md.split('\n\n') if x.strip()]:
             st.append(Paragraph(escape(line), B))
 SimpleDocTemplate(str(R / 'documents/Presentation_Guide.pdf'), pagesize=A4, leftMargin=48, rightMargin=48,
                   topMargin=44, bottomMargin=48, title='Poster presentation guide',
-                  author='Shreya Verma; Chih-yu Li; William Sun').build(st)
+                  author='Shreya Verma; Chih-yu Liu; William Sun').build(st)
 print('guide built')

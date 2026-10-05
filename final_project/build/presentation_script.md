@@ -1,6 +1,6 @@
 # Poster presentation guide
 
-Team: Shreya Verma, Chih-yu Li, William Sun. About four minutes in total, then questions.
+Team: Shreya Verma, Chih-yu Liu, William Sun. About four minutes in total, then questions.
 
 ## Shreya: opening (about 75 seconds)
 
@@ -10,7 +10,7 @@ Team: Shreya Verma, Chih-yu Li, William Sun. About four minutes in total, then q
 
 [Point at "How the API works"] “For Pharma I built an API around Microsoft’s Phi-4-mini, running entirely on a laptop so no data leaves the machine. A posting goes in, the model extracts the facts, automated checks compare them with the source, and an adviser reviews the result. I wrote the usage rules before running the final tests, then tested six designs on 50 postings each. Chih-yu will walk you through what we found.”
 
-## Chih-yu Li: findings (about 75 seconds)
+## Chih-yu Liu: findings (about 75 seconds)
 
 [Point at the Finding 1 chart] “Thanks, Shreya. The headline: the tool works, but the answers don’t. In the best design the model used its lookup tool correctly 50 out of 50 times, yet only 17 of 50 answers got all five basic facts right. A working tool does not guarantee a correct answer.”
 

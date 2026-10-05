@@ -34,7 +34,7 @@ def pdf(name,content):
    if 'text'in b:st.append(par(b['text']))
    elif 'heading'in b:st.append(par(b['heading'],'HeadX'))
    else:st.extend([tbl(b['table']),Spacer(1,12)])
- SimpleDocTemplate(str(O/name),pagesize=A4,leftMargin=42,rightMargin=42,topMargin=38,bottomMargin=50,title=content[0]['title'],author='Shreya Verma; Chih-yu Li; William Sun').build(st,onFirstPage=footer,onLaterPages=footer)
+ SimpleDocTemplate(str(O/name),pagesize=A4,leftMargin=42,rightMargin=42,topMargin=38,bottomMargin=50,title=content[0]['title'],author='Shreya Verma; Chih-yu Liu; William Sun').build(st,onFirstPage=footer,onLaterPages=footer)
 pdf('Team_Research_Report.pdf',pages)
 d=Document(); sec=d.sections[0];sec.top_margin=sec.bottom_margin=Inches(.65);sec.left_margin=sec.right_margin=Inches(.65)
 d.styles['Normal'].font.name='Calibri';d.styles['Normal'].font.size=Pt(10.5)

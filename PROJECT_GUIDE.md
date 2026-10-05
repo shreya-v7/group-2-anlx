@@ -1,6 +1,6 @@
 # Project guide: job-posting extraction with a small language model
 
-*CMU 95820 Applications of NLX and LLM, Fall 2026. Team Group 2: Shreya Verma (Pharma), Chih-yu Li (Finance), William Sun (Tech).*
+*CMU 95820 Applications of NLX and LLM, Fall 2026. Team Group 2: Shreya Verma (Pharma), Chih-yu Liu (Finance), William Sun (Tech).*
 
 This guide explains the whole project from zero: what each assignment asked for, what we did step by step, which
 models and code we used, what the results were, and where every file lives. It is written so that someone seeing
@@ -55,7 +55,7 @@ source data directly (no AI), and use the model only as a supervised tool with a
 | Who | Sector | AS01 corpus | AS02 API |
 |---|---|---|---|
 | Shreya Verma | Pharma / biotech | 200 postings, 8 employers | Career-services fact-extraction API (B1–C4, safety, cost) |
-| Chih-yu Li | Finance | 200 records, 175 postings, 27 employers | (memo only in our package) |
+| Chih-yu Liu | Finance | 200 records, 175 postings, 27 employers | (memo only in our package) |
 | William Sun | Tech (early-career) | 250 fragments, 71 postings, 68 employers | Tech API (C0–C4, 70 safety probes) |
 
 **Timeline (2026):** Sept 18–20 data collection → Sept 21–22 AS01 evaluation and memo → Sept 27–28 AS02 prototype and
@@ -326,7 +326,7 @@ intended IDs; metrics recompute from raw files; outputs are identical to the ear
 
 ## 8. Teammates' work
 
-### 8.1 Chih-yu Li, Finance (AS01, from her memo)
+### 8.1 Chih-yu Liu, Finance (AS01, from her memo)
 200 records from 175 postings at 27 employers via 18 Greenhouse boards, 2 Lever boards and NYC Open Data
 ("NYC Jobs"). Six fields including role family, seniority, work arrangement, certifications, required skills and an
 optional experience number. 28 reference labels (pre-annotated with Claude Opus; independent human review not

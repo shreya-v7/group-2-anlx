@@ -45,7 +45,7 @@ for name in ['report_content.json', 'build_report.py', 'build_poster.py', 'build
 
 (K / 'START_HERE.md').write_text("""# Group 2 final project: supporting package
 
-Team: Shreya Verma (Pharma), Chih-yu Li (Finance), William Sun (Tech). CMU 95820, Fall 2026.
+Team: Shreya Verma (Pharma), Chih-yu Liu (Finance), William Sun (Tech). CMU 95820, Fall 2026.
 
 ## Documents
 - `documents/Team_Research_Report.pdf` (+ `.docx`, `.md`): the team research report.

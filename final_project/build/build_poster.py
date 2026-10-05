@@ -130,7 +130,7 @@ plt.close(fig)
 W, H = 2592, 1728
 c = canvas.Canvas(str(OUT / 'Scientific_Poster_36x24.pdf'), pagesize=(W, H))
 c.setTitle('Job posting extraction across Pharma, Finance and Tech')
-c.setAuthor('Shreya Verma; Chih-yu Li; William Sun')
+c.setAuthor('Shreya Verma; Chih-yu Liu; William Sun')
 c.setFillColor(colors.HexColor(SURF))
 c.rect(0, 0, W, H, fill=1, stroke=0)
 c.setFillColor(colors.HexColor(NAVY))
@@ -139,9 +139,9 @@ c.setFillColor(colors.white)
 c.setFont('Helvetica-Bold', 66)
 c.drawString(64, H - 98, 'Can a small AI model summarize job postings for career advisers?')
 c.setFont('Helvetica', 34)
-c.drawString(66, H - 158, 'Shreya Verma · Chih-yu Li · William Sun   |   Pharma · Finance · Tech job postings')
+c.drawString(66, H - 158, 'Group 2   |   Shreya Verma (shreyave) · Chih-yu Liu (chihyul3) · William Sun (yiqings2)')
 c.setFont('Helvetica', 26)
-c.drawString(66, H - 205, '95820 Applications of NLX and LLM · Carnegie Mellon University · October 2026')
+c.drawString(66, H - 205, 'Pharma · Finance · Tech job postings   |   95820 Applications of NLX and LLM · Carnegie Mellon University · October 2026')
 
 COLW = 790
 GUT = 51

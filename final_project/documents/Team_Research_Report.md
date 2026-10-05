@@ -1,6 +1,6 @@
 # Job Posting Extraction Across Pharma, Finance and Tech
 
-Shreya Verma · Chih-yu Li · William Sun
+Shreya Verma · Chih-yu Liu · William Sun
 95820 Applications of NLX and LLM · Carnegie Mellon University
 3 October 2026
 
@@ -14,7 +14,7 @@ Job postings mix employer descriptions, role responsibilities, required credenti
 
 We ask three questions. First, what does a record represent in each sector, and what comparisons does that permit? Second, do structured output, restricted tools and verification produce usable and source-consistent answers? Third, how do refusals and human correction effort change the case for adoption? Our contributions are a provenance-preserving corpus audit, a synthesis of sector extraction studies, and two documented API case studies with retained failures, safety probes and a limited cost scenario.
 
-The team contributions supplied for this synthesis are Shreya Verma’s Pharma corpus and AS01/AS02 evidence [29], Chih-yu Li’s Finance corpus and memo [30], and William Sun’s Tech corpus and AS01 report [31] and Tech AS02 API runs [33]. The sector packages do not all contain the same experiment artifacts. Findings below distinguish locally audited files from numbers available only in a teammate’s memo.
+The team contributions supplied for this synthesis are Shreya Verma’s Pharma corpus and AS01/AS02 evidence [29], Chih-yu Liu’s Finance corpus and memo [30], and William Sun’s Tech corpus and AS01 report [31] and Tech AS02 API runs [33]. The sector packages do not all contain the same experiment artifacts. Findings below distinguish locally audited files from numbers available only in a teammate’s memo.
 
 # Data and related work
 
@@ -282,7 +282,7 @@ The accompanying scientific poster and presentation guide communicate the study 
 
 [29] Verma, S. (2026). Pharma AS01 corpus, labels, predictions and metrics; AS02 LLMBox-integrated evaluation and prototype timing records. Supplied project artifacts.
 
-[30] Li, C.-y. (2026). Finance AS01 corpus, reference labels, README and memo. assignment1_chihyul3.zip. Reported numerical results are not independently reproduced here.
+[30] Liu, C.-y. (2026). Finance AS01 corpus, reference labels, README and memo. assignment1_chihyul3.zip. Reported numerical results are not independently reproduced here.
 
 [31] Sun, W. (2026). Tech AS01 corpus, labels, README and report. 95820-assignment1-yiqings2.zip. Reported numerical results are not independently reproduced here.
 
